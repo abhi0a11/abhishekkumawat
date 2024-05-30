@@ -1,5 +1,7 @@
 import styles from "./About.module.css";
 import abhishek from "../assets/abhishek_1.jpg";
+import resumePdf from "../assets/resume__abhi.pdf";
+
 const About = () => {
   return (
     <>
@@ -36,7 +38,7 @@ const About = () => {
               <div class="d-grid gap-2 d-md-flex justify-content-center">
                 <a
                   download="resume"
-                  href="../resume__abhi.pdf"
+                  href={resumePdf}
                   className="btn btn-outline-info btn-lg px-4 me-md-2"
                 >
                   My Resume
