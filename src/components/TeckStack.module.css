@@ -1,0 +1,44 @@
+.brandingContainer {
+  height: fit-content;
+}
+/* .height {
+  height: 100vh;
+} */
+.progress {
+  height: 2rem;
+}
+
+.skills__heading {
+  text-align: center;
+  margin: 50px 0px 0px 0px;
+}
+.skills__container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  margin: 50px 0px 150px 0px;
+}
+.grid__item:hover {
+  cursor: pointer;
+}
+.fa__icon__rotate {
+  /* transition: all 1s; */
+  transform: rotate(180deg);
+}
+
+.skillset {
+  /* border: 1px solid white; */
+  margin: 25px 0px;
+}
+.skillset__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.bar {
+  border: 2px solid blue;
+  width: 90%;
+}
+.overlay {
+  background-color: white;
+}

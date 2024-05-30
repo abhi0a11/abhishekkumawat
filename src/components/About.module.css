@@ -1,0 +1,14 @@
+.displayBranding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading {
+  margin: 70px 0px 0px 0px;
+}
+
+.imgMine {
+  border-radius: 49% 54% 80% 20% / 85% 58% 47% 17%;
+  height: 60%;
+  width: 64%;
+}

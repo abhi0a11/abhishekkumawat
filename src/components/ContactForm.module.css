@@ -1,0 +1,31 @@
+.cont__name {
+  color: white;
+  text-align: center !important;
+}
+.contact__section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contact__heading {
+  text-align: center;
+  margin: 50px 0px 70px 0px;
+}
+.container_contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 34%;
+  justify-content: center;
+}
+
+.interset__heading {
+  font-size: 64px;
+  color: #22bfbf;
+  align-items: center;
+  text-align: center;
+}
+.form__contact {
+  width: 46%;
+}

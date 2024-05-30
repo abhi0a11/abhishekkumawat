@@ -1,0 +1,150 @@
+.portfolioContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.portfolioMainHeading {
+  font-size: 28px;
+  color: rgb(199, 196, 196);
+  margin: 50px 0px 0px 0px;
+  /* opacity: 0.75; */
+  letter-spacing: -0.04em;
+  line-height: 1.2rem;
+}
+.projectBtn {
+  float: center;
+}
+
+.portfolioSubHeading {
+  font-size: 80px;
+  margin: 0px 0px 33px 40px;
+  padding: 2px 450px 2px 2px;
+  line-height: 5rem;
+  color: white;
+  /* opacity: 0.8; */
+  letter-spacing: -0.045em;
+}
+.content__align {
+  align-content: center;
+}
+
+/* .projectBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 69px 14px;
+} */
+
+.pareshani {
+  padding: 10px 15px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 45px;
+  margin-top: 50px;
+  /* column-gap: -5px; */
+}
+
+.box {
+  /* border: 2px solid grey; */
+  border-radius: 25px;
+}
+
+.box:hover {
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size:contain; */
+  transition: 1s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.box1 {
+  background: url("../images/lunchttime.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  filter: brightness(90%);
+  margin: 0px 21px;
+  height: 41vh;
+  /* width: 40vw; */
+  /*  margin-left: 35px;
+    margin-bottom: 5px; */
+  /* max-width: 90%; */
+}
+
+.vid1 {
+  border-radius: 12px;
+  max-width: 100%;
+  height: 47vh;
+  width: 41vw;
+}
+.box2 {
+  background: url("../images/guess-the-number.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  filter: brightness(90%);
+  margin: 0px 21px;
+  height: 41vh;
+  /* width: 40vw; */
+  /*
+    margin-left: -35px;
+    margin-bottom: 5px; */
+  /* max-width: 90%; */
+}
+
+.box3 {
+  background: url("../images/forkify.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  /* filter: brightness(90%); */
+  height: 41vh;
+  margin: 0px 21px;
+  /* width: 40vw; */
+  /* margin-left: 35px;
+    margin-bottom: 5px; */
+  /* max-width: 90%; */
+}
+
+.box4 {
+  background: url("../images/pig-game.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  filter: brightness(90%);
+  height: 41vh;
+  margin: 0px 21px;
+  /* width: 40vw; */
+  /* margin-left: -35px; */
+  /* max-width: 90%; */
+}
+
+.btnPortfolio {
+  display: inline-block;
+  /* transform: translate(0px, 0px) scale(1, 1); */
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.btnPortfolio:hover {
+  display: inline-block;
+  /* transform: translate(0px, 0px) scale(1, 1); */
+  letter-spacing: -0.02em;
+}
+
+.w50 {
+  width: 14% !important;
+}
+.cardPort {
+  border-radius: 15px;
+  box-shadow: 20px;
+}

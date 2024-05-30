@@ -1,0 +1,90 @@
+.benefits {
+  /* border: 2px solid red; */
+  column-gap: 15px;
+  /* width: 100%; */
+}
+
+.clean {
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  /* box-shadow: 1px 1px 3px 3px black; */
+  margin: 164px 8px;
+  padding: 45px 25px;
+  line-height: 2.5rem;
+  font-size: 24px;
+  /* width: 48% !important; */
+  max-width: 40% !important;
+  background: #1d1d1f;
+  color: white;
+}
+
+.weeks {
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  /* box-shadow: 1px 1px 3px 3px black; */
+  margin: 164px 8px;
+  padding: 45px 35px;
+  line-height: 2.5rem;
+  font-size: 24px;
+  max-width: 40% !important;
+  /* width: 48% !important; */
+  background: #1d1d1f;
+  color: white;
+}
+.sbTxt1 {
+  opacity: 0.4;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px 2px;
+}
+
+.sbTxt2 {
+  font-size: 62px;
+  line-height: 1;
+  background: linear-gradient(
+    91.36deg,
+    #eca658 0%,
+    #f391a6 13.02%,
+    #e188c3 25.52%,
+    #a58de3 37.5%,
+    #56abec 49.48%,
+    #737eb7 63.02%,
+    #c8638c 72.92%,
+    #dd5d57 84.38%,
+    #df6c51 97.92%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-animation: intro-gradient 10s infinite ease both;
+  -moz-animation: intro-gradient 10s infinite ease both;
+  animation: intro-gradient 10s infinite ease both;
+  -webkit-text-fill-color: transparent;
+}
+.head3 {
+  font-size: 50px;
+  background: linear-gradient(
+    91.36deg,
+    #eca658 0%,
+    #f391a6 13.02%,
+    #e188c3 25.52%,
+    #a58de3 37.5%,
+    #56abec 49.48%,
+    #737eb7 63.02%,
+    #c8638c 72.92%,
+    #dd5d57 84.38%,
+    #df6c51 97.92%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-animation: intro-gradient 10s infinite ease both;
+  -moz-animation: intro-gradient 10s infinite ease both;
+  animation: intro-gradient 10s infinite ease both;
+  -webkit-text-fill-color: transparent;
+}
+.codeColor {
+  color: red;
+}
