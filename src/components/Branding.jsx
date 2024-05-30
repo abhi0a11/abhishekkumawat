@@ -96,6 +96,7 @@
 // };
 // export default Branding;
 
+import resumePdf from "../assets/resume__abhi.pdf";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import styles from "./Branding.module.css";
@@ -195,7 +196,7 @@ const Branding = () => {
           <p>
             <a
               download="resume"
-              href="../resume__abhi.pdf"
+              href={resumePdf}
               className="btn btn-outline-info btn-lg px-4 mt-5"
             >
               My Resume
