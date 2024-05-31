@@ -1,9 +1,7 @@
 .brandingContainer {
-  height: fit-content;
-}
-/* .height {
   height: 100vh;
-} */
+}
+
 .progress {
   height: 2rem;
 }
@@ -15,7 +13,7 @@
 .skills__container {
   display: grid;
   grid-template-columns: auto auto auto;
-  justify-items: center;
+  justify-items: start;
   margin: 50px 0px 150px 0px;
 }
 .grid__item:hover {
@@ -41,4 +39,43 @@
 }
 .overlay {
   background-color: white;
+}
+.grid__item__head {
+  color: #7bc9ff;
+}
+
+@media only screen and (max-width: 300px) {
+  .grid__item__head {
+    font-size: 18px;
+  }
+  .skills__container {
+    grid-template-columns: auto;
+    justify-content: space-around;
+    margin: 50px 0px 0px 0px;
+  }
+  .brandingContainer {
+    height: fit-content;
+  }
+  .skills_subhead {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 481px) {
+  .grid__item__head {
+    font-size: 28px;
+  }
+  .skills__container {
+    grid-template-columns: auto;
+    justify-content: space-around;
+    margin: 50px 0px 0px 0px;
+  }
+  .brandingContainer {
+    height: fit-content;
+  }
+  .skills_subhead {
+    font-size: 12px;
+  }
+  .skills__heading h2 {
+    font-size: 30px;
+  }
 }

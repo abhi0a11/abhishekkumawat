@@ -12,14 +12,10 @@ const WorkWithMe = () => {
   return (
     <>
       <div className={`border-2 bg-color text-center `}>
-        {/* <a
-          href="#"
-          className={`"footer-cta-wrap ix--cta w-inline-block ${styles.aFtr}`}
-        > */}
         <div
           className="container container--center "
           data-aos="fade-down"
-          data-aos-offset="300"
+          data-aos-offset="200"
           data-aos-duration="1500"
         >
           <h4
@@ -37,14 +33,13 @@ const WorkWithMe = () => {
             <div className="cta-link-text">
               <a
                 href="#"
-                className="btn btn-outline-light btn-lg px-4 me-sm-3 my-4"
+                className={`btn btn-outline-light btn-lg px-4 me-sm-3 my-4 ${styles.btn__projectRequest}`}
               >
                 Start a project request
               </a>
             </div>
           </div>
         </div>
-        {/* </a> */}
       </div>
     </>
   );

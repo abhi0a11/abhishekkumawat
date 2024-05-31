@@ -11,3 +11,8 @@
 .textF:hover {
   color: #8e99a2;
 }
+@media only screen and (max-width: 300px) {
+  .textF {
+    font-size: 12px;
+  }
+}

@@ -8,7 +8,7 @@ const Navbar = () => {
       >
         <div className="container-fluid">
           <button
-            className="navbar-toggler"
+            className="navbar-toggler collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"

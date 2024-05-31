@@ -29,3 +29,36 @@
 .form__contact {
   width: 46%;
 }
+@media only screen and (max-width: 482px) {
+  .contact__section {
+    display: block;
+  }
+  .contact__heading h2 {
+    font-size: 17px;
+    margin: 0;
+  }
+  .contact__heading span {
+    font-size: 10px;
+  }
+  .contact__heading {
+    margin: 18px 0px 38px 0px;
+  }
+  .container_contact {
+    width: 100%;
+  }
+  .interset__heading {
+    font-size: 25px;
+  }
+  .form__contact {
+    width: 100%;
+    padding: 0px 31px;
+    margin: 20px 0px 0px 0px;
+  }
+  .form__input {
+    font-size: 0.7rem;
+  }
+  .form_btn {
+    font-size: 10px;
+    padding: 4px 21px;
+  }
+}

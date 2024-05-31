@@ -3,7 +3,7 @@ const Message = () => {
   return (
     <>
       <section
-        className={`py-5 text-center bg-color text-light ${styles.displayBranding}`}
+        className={`py-5 text-center bg-color text-light ${styles.displayBranding} ${styles.world_class}`}
         style={{ height: "600px" }}
       >
         <div className="intro-1">

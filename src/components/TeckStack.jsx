@@ -54,7 +54,7 @@ const TeckStack = () => {
   return (
     <>
       <section
-        className={`py-5 ${styles.height} ${styles.brandingContainer}  bg-color text-light world-className vh-100`}
+        className={`py-5 ${styles.brandingContainer}  bg-color text-light world-className `}
         onClick={closeSkills}
         id="Skills"
       >
@@ -64,26 +64,42 @@ const TeckStack = () => {
         </div>
         <div className={`${styles.skills__container}`}>
           <div className={`${styles.grid__item}`} onClick={handleFrontendClick}>
-            <h1 style={{ color: "#7BC9FF" }}>Front-End Developer</h1>
-            <div className="d-flex justify-content-between">
-              <span>More than 1 year</span>
-              <FaChevronDown className="fa__icon__frontend" />
+            <h1 className={`${styles.grid__item__head}`}>
+              Front-End Developer
+            </h1>
+            <div className="d-flex justify-content-between align-items-center">
+              <span className={`${styles.skills_subhead}`}>
+                More than 1 year
+              </span>
+              <FaChevronDown
+                className={`fa__icon__frontend ${styles.skills_subhead}`}
+              />
             </div>
             {showFrontendSkills && <FrontendSkills></FrontendSkills>}
           </div>
           <div className={`${styles.grid__item}`} onClick={handleBackendClick}>
-            <h1 style={{ color: "#7BC9FF" }}>Back-End Developer</h1>
-            <div className="d-flex justify-content-between">
-              <span>More than 1 year</span>
-              <FaChevronDown className="fa-icon-backend" />
+            <h1 className={`${styles.grid__item__head}`}>Back-End Developer</h1>
+            <div className="d-flex justify-content-between align-items-cente">
+              <span className={`${styles.skills_subhead}`}>
+                More than 1 year
+              </span>
+              <FaChevronDown
+                className={`fa-icon-backend ${styles.skills_subhead}`}
+              />
             </div>
             {showBackendSkills && <FrontendSkills></FrontendSkills>}
           </div>
           <div className={`${styles.grid__item}`} onClick={handleCPClick}>
-            <h1 style={{ color: "#7BC9FF" }}>Competetive Programming </h1>
-            <div className="d-flex justify-content-between">
-              <span>More than 1 year</span>
-              <FaChevronDown className="fa-icon-cp" />
+            <h1 className={`${styles.grid__item__head}`}>
+              Competetive Programming{" "}
+            </h1>
+            <div className="d-flex justify-content-between align-items-cente">
+              <span className={`${styles.skills_subhead}`}>
+                More than 1 year
+              </span>
+              <FaChevronDown
+                className={`fa-icon-cp ${styles.skills_subhead}`}
+              />
             </div>
             {showCPSkills && <FrontendSkills></FrontendSkills>}
           </div>

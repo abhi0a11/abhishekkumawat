@@ -57,7 +57,7 @@ const Footer = () => {
           <div
             className={`d-flex justify-content-between ${styles.borderTop} p-2`}
           >
-            <p>© Abhishek kumawat 2020 Company, Inc. All rights reserved.</p>
+            <p>© Abhishek kumawat </p>
 
             <div className="d-flex ">
               <a
@@ -82,14 +82,6 @@ const Footer = () => {
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <FaInstagram />
-              </a>
-              &nbsp;&nbsp;&nbsp;
-              <a
-                href="https://www.youtube.com"
-                target="_blank"
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <IoLogoYoutube />
               </a>
               &nbsp;&nbsp;&nbsp;
             </div>

@@ -9,11 +9,20 @@ import Footer from "./components/Footer";
 import TeckStack from "./components/TeckStack";
 import About from "./components/About";
 import ContactForm from "./components/ContactForm";
+import { useEffect, useState } from "react";
+import MobileBranding from "./components/MobileBranding";
+
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 620;
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, [width]);
   return (
     <>
       <Navbar></Navbar>
-      <Branding></Branding>
+      {width > breakpoint ? <Branding></Branding> : <MobileBranding />}
       <Message></Message>
       <About></About>
       <Benefits></Benefits>
