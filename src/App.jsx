@@ -7,14 +7,14 @@ import Benefits from "./components/Benefits";
 import WorkWithMe from "./components/WorkWithMe";
 import Footer from "./components/Footer";
 import TeckStack from "./components/TeckStack";
-import About from "./components/About";
 import ContactForm from "./components/ContactForm";
 import { useEffect, useState } from "react";
 import MobileBranding from "./components/MobileBranding";
-
+import AboutMobile from "./components/AboutMobile";
+import AboutDesktop from "./components/AboutDesktop";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 620;
+  const breakpoint = 768;
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -22,9 +22,9 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      {width > breakpoint ? <Branding></Branding> : <MobileBranding />}
+      {width >= breakpoint ? <Branding></Branding> : <MobileBranding />}
       <Message></Message>
-      <About></About>
+      {width >= breakpoint ? <AboutDesktop></AboutDesktop> : <AboutMobile />}
       <Benefits></Benefits>
       <TeckStack></TeckStack>
       <Portfolio></Portfolio>

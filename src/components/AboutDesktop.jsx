@@ -1,8 +1,8 @@
-import styles from "./About.module.css";
+import styles from "./AboutDesktop.module.css";
 import abhishek from "../assets/abhishek_1.jpg";
 import resumePdf from "../assets/resume__abhi.pdf";
 
-const About = () => {
+const AboutDesktop = () => {
   return (
     <>
       <section
@@ -28,7 +28,7 @@ const About = () => {
                 loading="lazy"
               />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-6">
               <h1
                 className={`display-5 fw-bold lh-1 mb-3 text-white ${styles.intro__para}`}
               >
@@ -49,17 +49,18 @@ const About = () => {
                 <a
                   download="resume"
                   href={resumePdf}
-                  className={`btn btn-outline-info btn-lg px-4 me-md-2 ${styles.btn_about}`}
+                  className={`btn-animated btn btn-blue btn-outline-info btn-lg px-4 me-md-2 ${styles.btn_about}`}
                 >
                   My Resume
                 </a>
 
-                <button
+                <a
                   type="button"
-                  className={`btn btn-outline-secondary btn-lg px-4 ${styles.btn_about}`}
+                  className={`btn-animated btn btn-grey btn-outline-secondary btn-lg px-4 ${styles.btn_about}`}
+                  href="#Contact-Form"
                 >
                   Contact
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -69,4 +70,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutDesktop;

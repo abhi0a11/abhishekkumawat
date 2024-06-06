@@ -3,6 +3,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 import FrontendSkills from "./FrontendSkills";
+import BackendSkills from "./BackendSkills";
 const TeckStack = () => {
   const [showFrontendSkills, setShowFrontendSkills] = useState(false);
   const [showBackendSkills, setShowBackendSkills] = useState(false);
@@ -87,7 +88,7 @@ const TeckStack = () => {
                 className={`fa-icon-backend ${styles.skills_subhead}`}
               />
             </div>
-            {showBackendSkills && <FrontendSkills></FrontendSkills>}
+            {showBackendSkills && <BackendSkills></BackendSkills>}
           </div>
           <div className={`${styles.grid__item}`} onClick={handleCPClick}>
             <h1 className={`${styles.grid__item__head}`}>

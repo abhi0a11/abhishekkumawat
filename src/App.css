@@ -38,11 +38,105 @@
 }
 @media only screen and (max-width: 300px) {
   .typed-cursor {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 482px) {
   .typed-cursor {
-    font-size: 41px;
+    font-size: 24px;
   }
 }
+@media only screen and (min-width: 482px) and (max-width: 576px) {
+  .typed-cursor {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .typed-cursor {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .typed-cursor {
+    font-size: 33px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .typed-cursor {
+    font-size: 35px;
+  }
+}
+
+.cln-card {
+  margin: 2px 0px;
+}
+
+.classname {
+  /* animation-name: moveInLeft;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out; */
+  animation: moveInLeft 1s ease-out;
+  /* animation-fill-mode: backwards; */
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    /* transform: translateX(-100px) ; */
+    transform: translateX(-100px) rotate(-50deg);
+  }
+  /* 60%{
+    transform: rotate(120deg);
+  } */
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn-animated:link,
+.btn-animated:visited {
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  border-radius: 100px;
+}
+.btn-animated:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(233, 226, 226, 0.3);
+}
+.btn-animated:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(233, 226, 226, 0.3);
+}
+.btn-blue::after {
+  background-color: #0dcaf0 !important;
+}
+.btn-grey::after {
+  background-color: #6c757d !important;
+}
+.btn-animated::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 100px;
+  transition: all 0.8s;
+}
+
+.btn-animated:hover::after {
+  transform: scaleX(1.6) scaleY(1.4);
+  opacity: 0;
+}
+
+/* for fancy cropping images or anything in any polygon shape  use this css property x y are the cordinates*/
+/* clip-path: polygon(x y, x y ,x y, x y); */
+/* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+
+/* css clip path maker {website name} */

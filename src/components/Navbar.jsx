@@ -16,9 +16,11 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span
+              className={`navbar-toggler-icon ${styles.navbar_toggler_icon}`}
+            ></span>
           </button>
-          <a className="navbar-brand" href="#">
+          <a className={`navbar-brand ${styles.nav_logo_name}`} href="#">
             Abhishek Kumawat
           </a>
           <div

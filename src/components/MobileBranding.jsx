@@ -1,7 +1,7 @@
+import styles from "./MobileBranding.module.css";
 import resumePdf from "../assets/resume__abhi.pdf";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import styles from "./MobileBranding.module.css";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { IoLogoFacebook } from "react-icons/io5";
@@ -39,7 +39,7 @@ const MobileBranding = () => {
       data-aos="fade-up-right"
       className={`py-5 ${styles.brandingContainer} ${styles.rowEl} py-lg-5 `}
     >
-      <div class={`col-lg-6 col-md-8 ${styles.info__container}`}>
+      <div className={`col-lg-6 col-md-8 ${styles.info__container}`}>
         <div className={`text-light ${styles.iconContainer}`}>
           <p className="m-0">
             <a
@@ -62,7 +62,7 @@ const MobileBranding = () => {
         </div>
         <img
           src={abhishek}
-          class={`cmx-lg-auto img-fluid ${styles.imgMine1}`}
+          className={`cmx-lg-auto img-fluid ${styles.imgMine1}`}
           alt="Abhishek"
           loading="lazy"
         />
@@ -123,7 +123,7 @@ const MobileBranding = () => {
             <a
               download="resume"
               href={resumePdf}
-              className={`btn btn-outline-info btn-lg px-4 mt-4 ${styles.resumeBtn}`}
+              className={` btn-animated btn btn-blue btn-info btn-lg px-4 mt-4 ${styles.resumeBtn}`}
             >
               My Resume
             </a>

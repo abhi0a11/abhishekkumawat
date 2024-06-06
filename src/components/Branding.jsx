@@ -35,7 +35,6 @@ const Branding = () => {
   }, []);
   return (
     <section
-      data-aos="fade-up-right"
       className={`py-5 vh-100 ${styles.brandingContainer} ${styles.rowEl} row py-lg-5 `}
     >
       <div className={`text-light ${styles.iconContainer}`}>
@@ -67,34 +66,36 @@ const Branding = () => {
         <div className="container conatainer--hero text-light ">
           <div className="text-start hero-header container-fluid">
             <h2
-              className={`text-start display-6 fw-bold text-white lh-1 my-3 ${styles.frontEndTextSize}`}
+              className={`text-start display-6 fw-bold text-white lh-1 ${styles.frontEndTextSize}`}
             >
               FRONT-END
             </h2>
             <h1
-              className={`text-start display-3 fw-bold text-white lh-1 my-3 ${styles.developerTextSize}`}
+              className={`text-start display-3 fw-bold text-white lh-1 ${styles.developerTextSize}`}
             >
               DEVELOPER
             </h1>
             {/* <h2> */}
-            <span
-              className={`${styles.typed_Name} hero-eyebrow`}
-              ref={typedName}
-            ></span>
-            {/* </h2> */}
-            <br />
-            {/* <h1> */}
-            <span
-              className={`${styles.typed_Skill} hero-heading`}
-              ref={typedSkill}
-            ></span>
+            <div className="animate">
+              <span
+                className={`${styles.typed_Name} hero-eyebrow`}
+                ref={typedName}
+              ></span>
+              {/* </h2> */}
+              <br />
+              {/* <h1> */}
+              <span
+                className={`${styles.typed_Skill} hero-heading`}
+                ref={typedSkill}
+              ></span>
+            </div>
             {/* </h1> */}
           </div>
           <p>
             <a
               download="resume"
               href={resumePdf}
-              className={`btn btn-outline-info btn-lg px-4 mt-5 ${styles.resumeBtn}`}
+              className={`btn-animated btn btn-blue btn-outline-info btn-lg px-4 ${styles.resumeBtn}`}
             >
               My Resume
             </a>
@@ -115,14 +116,7 @@ const Branding = () => {
               target="_blank"
               className={`text-white ${styles.about_btn}`}
             >
-              <FaInstagram
-                style={{
-                  width: "28px",
-                  height: "28px",
-                  margin: "0px 10px",
-                  color: "#22bfbf",
-                }}
-              />
+              <FaInstagram className={`${styles.btn_social}`} />
             </a>
           </p>
           <p className="m-0">
@@ -131,14 +125,7 @@ const Branding = () => {
               target="_blank"
               className={`${styles.about_btn} `}
             >
-              <FaTwitter
-                style={{
-                  width: "28px",
-                  height: "28px",
-                  margin: "0px 10px",
-                  color: "#22bfbf",
-                }}
-              />
+              <FaTwitter className={`${styles.btn_social}`} />
             </a>
           </p>
           <p className="m-0">
@@ -147,14 +134,7 @@ const Branding = () => {
               target="_blank"
               className={`${styles.about_btn} `}
             >
-              <IoLogoFacebook
-                style={{
-                  width: "28px",
-                  height: "28px",
-                  margin: "0px 10px",
-                  color: "#22bfbf",
-                }}
-              />
+              <IoLogoFacebook className={`${styles.btn_social}`} />
             </a>
           </p>
         </div>

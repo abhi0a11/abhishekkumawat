@@ -24,3 +24,9 @@
 .underline:hover::after {
   transform: scaleX(0.7);
 }
+
+@media only screen and (max-width: 300px) {
+  .nav_logo_name {
+    font-size: 15px;
+  }
+}

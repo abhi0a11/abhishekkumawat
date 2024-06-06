@@ -69,7 +69,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className={`btn btn-primary ${styles.form_btn}`}
+            className={`btn-animated btn btn-blue btn-primary btn--animated ${styles.form_btn}`}
           >
             Submit
           </button>

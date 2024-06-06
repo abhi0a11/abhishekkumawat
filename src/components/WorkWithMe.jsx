@@ -30,14 +30,14 @@ const WorkWithMe = () => {
             className="cta-link cta-link--hero text-decoration-underline "
             style={{ transform: "translate(0px, 0px) scale(1, 1)" }}
           >
-            <div className="cta-link-text">
+            {/* <div className="cta-link-text">
               <a
                 href="#"
                 className={`btn btn-outline-light btn-lg px-4 me-sm-3 my-4 ${styles.btn__projectRequest}`}
               >
                 Start a project request
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

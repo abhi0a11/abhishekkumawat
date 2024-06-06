@@ -1,3 +1,10 @@
+/* .box {
+  transition: all 0.2s ease-in;
+}
+.box:hover {
+  transform: rotateX(180deg);
+} */
+
 .portfolioContainer {
   background-color: black;
   display: flex;
@@ -52,14 +59,13 @@
   border-radius: 25px;
 }
 
-.box:hover {
+/* .box:hover {
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size:contain; */
   transition: 1s;
   opacity: 0.7;
   cursor: pointer;
-}
+} */
 .box1 {
   background: url("../images/lunchttime.jpg");
   background-position: center;
@@ -151,7 +157,7 @@
 
 /* responsive styling */
 
-@media only screen and (max-width: 482px) {
+@media only screen and (max-width: 300px) {
   .portfolioMainHeading {
     font-size: 20px;
     padding: 2px 2px 2px 2px;
@@ -161,370 +167,279 @@
     justify-content: center;
     grid-template-columns: auto;
   }
-  .box:hover {
-    background-size: 85vw 21vh;
-  }
+  /* .box:hover {
+    background-size: 85vw 26vh;
+  } */
   .box1 {
-    background-size: 83vw 20vh;
-    height: 20vh;
+    background-size: 83vw 22vh;
+    height: 22vh;
     width: 76vw;
   }
 
   .box2 {
-    background-size: 83vw 20vh;
-    height: 20vh;
+    background-size: 83vw 22vh;
+    height: 22vh;
     width: 76vw;
   }
 
   .box3 {
-    background-size: 83vw 30vh;
-    height: 20vh;
+    background-size: 83vw 22vh;
+    height: 22vh;
     width: 76vw;
   }
 
   .box4 {
-    background-size: 83vw 20vh;
-    height: 20vh;
+    background-size: 83vw 22vh;
+    height: 22vh;
     width: 76vw;
   }
   .btnPortfolio {
     font-size: 13px;
   }
 }
-
-/*
-@media only screen and (min-width:462px) and (max-width: 532px) {
-  
-  .btnPortfolio {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width:532px) and (max-width: 584px) {
-  
+@media only screen and (min-width: 300px) and (max-width: 482px) {
   .portfolioMainHeading {
-    margin: 23px 2px -50px 0px;
+    font-size: 20px;
+    padding: 2px 2px 2px 2px;
   }
-}
-@media only screen and (min-width:584px) and (max-width: 600px) {
-  
+
   .pareshani {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column !important;
-    margin-left: -2px;
+    justify-content: center;
+    grid-template-columns: 4fr;
   }
-  .box:hover {
-    background-size: 99vw 41vh;
-  }
+  /* .box:hover {
+    background-size: 85vw 26vh;
+  } */
   .box1 {
-    background-size: 99vw 41vh;
-    height: 31vh;
-    width: 89vw;
+    background-size: 83vw 22vh;
+    height: 22vh;
+    width: 76vw;
   }
 
   .box2 {
-    background-size: 98vw 40vh;
-    height: 31vh;
-    width: 89vw;
+    background-size: 83vw 22vh;
+    height: 22vh;
+    width: 76vw;
   }
 
   .box3 {
-    background-size: 98vw 40vh;
-    height: 31vh;
-    width: 89vw;
+    background-size: 83vw 22vh;
+    height: 22vh;
+    width: 76vw;
   }
 
   .box4 {
-    background-size: 98vw 40vh;
-    height: 31vh;
-    width: 89vw;
+    background-size: 83vw 22vh;
+    height: 22vh;
+    width: 76vw;
   }
-}
-
-
-
-@media only screen and (min-width:600px) and (max-width: 680px) {
-
   .btnPortfolio {
-    width: 25% !important;
+    font-size: 13px;
   }
 }
-@media only screen and (min-width:680px) and (max-width: 747px) {
+@media only screen and (min-width: 482px) and (max-width: 576px) {
   .portfolioMainHeading {
-    margin: 120px 2px -50px 4px;
+    font-size: 20px;
+    padding: 2px 2px 2px 2px;
   }
-  .portfolioSubHeading {
-    font-size: 55px;
-    line-height: 3.5rem;
-    margin: 0px 2px 2px 14px;
-    padding: 2px 138px 2px 2px;
+
+  .pareshani {
+    justify-content: center;
+    grid-template-columns: auto;
   }
-  
+  /* .box:hover {
+    background-size: 65vw 26vh;
+    background-position: initial;
+  } */
   .box1 {
-    background-size: 45vw 40vh;
-    height: 28vh;
-    width: 40vw;
+    background-size: 65vw 22vh;
+    height: 22vh;
+    width: 65vw;
   }
 
   .box2 {
-    background-size: 45vw 40vh;
-    height: 28vh;
-    width: 40vw;
+    background-size: 65vw 22vh;
+    height: 22vh;
+    width: 65vw;
   }
 
   .box3 {
-    background-size: 45vw 40vh;
-    height: 28vh;
-    width: 40vw;
+    background-size: 65vw 22vh;
+    height: 22vh;
+    width: 65vw;
   }
 
   .box4 {
-    background-size: 45vw 40vh;
-    height: 28vh;
-    width: 40vw;
+    background-size: 65vw 22vh;
+    height: 22vh;
+    width: 65vw;
   }
-}
-
-@media only screen and (min-width:747px) and (max-width: 808px) {
-
   .btnPortfolio {
-    width: 20% !important;
-  }
-  .box1 {
-    background-size: 45vw 40vh;
-    height: 30vh;
-    width: 40vw;
-  }
-
-  .box2 {
-    background-size: 45vw 40vh;
-    height: 30vh;
-    width: 40vw;
-  }
-
-  .box3 {
-    background-size: 45vw 40vh;
-    height: 30vh;
-    width: 40vw;
-  }
-
-  .box4 {
-    background-size: 45vw 40vh;
-    height: 30vh;
-    width: 40vw;
-  }
-}
-@media only screen and (min-width:808px) and (max-width: 950px) {
-  .box1 {
-    background-size: 45vw 53vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: 12px;
-  }
-
-  .box2 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: -12px;
-  }
-
-  .box3 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: 12px;
-  }
-
-  .box4 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: -12px;
+    font-size: 13px;
   }
 }
 
-@media only screen and (min-width:950px) and (max-width: 1000px) {
-  .box1 {
-    background-size: 45vw 53vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: 14px;
+@media only screen and (min-width: 576px) and (max-width: 786px) {
+  .portfolioMainHeading {
+    font-size: 32px;
+    padding: 2px 2px 2px 2px;
   }
-  
-  .box2 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: -14px;
-  }
-  
-  .box3 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: 14px;
-  }
-  
-  .box4 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: -14px;
-  }
-}
 
-
-@media only screen and (min-width:1000px) and (max-width: 1050px) {
+  .pareshani {
+    justify-content: center;
+    grid-template-columns: auto auto;
+  }
+  /* .box:hover {
+    background-size: 41vw 32vh;
+    background-position: top;
+  } */
   .box1 {
-    background-size: 45vw 53vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: 0px !important;
+    background-size: 42vw 26vh;
+    height: 27vh;
+    width: 41vw;
   }
-  
-  .box2 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: -0px !important;
-  }
-  
-  .box3 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: 0px !important;
-  }
-  
-  .box4 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: -0px !important;
-  }
-}
-@media only screen and (min-width:1050px) and (max-width: 1100px) {
-  .box1 {
-    background-size: 45vw 53vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: 15px !important;
-  }
-  
-  .box2 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: -15px !important;
-  }
-  
-  .box3 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: 15px !important;
-  }
-  
-  .box4 {
-    background-size: 45vw 51vh;
-    height: 40vh;
-    width: 40vw;
-    margin-left: -15px !important;
-  }
-}
-@media only screen and (min-width:1100px) and (max-width: 1137px) {
 
+  .box2 {
+    background-size: 42vw 27vh;
+    height: 27vh;
+    width: 41vw;
+  }
+
+  .box3 {
+    background-size: 42vw 29vh;
+    height: 27vh;
+    width: 41vw;
+  }
+
+  .box4 {
+    background-size: 41vw 27vh;
+    height: 27vh;
+    width: 41vw;
+  }
   .btnPortfolio {
     font-size: 16px;
   }
 }
-@media only screen and (min-width:1137px) and (max-width: 1250px) {
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  .portfolioMainHeading {
+    font-size: 32px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .pareshani {
+    justify-content: center;
+    grid-template-columns: auto auto;
+  }
+  /* .box:hover {
+    background-size: 43vw 44vh;
+    background-position: top;
+  } */
   .box1 {
-    background-size: 45vw 53vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: 20px;
+    width: 35vw;
   }
 
   .box2 {
-    background-size: 45vw 51vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: -20px;
+    width: 35vw;
   }
 
   .box3 {
-    background-size: 48vw 64vh;
+    background-size: 35vw 60vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: 20px;
+    width: 35vw;
   }
 
   .box4 {
-    background-size: 45vw 51vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: -20px;
+    width: 35vw;
+  }
+  .btnPortfolio {
+    font-size: 21px;
   }
 }
-@media only screen and (min-width:1250px) and (max-width: 1300px) {
+@media only screen and (min-width: 1020px) {
+  .portfolioMainHeading {
+    font-size: 32px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .pareshani {
+    justify-content: center;
+    grid-template-columns: auto auto;
+  }
+  /* .box:hover {
+    background-size: 43vw 44vh;
+    background-position: top;
+  } */
   .box1 {
-    background-size: 45vw 53vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: 25px;
+    width: 35vw;
   }
 
   .box2 {
-    background-size: 45vw 51vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: -25px;
+    width: 35vw;
   }
 
   .box3 {
-    background-size: 48vw 64vh;
+    background-size: 35vw 60vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: 25px;
+    width: 35vw;
   }
 
   .box4 {
-    background-size: 45vw 51vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: -25px;
+    width: 35vw;
+  }
+  .btnPortfolio {
+    font-size: 21px;
   }
 }
-@media only screen and (min-width:1300px) and (max-width: 1400px) {
+@media only screen and (min-width: 1400px) {
+  .portfolioMainHeading {
+    font-size: 32px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  .pareshani {
+    justify-content: center;
+    grid-template-columns: auto auto;
+  }
+  /* .box:hover {
+    background-size: 35vw 44vh;
+    background-position: top;
+  } */
   .box1 {
-    background-size: 45vw 53vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: 30px;
+    width: 35vw;
   }
 
   .box2 {
-    background-size: 45vw 51vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: -30px;
+    width: 35vw;
   }
 
   .box3 {
-    background-size: 45vw 67vh;
+    background-size: 35vw 60vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: 30px;
+    width: 35vw;
   }
 
   .box4 {
-    background-size: 45vw 51vh;
+    background-size: 35vw 41vh;
     height: 40vh;
-    width: 40vw;
-    margin-left: -30px;
+    width: 35vw;
+  }
+  .btnPortfolio {
+    font-size: 21px;
   }
 }
-*/
