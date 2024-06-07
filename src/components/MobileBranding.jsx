@@ -36,7 +36,6 @@ const MobileBranding = () => {
   }, []);
   return (
     <section
-      data-aos="fade-up-right"
       className={`py-5 ${styles.brandingContainer} ${styles.rowEl} py-lg-5 `}
     >
       <div className={`col-lg-6 col-md-8 ${styles.info__container}`}>
