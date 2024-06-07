@@ -1,7 +1,7 @@
+import styles from "./Branding.module.css";
 import resumePdf from "../assets/resume__abhi.pdf";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import styles from "./Branding.module.css";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { IoLogoFacebook } from "react-icons/io5";

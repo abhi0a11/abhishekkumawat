@@ -77,7 +77,7 @@
     font-size: 35px;
   }
   .world_class {
-    height: 400px !important;
+    height: 50vh !important;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 576px) {
