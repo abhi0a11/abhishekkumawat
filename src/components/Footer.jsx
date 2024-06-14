@@ -61,7 +61,7 @@ const Footer = () => {
 
             <div className="d-flex ">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/abhisjek.kumawat?mibextid=LQQJ4d"
                 target="_blank"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -69,7 +69,7 @@ const Footer = () => {
               </a>
               &nbsp;&nbsp;&nbsp;
               <a
-                href="https://www.twitter.com"
+                href="https://x.com/AbhishekKu32163"
                 target="_blank"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -77,7 +77,7 @@ const Footer = () => {
               </a>
               &nbsp;&nbsp;&nbsp;
               <a
-                href="https://www.instagram.com "
+                href="https://www.instagram.com/abhishekkumawt._/"
                 target="_blank"
                 style={{ textDecoration: "none", color: "white" }}
               >

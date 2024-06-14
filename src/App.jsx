@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 import MobileBranding from "./components/MobileBranding";
 import AboutMobile from "./components/AboutMobile";
 import AboutDesktop from "./components/AboutDesktop";
+import { Toaster } from "react-hot-toast";
+
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 768;
@@ -31,6 +33,7 @@ function App() {
       <WorkWithMe></WorkWithMe>
       <ContactForm></ContactForm>
       <Footer></Footer>
+      <Toaster></Toaster>
     </>
   );
 }
