@@ -1,0 +1,70 @@
+.container__contact {
+  display: flex;
+  padding: 50px;
+}
+.contact__left {
+  flex-basis: 35%;
+}
+.contact__left p {
+  margin-top: 30px;
+}
+
+.emailIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  /* color: #22fbf; */
+  color: #ff004f;
+}
+.social__icons {
+  margin-top: 30px;
+}
+.social__icons a {
+  margin-right: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #ababab;
+}
+
+.contact__right {
+  flex-basis: 60%;
+}
+.resumeBtn {
+  margin: 25px 0px;
+  background-color: #ff004f;
+  color: #fff;
+}
+.form_btn {
+  background-color: #ff004f;
+  color: #fff;
+}
+.form_btn:hover {
+  color: #fff;
+}
+
+form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+/* ------------------responsive */
+@media only screen and (min-width: 350px) and (max-width: 786px) {
+  .container__contact {
+    flex-direction: column;
+  }
+  .contact__left,
+  .contact__right {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}

@@ -95,7 +95,7 @@ const Branding = () => {
             <a
               download="resume"
               href={resumePdf}
-              className={`btn-animated btn btn-blue btn-outline-info btn-lg px-4 ${styles.resumeBtn}`}
+              className={`btn-animated btn btn-blue btn-info btn-lg px-4  ${styles.resumeBtn}`}
             >
               My Resume
             </a>

@@ -1,4 +1,8 @@
 import styles from "./Portfolio.module.css";
+import lunchtime from "../assets/lunchttime.jpg";
+import guessTheNumber from "../assets/guess-the-number.png";
+import forkify from "../assets/forkify.jpg";
+import pigGame from "../assets/pig-game.png";
 
 const Portfolio = () => {
   const handleAllClick = () => {
@@ -52,6 +56,12 @@ const Portfolio = () => {
         >
           Javascript
         </button>
+        <button
+          className={`btn btn-lg ${styles.btnPortfolio}`}
+          onClick={handleJsClick}
+        >
+          Game
+        </button>
       </div>
 
       {/* <div className={`container-fluid ${styles.projectBox} `}> */}
@@ -60,7 +70,10 @@ const Portfolio = () => {
           <a href="https://forkify-abhishek.netlify.app/" target="_blank">
             <div
               className={`card ${styles.cardPort} bg-dark text-white overflow-hidden ${styles.box} ${styles.box3}`}
-            ></div>
+            >
+              <img src={forkify} alt="" />
+              <h3>Forkify</h3>
+            </div>
           </a>
         </div>
 
@@ -68,7 +81,10 @@ const Portfolio = () => {
           <a href="https://abhi0a11.github.io/LunchTime/" target="_blank">
             <div
               className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box1}`}
-            ></div>
+            >
+              <img src={lunchtime} alt="" />
+              <h3>Lunchtime</h3>
+            </div>
           </a>
         </div>
 
@@ -79,7 +95,10 @@ const Portfolio = () => {
           >
             <div
               className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box2}`}
-            ></div>
+            >
+              <img src={guessTheNumber} alt="" />
+              <h3>Guess The Number</h3>
+            </div>
           </a>
         </div>
 
@@ -87,7 +106,10 @@ const Portfolio = () => {
           <a href="https://abhi0a11.github.io/Pig-Game/" target="_blank">
             <div
               className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box4}`}
-            ></div>
+            >
+              <img src={pigGame} alt="" />
+              <h3>Pig Game</h3>
+            </div>
           </a>
         </div>
       </div>

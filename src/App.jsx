@@ -13,7 +13,7 @@ import MobileBranding from "./components/MobileBranding";
 import AboutMobile from "./components/AboutMobile";
 import AboutDesktop from "./components/AboutDesktop";
 import { Toaster } from "react-hot-toast";
-
+import Contact from "./components/Contact";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 768;
@@ -25,14 +25,15 @@ function App() {
     <>
       <Navbar></Navbar>
       {width >= breakpoint ? <Branding></Branding> : <MobileBranding />}
-      <Message></Message>
+      {/* <Message></Message> */}
       {width >= breakpoint ? <AboutDesktop></AboutDesktop> : <AboutMobile />}
-      <Benefits></Benefits>
+      {/* <Benefits></Benefits> */}
       <TeckStack></TeckStack>
       <Portfolio></Portfolio>
-      <WorkWithMe></WorkWithMe>
-      <ContactForm></ContactForm>
-      <Footer></Footer>
+      {/* <WorkWithMe></WorkWithMe> */}
+      <Contact></Contact>
+      {/* <ContactForm></ContactForm> */}
+      {/* <Footer></Footer> */}
       <Toaster></Toaster>
     </>
   );

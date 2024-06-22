@@ -31,9 +31,18 @@ const ContactForm = () => {
       // console.log(data.message);
       toast.success(data.message);
       setLoading(false);
+      setName("");
+      setEmail("");
+      setPhone("");
+      sta;
+      setDescription("");
     } catch (error) {
       console.log(error);
       toast.error(error.response.data.message);
+      setName("");
+      setEmail("");
+      setPhone("");
+      setDescription("");
       setLoading(false);
     }
   };

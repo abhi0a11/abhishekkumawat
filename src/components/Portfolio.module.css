@@ -46,39 +46,54 @@
 } */
 
 .pareshani {
+  width: 70%;
   padding: 10px 15px;
   display: grid;
+  grid-gap: 2rem;
   grid-template-columns: auto auto auto;
   row-gap: 45px;
   margin-top: 50px;
+  /* position: relative; */
   /* column-gap: -5px; */
 }
 
 .box {
-  /* border: 2px solid grey; */
   border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.box h3 {
+  position: absolute;
+  color: #ababab;
+  z-index: -1;
 }
 
-/* .box:hover {
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 1s;
-  opacity: 0.7;
+.box img:hover {
+  transition: 0.71s;
+  opacity: 0.2;
   cursor: pointer;
-} */
-.box1 {
-  background: url("../images/lunchttime.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  filter: brightness(90%);
-  margin: 0px 21px;
-  height: 41vh;
-  /* width: 40vw; */
-  /*  margin-left: 35px;
-    margin-bottom: 5px; */
-  /* max-width: 90%; */
+  z-index: 0;
+
+  .box h3 {
+    z-index: 1;
+  }
+}
+
+.box1 img,
+.box2 img,
+.box4 img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.box3 img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: fill;
 }
 
 .vid1 {
@@ -88,14 +103,14 @@
   width: 41vw;
 }
 .box2 {
-  background: url("../images/guess-the-number.png");
+  /* background: url("../images/guess-the-number.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   filter: brightness(90%);
   margin: 0px 21px;
-  height: 41vh;
+  height: 41vh; */
   /* width: 40vw; */
   /*
     margin-left: -35px;
@@ -104,14 +119,14 @@
 }
 
 .box3 {
-  background: url("../images/forkify.jpg");
+  /* background: url("../images/forkify.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  /* filter: brightness(90%); */
+  /* filter: brightness(90%);
   height: 41vh;
-  margin: 0px 21px;
+  margin: 0px 21px; */
   /* width: 40vw; */
   /* margin-left: 35px;
     margin-bottom: 5px; */
@@ -119,14 +134,14 @@
 }
 
 .box4 {
-  background: url("../images/pig-game.png");
+  /* background: url("../images/pig-game.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   filter: brightness(90%);
   height: 41vh;
-  margin: 0px 21px;
+  margin: 0px 21px; */
   /* width: 40vw; */
   /* margin-left: -35px; */
   /* max-width: 90%; */
@@ -170,7 +185,7 @@
   /* .box:hover {
     background-size: 85vw 26vh;
   } */
-  .box1 {
+  /* .box1 {
     background-size: 83vw 22vh;
     height: 22vh;
     width: 76vw;
@@ -192,7 +207,7 @@
     background-size: 83vw 22vh;
     height: 22vh;
     width: 76vw;
-  }
+  } */
   .btnPortfolio {
     font-size: 13px;
   }
@@ -210,7 +225,7 @@
   /* .box:hover {
     background-size: 85vw 26vh;
   } */
-  .box1 {
+  /* .box1 {
     background-size: 83vw 22vh;
     height: 22vh;
     width: 76vw;
@@ -232,7 +247,7 @@
     background-size: 83vw 22vh;
     height: 22vh;
     width: 76vw;
-  }
+  } */
   .btnPortfolio {
     font-size: 13px;
   }
@@ -251,7 +266,7 @@
     background-size: 65vw 26vh;
     background-position: initial;
   } */
-  .box1 {
+  /* .box1 {
     background-size: 65vw 22vh;
     height: 22vh;
     width: 65vw;
@@ -273,7 +288,7 @@
     background-size: 65vw 22vh;
     height: 22vh;
     width: 65vw;
-  }
+  } */
   .btnPortfolio {
     font-size: 13px;
   }
@@ -293,7 +308,7 @@
     background-size: 41vw 32vh;
     background-position: top;
   } */
-  .box1 {
+  /* .box1 {
     background-size: 42vw 26vh;
     height: 27vh;
     width: 41vw;
@@ -315,7 +330,7 @@
     background-size: 41vw 27vh;
     height: 27vh;
     width: 41vw;
-  }
+  } */
   .btnPortfolio {
     font-size: 16px;
   }
@@ -334,7 +349,7 @@
     background-size: 43vw 44vh;
     background-position: top;
   } */
-  .box1 {
+  /* .box1 {
     background-size: 35vw 41vh;
     height: 40vh;
     width: 35vw;
@@ -356,7 +371,7 @@
     background-size: 35vw 41vh;
     height: 40vh;
     width: 35vw;
-  }
+  } */
   .btnPortfolio {
     font-size: 21px;
   }
@@ -369,35 +384,35 @@
 
   .pareshani {
     justify-content: center;
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
   }
   /* .box:hover {
     background-size: 43vw 44vh;
     background-position: top;
   } */
-  .box1 {
+  /* .box1 {
     background-size: 35vw 41vh;
     height: 40vh;
-    width: 35vw;
+    width: 320vw;
   }
 
   .box2 {
     background-size: 35vw 41vh;
     height: 40vh;
-    width: 35vw;
+    width: 20vw;
   }
 
   .box3 {
     background-size: 35vw 60vh;
     height: 40vh;
-    width: 35vw;
+    width: 20vw;
   }
 
   .box4 {
     background-size: 35vw 41vh;
     height: 40vh;
-    width: 35vw;
-  }
+    width: 20vw;
+  } */
   .btnPortfolio {
     font-size: 21px;
   }
@@ -410,35 +425,35 @@
 
   .pareshani {
     justify-content: center;
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
   }
   /* .box:hover {
     background-size: 35vw 44vh;
     background-position: top;
   } */
-  .box1 {
-    background-size: 35vw 41vh;
+  /* .box1 {
+    background-size: 20vw;
     height: 40vh;
-    width: 35vw;
+    width: 20vw;
   }
 
   .box2 {
-    background-size: 35vw 41vh;
+    background-size: 20vw;
     height: 40vh;
-    width: 35vw;
+    width: 20vw;
   }
 
   .box3 {
-    background-size: 35vw 60vh;
+    background-size: 20vw;
     height: 40vh;
-    width: 35vw;
+    width: 20vw;
   }
 
   .box4 {
-    background-size: 35vw 41vh;
+    background-size: 20vw;
     height: 40vh;
-    width: 35vw;
-  }
+    width: 20vw;
+  } */
   .btnPortfolio {
     font-size: 21px;
   }

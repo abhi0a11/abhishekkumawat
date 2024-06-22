@@ -36,9 +36,16 @@
   color: #22bfbf !important;
   /* color: #6fdce3 !important; */
 }
+
+.iconAnimation:hover {
+  color: #ff004f;
+  transform: translateY(-2px);
+}
+
 .typed-cursor {
   font-size: 50px;
 }
+
 @media only screen and (max-width: 300px) {
   .typed-cursor {
     font-size: 19px;
@@ -104,7 +111,12 @@
   display: inline-block;
   transition: all 0.2s;
   position: relative;
-  border-radius: 100px;
+  border-radius: 10px;
+}
+.btn-red:hover,
+.btn-red:active,
+.btn-red:link {
+  background-color: #ff004f;
 }
 .btn-animated:hover {
   transform: translateY(-3px);
@@ -115,7 +127,10 @@
   box-shadow: 0 5px 10px rgba(233, 226, 226, 0.3);
 }
 .btn-blue::after {
-  background-color: #0dcaf0 !important;
+  background-color: #22bfbf !important;
+}
+.btn-red::after {
+  background-color: #ff004f !important;
 }
 .btn-grey::after {
   background-color: #6c757d !important;
@@ -129,7 +144,7 @@
   top: 0;
   left: 0;
   z-index: -1;
-  border-radius: 100px;
+  border-radius: 10px;
   transition: all 0.8s;
 }
 
