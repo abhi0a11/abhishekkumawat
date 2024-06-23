@@ -110,7 +110,7 @@ const Contact = () => {
               placeholder="exampleemail@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
+              // required
             />
             {/* </div> */}
             {/* <div className="mb-3"> */}
@@ -131,7 +131,7 @@ const Contact = () => {
               id="contact-no-1"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              required
+              // required
             />
             {/* </div>
               </div> */}
@@ -146,12 +146,12 @@ const Contact = () => {
               id="exampleInputEmail1"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              required
+              // required
             />
             {/* </div> */}
             <button
               type="submit"
-              className={`btn-animated btn btn-red ${styles.form_btn}`}
+              className={`btn btn-red btn-animated ${styles.form_btn}`}
               disabled={loading}
             >
               Submit

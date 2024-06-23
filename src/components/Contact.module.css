@@ -1,6 +1,6 @@
 .container__contact {
   display: flex;
-  padding: 100px;
+  padding: 50px;
 }
 .contact__left {
   flex-basis: 35%;
@@ -37,7 +37,11 @@
   background-color: #ff004f;
   color: #fff;
 }
-.form_btn:hover {
+.form_btn:hover,
+.form_btn:focus,
+.resumeBtn:hover {
+  background-color: #ff004f;
+  box-shadow: 1px 1px 1px 1px #ff004f;
   color: #fff;
 }
 
@@ -65,6 +69,11 @@ form textarea {
   .contact__left,
   .contact__right {
     flex-direction: column;
-    flex-basis: 100%;
+    flex-basis: 90%;
+  }
+}
+@media only screen and (min-width: 786px) {
+  .contact__left {
+    margin-right: 20px;
   }
 }

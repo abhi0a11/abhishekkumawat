@@ -5,14 +5,9 @@
   height: fit-content !important;
   /* align-items: center; */
 }
-.heading {
-  /* margin: 70px 0px 0px 0px; */
-  /* flex-basis: 30%; */
-}
 
 .imgMine {
   border-radius: 24px;
-  /* width: 46%; */
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -51,6 +46,26 @@
 .btn_about {
   font-size: 15px;
   padding: 8px 25px !important;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .displayBranding {
+    flex-direction: column;
+    text-align: center;
+  }
+  .img_box {
+    margin: auto;
+    width: 38.33333% !important;
+  }
+  .intro__subpara {
+    display: inline-block;
+  }
+  .btn__container {
+    justify-content: center;
+  }
+  .head__about {
+    font-size: calc(24px, 4vw, 40px);
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1020px) {
   .displayBranding {

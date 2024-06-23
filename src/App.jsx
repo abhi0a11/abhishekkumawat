@@ -36,7 +36,7 @@ function App() {
       <Navbar top={top}></Navbar>
       {width >= breakpoint ? <Branding></Branding> : <MobileBranding />}
       {/* <Message></Message> */}
-      {width >= breakpoint ? <AboutDesktop></AboutDesktop> : <AboutMobile />}
+      <AboutDesktop></AboutDesktop>
       {/* <Benefits></Benefits> */}
       <Skills></Skills>
       {/* <TeckStack></TeckStack> */}
