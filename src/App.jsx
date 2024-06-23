@@ -7,6 +7,7 @@ import Benefits from "./components/Benefits";
 import WorkWithMe from "./components/WorkWithMe";
 import Footer from "./components/Footer";
 import TeckStack from "./components/TeckStack";
+import Skills from "./components/Skills";
 import ContactForm from "./components/ContactForm";
 import { useEffect, useState } from "react";
 import MobileBranding from "./components/MobileBranding";
@@ -21,14 +22,24 @@ function App() {
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, [width]);
+
+  const [top, setTop] = useState();
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let newTop = window.scrollY;
+      setTop(newTop);
+    });
+  }, []);
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar top={top}></Navbar>
       {width >= breakpoint ? <Branding></Branding> : <MobileBranding />}
       {/* <Message></Message> */}
       {width >= breakpoint ? <AboutDesktop></AboutDesktop> : <AboutMobile />}
       {/* <Benefits></Benefits> */}
-      <TeckStack></TeckStack>
+      <Skills></Skills>
+      {/* <TeckStack></TeckStack> */}
       <Portfolio></Portfolio>
       {/* <WorkWithMe></WorkWithMe> */}
       <Contact></Contact>

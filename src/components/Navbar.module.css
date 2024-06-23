@@ -25,6 +25,9 @@
   transform: scaleX(0.7);
 }
 
+li:hover {
+  cursor: pointer;
+}
 @media only screen and (max-width: 300px) {
   .nav_logo_name {
     font-size: 15px;

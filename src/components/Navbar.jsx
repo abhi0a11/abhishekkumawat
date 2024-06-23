@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -29,39 +30,55 @@ const Navbar = () => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
-                  className={`nav-link ${styles.underline} active`}
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  className={`nav-link ${styles.underline}`}
                   aria-current="page"
-                  href="#"
+                  to="brand"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className={`nav-link ${styles.underline} `} href="#AboutMe">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className={`nav-link ${styles.underline} `} href="#Skills">
-                  Skills
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
+                <Link
+                  activeClass="active"
+                  spy={true}
                   className={`nav-link ${styles.underline} `}
-                  href="#portfolio-id"
+                  to="AboutMe"
+                >
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  className={`nav-link ${styles.underline} `}
+                  to="Skills"
+                >
+                  Skills
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  className={`nav-link ${styles.underline} `}
+                  to="portfolio-id"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
+                  activeClass="active"
+                  spy={true}
                   className={`nav-link ${styles.underline} `}
-                  href="#Contact-Form"
+                  to="Contact-Form"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex">

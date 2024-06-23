@@ -36,6 +36,7 @@ const Branding = () => {
   return (
     <section
       className={`py-5 vh-100 ${styles.brandingContainer} ${styles.rowEl} row py-lg-5 `}
+      id="brand"
     >
       <div className={`text-light ${styles.iconContainer}`}>
         <p>
