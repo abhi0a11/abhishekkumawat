@@ -2,8 +2,11 @@ import styles from "./Skills.module.css";
 
 const Skills = () => {
   return (
-    <section className={`bg-color text-white ${styles.section__skills}`}>
-      <div className={`${styles.container1}`} id="Skills">
+    <section
+      className={`bg-color text-white ${styles.section__skills}`}
+      id="Skills"
+    >
+      <div className={`${styles.container1}`}>
         <h1 className={`${styles.heading1}`}>FrontEnd Skills</h1>
         <div className={`${styles.technical__bars}`}>
           <div className={`${styles.bar}`}>
@@ -67,7 +70,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.container1}`} id="skills">
+      <div className={`${styles.container1}`}>
         <h1 className={`${styles.heading1}`}>Backend Skills</h1>
 
         <div className={`${styles.technical__bars}`}>

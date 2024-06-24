@@ -16,6 +16,7 @@ const Contact = () => {
   const [phone, setPhone] = useState();
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false);
+  const [buttonText, setButtonText] = useState("Submit");
   const submitHandler = async (e) => {
     setLoading(true);
     try {
@@ -41,6 +42,10 @@ const Contact = () => {
       setEmail("");
       setPhone("");
       setDescription("");
+      setButtonText("Message Sent Successfully");
+      setTimeout(() => {
+        setButtonText("Submit");
+      }, 1000);
     } catch (error) {
       console.log(error);
       toast.error(error.response.data.message);
@@ -49,6 +54,10 @@ const Contact = () => {
       setPhone("");
       setDescription("");
       setLoading(false);
+      setButtonText("Failed");
+      setTimeout(() => {
+        setButtonText("Submit");
+      }, 1000);
     }
   };
   return (
@@ -88,7 +97,6 @@ const Contact = () => {
         </div>
         <div className={`${styles.contact__right}`}>
           <form onSubmit={submitHandler}>
-            {/* <div className="mb-3"> */}
             <input
               type="name"
               className={` ${styles.form__input}`}
@@ -98,47 +106,27 @@ const Contact = () => {
               onChange={(e) => setName(e.target.value)}
               required
             />
-            {/* </div> */}
-            {/* <div className="mb-3"> */}
-            {/* <label htmlFor="exampleInputEmail1" className="form-label">
-                  Email address
-                </label> */}
+
             <input
               type="email"
               className={` ${styles.form__input}`}
               id="user-email"
-              placeholder="exampleemail@gmail.com"
+              placeholder="Email Id"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              // required
+              required
             />
-            {/* </div> */}
-            {/* <div className="mb-3"> */}
-            {/* <label htmlFor="contact-no-1" className="form-label ">
-                  Contact Number
-                </label> */}
-            {/* <div className="input-group mb-3"> */}
-            {/* <span
-                    className={`input-group-text ${styles.form__input}`}
-                    id="inputGroup-sizing-default"
-                  >
-                    +91
-                  </span> */}
+
             <input
               type="number"
               className={` ${styles.form__input}`}
-              placeholder="1234567890"
+              placeholder="Contact Number"
               id="contact-no-1"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              // required
+              required
             />
-            {/* </div>
-              </div> */}
-            {/* <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">
-                  Project Description
-                </label> */}
+
             <textarea
               type="text"
               className={`${styles.form__input}`}
@@ -146,7 +134,8 @@ const Contact = () => {
               id="exampleInputEmail1"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              // required
+              placeholder="Project Description"
+              required
             />
             {/* </div> */}
             <button
@@ -154,7 +143,7 @@ const Contact = () => {
               className={`btn btn-red btn-animated ${styles.form_btn}`}
               disabled={loading}
             >
-              Submit
+              {buttonText}
             </button>
           </form>
         </div>

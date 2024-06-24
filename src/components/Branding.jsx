@@ -8,6 +8,7 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import abhishek from "../assets/abhishek_1.jpg";
+import ab from "../assets/ab.jpg";
 const Branding = () => {
   const typedName = useRef("");
   const typedSkill = useRef("");

@@ -16,16 +16,18 @@
 .head__about {
   font-size: 71px;
   margin-top: 24px;
-  padding: 0px 18px 0px 18px;
+  /* padding: 0px 18px 0px 18px; */
 }
 
 /* .intro__para {
   font-size: 32px;
   } */
 .intro__subpara {
+  display: contents;
   font-size: 20px;
   padding: 0px 18px 0px 18px;
   width: 85%;
+  text-align: start;
 }
 
 .img_box {
@@ -37,25 +39,68 @@
   align-items: center;
   justify-content: center;
 }
-
+.btn {
+  letter-spacing: 2px;
+}
 .btn__container {
   display: flex !important;
   margin: 30px 0px 0px 0px;
-  padding: 0px 18px 0px 18px;
+  /* padding: 0px 18px 0px 18px; */
 }
 .btn_about {
   font-size: 15px;
   padding: 8px 25px !important;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .img_box {
+    margin: auto;
+    width: 55.33333% !important;
+  }
+  .head__about {
+    font-size: 43px;
+    margin-top: 0px;
+  }
+  .intro__subpara {
+    font-size: 15px;
+    padding: 0px 0px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  .img_box {
+    margin: auto;
+    width: 50.33333% !important;
+  }
+  .head__about {
+    font-size: 48px;
+    margin-top: 0px;
+  }
+  .intro__subpara {
+    font-size: 16px;
+    padding: 0px 0px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .img_box {
+    margin: auto;
+    width: 45.33333% !important;
+  }
+  .head__about {
+    font-size: 58px;
+    margin-top: 0px;
+  }
+  .intro__subpara {
+    font-size: 18px;
+    padding: 0px 0px;
+  }
+  .heading {
+    padding-bottom: 0 !important;
+  }
+}
 @media only screen and (min-width: 300px) and (max-width: 768px) {
   .displayBranding {
     flex-direction: column;
     text-align: center;
-  }
-  .img_box {
-    margin: auto;
-    width: 38.33333% !important;
   }
   .intro__subpara {
     display: inline-block;
@@ -63,31 +108,18 @@
   .btn__container {
     justify-content: center;
   }
-  .head__about {
-    font-size: calc(24px, 4vw, 40px);
-  }
 }
-@media only screen and (min-width: 768px) and (max-width: 1020px) {
+
+@media only screen and (min-width: 768px) {
   .displayBranding {
     height: fit-content !important;
   }
-  .head__about {
-    font-size: 21px;
-  }
-  .subhead__about {
-    font-size: 18px;
-  }
-  .intro__para {
-    font-size: 20px;
-  }
-  .intro__subpara {
-    font-size: 12px;
-  }
   .img_box {
-    display: flex !important;
-    margin: 0;
-    justify-content: center;
-    width: 33.33333% !important;
+    margin: 70px 10px 0px 10px;
+    flex-basis: 40%;
+  }
+  .heading {
+    flex-basis: 60%;
   }
   .imgMine {
     width: 82%;
@@ -99,6 +131,37 @@
   .btn_about {
     font-size: 16px;
     padding: 6px 20px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 835px) {
+  .head__about {
+    font-size: 60px;
+  }
+  .intro__subpara {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 835px) and (max-width: 1020px) {
+  .head__about {
+    font-size: 60px;
+  }
+  .intro__subpara {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .head__about {
+    font-size: 60px;
+  }
+  .intro__subpara {
+    font-size: 20px;
+    padding: 0px 50px 0px 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .img_box {
+    margin: 70px 10px 0px 10px;
+    flex-basis: 28%;
   }
 }
 
