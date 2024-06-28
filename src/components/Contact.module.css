@@ -27,6 +27,7 @@
 
 .contact__right {
   flex-basis: 60%;
+  position: relative;
 }
 .resumeBtn {
   margin: 25px 0px;
@@ -41,7 +42,10 @@
 .form_btn:focus,
 .resumeBtn:hover {
   background-color: #ff004f;
-  box-shadow: 1px 1px 1px 1px #ff004f;
+
+  box-shadow: 1px 1px 3px 1px #ababab;
+  transform: translate(-1px, -1px);
+
   color: #fff;
 }
 

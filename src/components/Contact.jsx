@@ -35,7 +35,6 @@ const Contact = () => {
           },
         }
       );
-      // console.log(data.message);
       toast.success(data.message);
       setLoading(false);
       setName("");
@@ -45,7 +44,7 @@ const Contact = () => {
       setButtonText("Message Sent Successfully");
       setTimeout(() => {
         setButtonText("Submit");
-      }, 1000);
+      }, 2000);
     } catch (error) {
       console.log(error);
       toast.error(error.response.data.message);
@@ -57,7 +56,7 @@ const Contact = () => {
       setButtonText("Failed");
       setTimeout(() => {
         setButtonText("Submit");
-      }, 1000);
+      }, 2000);
     }
   };
   return (
@@ -95,53 +94,67 @@ const Contact = () => {
             My Resume
           </a>
         </div>
-        <div className={`${styles.contact__right}`}>
+        <div className={`${styles.contact__right} `}>
+          <div className={`${loading ? "loader" : ""}`}></div>
           <form onSubmit={submitHandler}>
             <input
               type="name"
-              className={` ${styles.form__input}`}
+              className={` ${styles.form__input} ${
+                loading ? "loading_form" : ""
+              }`}
               id="name"
               placeholder="Full Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
+              readOnly={loading}
             />
 
             <input
               type="email"
-              className={` ${styles.form__input}`}
+              className={` ${styles.form__input} ${
+                loading ? "loading_form" : ""
+              }`}
               id="user-email"
               placeholder="Email Id"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              readOnly={loading}
               required
             />
 
             <input
               type="number"
-              className={` ${styles.form__input}`}
+              className={` ${styles.form__input} ${
+                loading ? "loading_form" : ""
+              }`}
               placeholder="Contact Number"
               id="contact-no-1"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
+              readOnly={loading}
               required
             />
 
             <textarea
               type="text"
-              className={`${styles.form__input}`}
+              className={`${styles.form__input} ${
+                loading ? "loading_form" : ""
+              }`}
               rows={6}
               id="exampleInputEmail1"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Project Description"
+              readOnly={loading}
               required
             />
             {/* </div> */}
             <button
               type="submit"
-              className={`btn btn-red btn-animated ${styles.form_btn}`}
-              disabled={loading}
+              className={`btn ${styles.form_btn} ${
+                loading ? "loading_form" : ""
+              }`}
             >
               {buttonText}
             </button>

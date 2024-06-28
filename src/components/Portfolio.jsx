@@ -3,17 +3,85 @@ import lunchtime from "../assets/lunchttime.jpg";
 import guessTheNumber from "../assets/guess-the-number.png";
 import forkify from "../assets/forkify.jpg";
 import pigGame from "../assets/pig-game.png";
+import { useState } from "react";
 
 const Portfolio = () => {
+  const [n, setN] = useState(4);
+  const project_data = [
+    {
+      id: "01",
+      name: "Forkify",
+      image: forkify,
+      description: [
+        "A web application that helps you search for recipes and save them.",
+        "Implemented Fetching data and Sending data back to API asynchronously.",
+        " Implemented pagination to render only subset of fetched results on a page.",
+        " User can navigate through different pages to access remaining search results. ",
+      ],
+      link: "https://forkify-abhishek.netlify.app/",
+      category: ["Javascript", "html", "css"],
+      js: true,
+    },
+    {
+      id: "02",
+      name: "Lunch Time",
+      image: lunchtime,
+      description: [
+        "A web application that helps you plan your lunch with your friends and family.",
+      ],
+      link: "https://abhi0a11.github.io/LunchTime/",
+      category: ["html", "css"],
+      js: false,
+    },
+    {
+      id: "03",
+      name: "Guess The Number",
+      image: guessTheNumber,
+      description: [
+        "A web application that helps you guess the number between 1 to 100.",
+      ],
+      link: "https://abhi0a11.github.io/Guess-the-number/",
+      category: ["Javascript", "game"],
+      js: true,
+      game: true,
+    },
+    {
+      id: "04",
+      name: "Pig Game",
+      image: pigGame,
+      description: [
+        "A web application that helps you guess the number between 1 to 100.",
+      ],
+      link: "https://abhi0a11.github.io/Pig-Game/",
+      category: ["Javascript", "game"],
+      js: true,
+      game: true,
+    },
+  ];
+  const [index, setIndex] = useState(0);
+  const [project, setProject] = useState(project_data);
+
+  const handlePrevClick = () => {
+    const newIndex = (((index - 1) % n) + n) % n;
+    setIndex(newIndex);
+  };
+  const handleNextClick = () => {
+    const newIndex = (index + 1) % n;
+    setIndex(newIndex);
+  };
   const handleAllClick = () => {
     document.querySelectorAll(".all").forEach((element) => {
       element.classList.remove("js_hidden");
     });
+    setProject(project_data);
+    setIndex(0);
+    setN(project_data.length);
   };
-  const handleReactClick = () => {
-    // document.querySelectorAll(".react").forEach((element) => {
-    //   element.classList.toggle("react_hidden");
-    // });
+  const handleGameClick = () => {
+    const game_data = project_data.filter((element) => element.game === true);
+    setProject(game_data);
+    setIndex(0);
+    setN(game_data.length);
   };
   const handleJsClick = () => {
     document.querySelectorAll(".js").forEach((element) => {
@@ -24,7 +92,13 @@ const Portfolio = () => {
         element.classList.toggle("js_hidden");
       }
     });
+
+    const js_data = project_data.filter((element) => element.js === true);
+    setProject(js_data);
+    setIndex(0);
+    setN(js_data.length);
   };
+
   return (
     <div
       className={`col-xxl-12 px-4 py-5 ${styles.portfolioContainer} container-fluid`}
@@ -44,10 +118,7 @@ const Portfolio = () => {
         >
           All
         </button>
-        <button
-          className={`btn btn-lg ${styles.btnPortfolio}`}
-          onClick={handleReactClick}
-        >
+        <button className={`btn btn-lg btn ${styles.btnPortfolio}`}>
           React.js
         </button>
         <button
@@ -58,14 +129,13 @@ const Portfolio = () => {
         </button>
         <button
           className={`btn btn-lg ${styles.btnPortfolio}`}
-          onClick={handleJsClick}
+          onClick={handleGameClick}
         >
           Game
         </button>
       </div>
 
-      {/* <div className={`container-fluid ${styles.projectBox} `}> */}
-      <div className={`container-fluid ${styles.pareshani} `}>
+      {/* <div className={`container-fluid ${styles.pareshani} `}>
         <div className="col all">
           <a href="https://forkify-abhishek.netlify.app/" target="_blank">
             <div
@@ -112,15 +182,62 @@ const Portfolio = () => {
             </div>
           </a>
         </div>
+      </div> */}
+
+      <div className={`text-white ${styles.container_portfolio}`}>
+        <div className={`${styles.project_detail}`}>
+          <div className={`${styles.project_title}`}>
+            <div className={`${styles.project_serial}`}>
+              {project[index].id}
+            </div>
+            <div className={`${styles.project_Heading}`}>
+              {project[index].name}
+            </div>
+          </div>
+
+          <div className={`${styles.project_info}`}>
+            {project[index].description.map((des) => (
+              <p className={`${styles.project_summary}`}>{des}</p>
+            ))}
+
+            <p className={`${styles.project_tags}`}>
+              {project[index].category.map((categ) => (
+                <span className={`${styles.danfo_unique}`}>
+                  {"#" + categ.toUpperCase() + " "}
+                </span>
+              ))}
+            </p>
+          </div>
+          <a
+            className={`text-white btn btn-red ${styles.project_redirect_button}`}
+            href={project[index].link}
+            target="_blank"
+          >
+            Check Out Project!
+          </a>
+        </div>
+        <div className={`${styles.project_icon}`}>
+          <a href={project[index].link} target="_blank">
+            <img src={project[index].image} alt={project[index].name} />
+          </a>
+          <div className={`${styles.project_navigation}`}>
+            <button
+              type="button"
+              className={`text-white btn ${styles.prev_project}`}
+              onClick={handlePrevClick}
+            >
+              PREV
+            </button>
+            <button
+              type="button"
+              className={`text-white btn ${styles.next_project}`}
+              onClick={handleNextClick}
+            >
+              NEXT
+            </button>
+          </div>
+        </div>
       </div>
-      {/* <a
-          href="portfolio-overlay.html#Portfolio"
-          className={`btn btn-lg ${styles.w50} my-3 mx-auto ${styles.btnPortfolio}`}
-          data-aos="flip-up"
-        >
-          Load more
-        </a> */}
-      {/* </div> */}
     </div>
   );
 };
