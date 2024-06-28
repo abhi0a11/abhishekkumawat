@@ -40,7 +40,8 @@
 }
 .form_btn:hover,
 .form_btn:focus,
-.resumeBtn:hover {
+.resumeBtn:hover,
+.resumeBtn:focus {
   background-color: #ff004f;
 
   box-shadow: 1px 1px 3px 1px #ababab;

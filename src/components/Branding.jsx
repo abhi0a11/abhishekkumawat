@@ -7,8 +7,6 @@ import { FiGithub } from "react-icons/fi";
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import abhishek from "../assets/abhishek_1.jpg";
-import ab from "../assets/ab.jpg";
 const Branding = () => {
   const typedName = useRef("");
   const typedSkill = useRef("");
@@ -106,7 +104,7 @@ const Branding = () => {
       </div>
       <div className={`col-lg-6 col-md-8 ${styles.imgMine}`}>
         <img
-          src={abhishek}
+          src="https://ik.imagekit.io/abhishekkumawat/abhishek_1.jpg?updatedAt=1719573870814"
           className={`cmx-lg-auto img-fluid ${styles.imgMine1}`}
           alt="Abhishek"
           loading="lazy"

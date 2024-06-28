@@ -12,6 +12,8 @@ const Portfolio = () => {
       id: "01",
       name: "Forkify",
       image: forkify,
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/forkify.jpg?updatedAt=1719573871091",
       description: [
         "A web application that helps you search for recipes and save them.",
         "Implemented Fetching data and Sending data back to API asynchronously.",
@@ -26,6 +28,8 @@ const Portfolio = () => {
       id: "02",
       name: "Lunch Time",
       image: lunchtime,
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/lunchttime.jpg?updatedAt=1719573870999",
       description: [
         "A web application that helps you plan your lunch with your friends and family.",
       ],
@@ -37,6 +41,8 @@ const Portfolio = () => {
       id: "03",
       name: "Guess The Number",
       image: guessTheNumber,
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/guess-the-number.png?updatedAt=1719573870728",
       description: [
         "A web application that helps you guess the number between 1 to 100.",
       ],
@@ -49,6 +55,8 @@ const Portfolio = () => {
       id: "04",
       name: "Pig Game",
       image: pigGame,
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/pig-game.png?updatedAt=1719573871017",
       description: [
         "A web application that helps you guess the number between 1 to 100.",
       ],
@@ -217,8 +225,13 @@ const Portfolio = () => {
           </a>
         </div>
         <div className={`${styles.project_icon}`}>
-          <a href={project[index].link} target="_blank">
-            <img src={project[index].image} alt={project[index].name} />
+          <a href={project[index].image_url} target="_blank">
+            <img
+              src={project[index].image}
+              srcSet={`${project[index].image_url} 1x, ${project[index].image_url} 2x`}
+              alt={project[index].name}
+              loading="lazy"
+            />
           </a>
           <div className={`${styles.project_navigation}`}>
             <button

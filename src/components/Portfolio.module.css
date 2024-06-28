@@ -211,6 +211,7 @@
   background-color: #ff00519f;
   color: white;
   transform: translate(-3px, -3px);
+  box-shadow: 1px 1px 3px 1px #ababab;
 }
 .project_icon a img {
   height: 100%;
@@ -221,6 +222,7 @@
 .project_icon a img:hover,
 .project_icon a img:focus {
   transform: translate(-3px, -3px);
+  box-shadow: 1px 1px 3px 1px #ababab;
 }
 
 .project_navigation {
@@ -247,10 +249,12 @@
   border-radius: 0px;
 }
 .prev_project:hover,
-.prev_project:focus,
-.next_project:hover,
-.next_project:focus {
+.next_project:hover {
   background-color: #ff00519f;
+}
+.prev_project:focus,
+.next_project:focus {
+  background-color: #ff004f;
 }
 /* end */
 /* responsive styling */

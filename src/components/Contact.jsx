@@ -89,7 +89,7 @@ const Contact = () => {
           <a
             download="resume"
             href={resumePdf}
-            className={`btn-animated btn btn-red px-4  ${styles.resumeBtn}`}
+            className={`btn px-4  ${styles.resumeBtn}`}
           >
             My Resume
           </a>
