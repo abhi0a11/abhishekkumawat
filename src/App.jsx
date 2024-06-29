@@ -34,19 +34,12 @@ function App() {
   }, []);
   return (
     <>
-      <Navbar top={top}></Navbar>
+      <Navbar></Navbar>
       <LandingPage></LandingPage>
-      {/* {width >= breakpoint ? <Branding></Branding> : <MobileBranding />} */}
-      {/* <Message></Message> */}
       <AboutDesktop></AboutDesktop>
-      {/* <Benefits></Benefits> */}
       <Skills></Skills>
-      {/* <TeckStack></TeckStack> */}
       <Portfolio></Portfolio>
-      {/* <WorkWithMe></WorkWithMe> */}
       <Contact></Contact>
-      {/* <ContactForm></ContactForm> */}
-      {/* <Footer></Footer> */}
       <Toaster></Toaster>
     </>
   );

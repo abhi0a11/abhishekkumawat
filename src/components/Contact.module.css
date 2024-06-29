@@ -5,6 +5,15 @@
 .contact__left {
   flex-basis: 35%;
 }
+.contact__left > h1 {
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+  color: #00ff99;
+  font-size: 4rem;
+}
 .contact__left p {
   margin-top: 30px;
 }
@@ -13,7 +22,7 @@
   font-size: 20px;
   margin-right: 10px;
   /* color: #22fbf; */
-  color: #ff004f;
+  color: #00ff99;
 }
 .social__icons {
   margin-top: 30px;
@@ -31,23 +40,22 @@
 }
 .resumeBtn {
   margin: 25px 0px;
-  background-color: #ff004f;
-  color: #fff;
+  /* background-color: #ff004f; */
+  /* color: #fff; */
 }
-.form_btn {
-  background-color: #ff004f;
+/* .form_btn { */
+/* background-color: #ff004f;
   color: #fff;
-}
+} */
 .form_btn:hover,
 .form_btn:focus,
 .resumeBtn:hover,
 .resumeBtn:focus {
-  background-color: #ff004f;
+  /* background-color: #ff004f; */
 
-  box-shadow: 1px 1px 3px 1px #ababab;
-  transform: translate(-1px, -1px);
-
-  color: #fff;
+  /* box-shadow: 1px 1px 3px 1px #ababab; */
+  transform: translate(-3px, -3px);
+  /* color: #fff; */
 }
 
 form {

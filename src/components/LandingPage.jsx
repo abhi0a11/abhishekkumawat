@@ -7,7 +7,10 @@ import { FaInstagram } from "react-icons/fa";
 import abhishek from "../assets/branding-removebg.png";
 const LandingPage = () => {
   return (
-    <section id="brand" className={`text-white ${styles.display_branding}`}>
+    <section
+      id="brand"
+      className={`bg-color text-white ${styles.display_branding}`}
+    >
       <div className={`${styles.branding_info}`}>
         <h5>Full Stack Developer</h5>
         <h1>Hello I'm</h1>
@@ -20,12 +23,14 @@ const LandingPage = () => {
           <a
             download="resume"
             href={resumePdf}
-            className={`btn-animated btn btn-green btn-lg px-4  ${styles.resumeBtn}`}
+            className={`btn-animated btn btn-green-outline btn-lg px-4  ${styles.resumeBtn}`}
           >
             Download CV
           </a>
           <div className={`${styles.mobile}`}>
-            <div className={`btn-animated btn-green ${styles.icon_div}`}>
+            <div
+              className={`btn-animated btn-green-outline ${styles.icon_div}`}
+            >
               <a
                 href="https://www.linkedin.com/in/abhishekkumawt/"
                 target="_blank"
@@ -34,7 +39,9 @@ const LandingPage = () => {
                 <FaLinkedinIn className={`${styles.fa__icon__detail}`} />
               </a>
             </div>
-            <div className={`btn-animated btn-green ${styles.icon_div}`}>
+            <div
+              className={`btn-animated btn-green-outline ${styles.icon_div}`}
+            >
               <a
                 href="https://github.com/abhi0a11"
                 target="_blank"
@@ -43,7 +50,9 @@ const LandingPage = () => {
                 <FiGithub className={`${styles.fa__icon__detail}`} />
               </a>
             </div>
-            <div className={`btn-animated btn-green ${styles.icon_div}`}>
+            <div
+              className={`btn-animated btn-green-outline ${styles.icon_div}`}
+            >
               <a
                 href="https://www.instagram.com/abhishekkumawt._/"
                 target="_blank"
@@ -52,7 +61,9 @@ const LandingPage = () => {
                 <FaInstagram className={`${styles.fa__icon__detail}`} />
               </a>
             </div>
-            <div className={`btn-animated btn-green ${styles.icon_div}`}>
+            <div
+              className={`btn-animated btn-green-outline ${styles.icon_div}`}
+            >
               <a
                 href="https://x.com/AbhishekKu32163"
                 target="_blank"

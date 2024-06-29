@@ -16,7 +16,12 @@
 .head__about {
   font-size: 71px;
   margin-top: 24px;
-  /* padding: 0px 18px 0px 18px; */
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+  color: #00ff99;
 }
 
 /* .intro__para {
@@ -50,6 +55,7 @@
 .btn_about {
   font-size: 15px;
   padding: 8px 25px !important;
+  background-color: #1c1c22;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 480px) {

@@ -3,6 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   height: fit-content;
+  background-color: #000 !important;
 }
 .container1 {
   flex-basis: 40%;
@@ -16,6 +17,12 @@
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
   margin-bottom: 50px;
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+  color: #00ff99;
 }
 .bar {
   font-size: 23px;
@@ -83,7 +90,7 @@
 }
 .technical__bars .bar .progress__line span {
   height: 100%;
-  background-color: #ff004f;
+  background-color: antiquewhite;
   position: absolute;
   border-radius: 10px;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;

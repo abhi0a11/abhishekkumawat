@@ -68,6 +68,7 @@ clolor-green {
 } */
 .bg-color {
   background-color: rgba(11, 11, 12, 1);
+  /* background-color: #1c1c22; */
 }
 .cutom-text-color {
   /* text-transform: uppercase;
@@ -76,13 +77,13 @@ clolor-green {
     1px 4px 1px #957dad, 1px 5px 1px #957dad, 1px 6px 1px #957dad,
     1px 10px 5px rgba(16, 16, 16, 0.5), 1px 15px 10px rgba(16, 16, 16, 0.4),
     1px 20px 30px rgba(16, 16, 16, 0.3), 1px 25px 50px rgba(16, 16, 16, 0.2); */
-  color: #22bfbf !important;
-  /* color: #00ff99 !important; */
+  /* color: #22bfbf !important; */
+  color: #00ff99 !important;
   /* color: #6fdce3 !important; */
 }
 
 .iconAnimation:hover {
-  color: #ff004f;
+  color: #00ff99;
   transform: translateY(-2px);
 }
 
@@ -174,6 +175,31 @@ clolor-green {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(233, 226, 226, 0.3);
 }
+
+.btn-red {
+  background-color: #ff004f;
+}
+.btn-green {
+  background-color: #00ff99;
+  color: #000;
+}
+.btn-green-outline {
+  border: 1px solid #00ff99;
+  color: #00ff99;
+}
+
+.btn-red:hover {
+  background-color: #ff004f;
+}
+.btn-green:hover {
+  background-color: #00ff99;
+  color: #000;
+}
+.btn-green-outline:hover {
+  border: 1px solid #00ff99;
+  color: #00ff99;
+}
+
 .btn-blue::after {
   content: "";
   background-color: #22bfbf !important;
@@ -182,25 +208,14 @@ clolor-green {
   content: "";
   background-color: #ff004f;
 }
-.btn-red {
-  background-color: #ff004f;
-}
-.btn-green {
-  border: 1px solid #00ff99;
-  color: #00ff99;
-}
-.btn-green:hover {
-  border: 1px solid #00ff99;
-}
-.btn-red:hover {
-  background-color: #ff004f;
-}
 .btn-grey::after {
   background-color: #6c757d !important;
 }
-.btn-green::after {
+.btn-green::after,
+.btn-green-outline::after {
   background-color: #00ff99 !important;
 }
+
 .btn-animated::after {
   content: "";
   display: inline-block;

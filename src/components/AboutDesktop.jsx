@@ -41,14 +41,14 @@ const AboutDesktop = () => {
             <a
               download="resume"
               href={resumePdf}
-              className={`btn-animated btn btn-blue btn-info btn-lg px-4 me-md-2 ${styles.btn_about}`}
+              className={`btn-animated btn btn-green-outline btn-lg px-4 me-md-2 ${styles.btn_about}`}
             >
               My Resume
             </a>
 
             <a
               type="button"
-              className={`btn-animated btn btn-grey btn-secondary btn-lg px-4 ${styles.btn_about}`}
+              className={`btn-animated btn btn-green-outline btn-lg px-4 ${styles.btn_about}`}
               href="#Contact-Form"
             >
               Contact

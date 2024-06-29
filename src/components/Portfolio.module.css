@@ -13,13 +13,18 @@
 }
 
 .portfolioMainHeading {
-  font-size: 28px;
+  font-size: 60px;
   color: rgb(199, 196, 196);
   margin: 35px 0px 0px 0px;
   /* opacity: 0.75; */
   letter-spacing: -0.04em;
   line-height: 1.2rem;
   color: #ff004f;
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
 }
 .projectBtn {
   float: center;
@@ -124,6 +129,11 @@
   transform: translate(-1px, -1px);
   letter-spacing: -0.02em;
   color: #ff004f;
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ELSH" 0;
 }
 
 .w50 {
@@ -213,8 +223,13 @@
   background-color: #ff00519f;
   color: white;
   transform: translate(-3px, -3px);
-  box-shadow: 1px 1px 3px 1px #ababab;
+  /* box-shadow: 1px 1px 3px 1px #ababab; */
   border: 1px solid #ff004f;
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ELSH" 0;
 }
 .project_icon a img {
   height: 100%;
@@ -254,6 +269,11 @@
 .prev_project:hover,
 .next_project:hover {
   background-color: #ff00519f;
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ELSH" 0;
 }
 .prev_project:focus,
 .next_project:focus {
@@ -407,8 +427,9 @@
 }
 @media only screen and (min-width: 1300px) {
   .portfolioMainHeading {
-    font-size: 32px;
-    padding: 2px 2px 2px 2px;
+    font-size: 70px;
+    margin-bottom: 10px;
+    /* color: #00ff99; */
   }
 
   /* .pareshani {

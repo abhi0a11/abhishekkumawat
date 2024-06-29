@@ -89,7 +89,7 @@ const Contact = () => {
           <a
             download="resume"
             href={resumePdf}
-            className={`btn px-4  ${styles.resumeBtn}`}
+            className={`btn btn-green-outline btn-animated px-4  ${styles.resumeBtn}`}
           >
             My Resume
           </a>
@@ -152,7 +152,7 @@ const Contact = () => {
             {/* </div> */}
             <button
               type="submit"
-              className={`btn ${styles.form_btn} ${
+              className={`btn btn-green ${styles.form_btn} ${
                 loading ? "loading_form" : ""
               }`}
             >
