@@ -113,9 +113,7 @@ const Portfolio = () => {
       id="portfolio-id"
     >
       <div className="container-fluid " id="custom-cards">
-        <h1
-          className={`pb-2 text-center ${styles.portfolioMainHeading} cutom-text-color`}
-        >
+        <h1 className={`pb-2 text-center ${styles.portfolioMainHeading} `}>
           Projects
         </h1>
       </div>

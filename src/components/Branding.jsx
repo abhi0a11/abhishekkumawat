@@ -7,6 +7,7 @@ import { FiGithub } from "react-icons/fi";
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+
 const Branding = () => {
   const typedName = useRef("");
   const typedSkill = useRef("");

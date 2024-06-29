@@ -15,6 +15,7 @@ import AboutMobile from "./components/AboutMobile";
 import AboutDesktop from "./components/AboutDesktop";
 import { Toaster } from "react-hot-toast";
 import Contact from "./components/Contact";
+import LandingPage from "./components/LandingPage";
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const breakpoint = 768;
@@ -34,7 +35,8 @@ function App() {
   return (
     <>
       <Navbar top={top}></Navbar>
-      {width >= breakpoint ? <Branding></Branding> : <MobileBranding />}
+      <LandingPage></LandingPage>
+      {/* {width >= breakpoint ? <Branding></Branding> : <MobileBranding />} */}
       {/* <Message></Message> */}
       <AboutDesktop></AboutDesktop>
       {/* <Benefits></Benefits> */}

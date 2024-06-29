@@ -1,0 +1,285 @@
+.display_branding {
+  display: flex;
+  height: 100vh;
+  background: #1c1c22;
+}
+.branding_info {
+  flex-grow: 2;
+  flex-basis: 60%;
+  align-content: center;
+  justify-content: center;
+  padding: 100px;
+}
+.branding_info h5 {
+  font-size: 1.25rem;
+}
+.branding_info h1 {
+  font-size: 4.75rem;
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+}
+.branding_info > p {
+  width: 75%;
+  color: #ababab;
+  font-size: 17px;
+}
+
+.branding_social {
+  display: flex;
+  margin-top: 29px;
+  gap: 14px;
+}
+.icon_div {
+  border: 1px solid #00ff99;
+  width: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 42px;
+}
+
+.fa__icon__detail {
+  color: #00ff99;
+}
+.image_container {
+  background-color: transparent;
+  flex-grow: 1;
+  flex-basis: 40%;
+  display: flex;
+  /* justify-content: center; */
+  align-content: center;
+  flex-wrap: wrap;
+}
+.branding_image {
+  /* height: 77%;
+  width: 87%; */
+  height: 60%;
+  width: 69%;
+  /* border-radius: 100%; */
+  overflow: hidden;
+  /* margin: 0px 38px 0px 0px; */
+  /* background-image: linear-gradient(
+      0deg,
+      hsla(0, 0%, 0%, 0.6) 11%,
+      hsla(240, 10%, 12%, 0.1) 39%
+    ),
+    url(../assets/branding-removebg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: contrast(1); */
+}
+
+.resumeBtn {
+  font-size: 15px;
+  padding: 8px 25px !important;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .branding_info {
+    padding: 25px;
+  }
+  .branding_info h5 {
+    font-size: 0.75rem;
+  }
+  .branding_info h1 {
+    font-size: 2rem;
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 0;
+  }
+  .branding_info > p {
+    /* width: 75%; */
+    color: #ababab;
+    font-size: 14px;
+  }
+  .branding_social {
+    flex-direction: column-reverse;
+  }
+  .mobile {
+    display: flex;
+    margin-top: 29px;
+    gap: 14px;
+    margin: 0 auto;
+  }
+  .icon_div {
+    width: 8.75vw;
+  }
+  .resumeBtn {
+    font-size: 15px;
+    padding: 8px 32px !important;
+    font-weight: 400;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .branding_info {
+    padding: 80px;
+  }
+  .branding_info h5 {
+    font-size: 1rem;
+  }
+  .branding_info h1 {
+    font-size: 2.75rem;
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 0;
+  }
+  .branding_info > p {
+    width: 90%;
+    color: #ababab;
+    font-size: 16px;
+  }
+  .branding_social {
+    flex-direction: column-reverse;
+  }
+  .mobile {
+    display: flex;
+    margin-top: 29px;
+    gap: 14px;
+    margin: 0 auto;
+  }
+  .icon_div {
+    width: 7vw;
+    height: 6vh;
+  }
+  .resumeBtn {
+    font-size: 15px;
+    padding: 8px 32px !important;
+    font-weight: 400;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 700px) {
+  .branding_info {
+    padding: 80px;
+  }
+  .branding_info h5 {
+    font-size: 1rem;
+  }
+  .branding_info h1 {
+    font-size: 3.25rem;
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 0;
+  }
+  .branding_info > p {
+    width: 90%;
+    color: #ababab;
+    font-size: 17px;
+  }
+  .branding_social {
+    flex-direction: column-reverse;
+  }
+  .mobile {
+    display: flex;
+    margin-top: 29px;
+    gap: 14px;
+    margin: 0 auto;
+  }
+  .icon_div {
+    width: 6.5vw;
+    height: 7vh;
+  }
+  .resumeBtn {
+    font-size: 15px;
+    padding: 8px 32px !important;
+    font-weight: 400;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 890px) {
+  .branding_info {
+    padding: 100px;
+  }
+  .branding_info h5 {
+    font-size: 1.25rem;
+  }
+  .branding_info h1 {
+    font-size: 4.25rem;
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 0;
+  }
+  .branding_info > p {
+    width: 90%;
+    color: #ababab;
+    font-size: 17px;
+  }
+
+  .mobile {
+    display: flex;
+    gap: 14px;
+  }
+  .icon_div {
+    width: 4.5vw;
+    height: 7vh;
+  }
+  .resumeBtn {
+    font-size: 15px;
+    padding: 8px 32px !important;
+    font-weight: 400;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 890px) {
+  .branding_info > p {
+    width: 90%;
+  }
+  .mobile {
+    display: flex;
+    gap: 14px;
+  }
+  .icon_div {
+    width: 4.5vw;
+    height: 7vh;
+  }
+  .resumeBtn {
+    font-size: 15px;
+    padding: 8px 32px !important;
+    font-weight: 400;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .branding_info > p {
+    width: 80%;
+  }
+  .icon_div {
+    width: 3.5vw;
+    height: 6vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icon_div {
+    width: 3vw;
+    height: 6vh;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .icon_div {
+    width: 2.8vw;
+    height: 6vh;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .icon_div {
+    width: 2.5vw;
+    height: 6vh;
+  }
+}
