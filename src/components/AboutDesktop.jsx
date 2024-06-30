@@ -6,7 +6,7 @@ const AboutDesktop = () => {
   return (
     <>
       <section
-        className={`py-5 bg-color text-light world-className vh-100 ${styles.displayBranding} `}
+        className={`py-5 bg-color-primary text-light world-className vh-100 ${styles.displayBranding} `}
         style={{ height: "600px" }}
         id="AboutMe"
       >

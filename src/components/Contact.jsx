@@ -60,7 +60,7 @@ const Contact = () => {
     }
   };
   return (
-    <div id="Contact-Form" className="bg-color">
+    <div id="Contact-Form">
       <div className={`${styles.container__contact}`}>
         <div className={`${styles.contact__left} text-white`}>
           <h1 className="sub-title">Contact Me</h1>

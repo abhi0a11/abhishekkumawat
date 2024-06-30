@@ -4,7 +4,10 @@ import guessTheNumber from "../assets/guess-the-number.png";
 import forkify from "../assets/forkify.jpg";
 import pigGame from "../assets/pig-game.png";
 import { useState } from "react";
-
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
+import { GrNext, GrPrevious } from "react-icons/gr";
+import { PiLinkBold } from "react-icons/pi";
 const Portfolio = () => {
   const [n, setN] = useState(4);
   const project_data = [
@@ -21,6 +24,7 @@ const Portfolio = () => {
         " User can navigate through different pages to access remaining search results. ",
       ],
       link: "https://forkify-abhishek.netlify.app/",
+      git_link: "https://github.com/abhi0a11/Forkify",
       category: ["Javascript", "html", "css"],
       js: true,
     },
@@ -34,6 +38,7 @@ const Portfolio = () => {
         "A web application that helps you plan your lunch with your friends and family.",
       ],
       link: "https://abhi0a11.github.io/LunchTime/",
+      git_link: "https://github.com/abhi0a11/LunchTime",
       category: ["html", "css"],
       js: false,
     },
@@ -47,6 +52,7 @@ const Portfolio = () => {
         "A web application that helps you guess the number between 1 to 100.",
       ],
       link: "https://abhi0a11.github.io/Guess-the-number/",
+      git_link: "https://github.com/abhi0a11/Guess-the-number",
       category: ["Javascript", "game"],
       js: true,
       game: true,
@@ -61,6 +67,7 @@ const Portfolio = () => {
         "A web application that helps you guess the number between 1 to 100.",
       ],
       link: "https://abhi0a11.github.io/Pig-Game/",
+      git_link: "https://github.com/abhi0a11/Pig-Game",
       category: ["Javascript", "game"],
       js: true,
       game: true,
@@ -141,55 +148,6 @@ const Portfolio = () => {
         </button>
       </div>
 
-      {/* <div className={`container-fluid ${styles.pareshani} `}>
-        <div className="col all">
-          <a href="https://forkify-abhishek.netlify.app/" target="_blank">
-            <div
-              className={`card ${styles.cardPort} bg-dark text-white overflow-hidden ${styles.box} ${styles.box3}`}
-            >
-              <img src={forkify} alt="" />
-              <h3>Forkify</h3>
-            </div>
-          </a>
-        </div>
-
-        <div className="col js all">
-          <a href="https://abhi0a11.github.io/LunchTime/" target="_blank">
-            <div
-              className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box1}`}
-            >
-              <img src={lunchtime} alt="" />
-              <h3>Lunchtime</h3>
-            </div>
-          </a>
-        </div>
-
-        <div className="col all">
-          <a
-            href="https://abhi0a11.github.io/Guess-the-number/"
-            target="_blank"
-          >
-            <div
-              className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box2}`}
-            >
-              <img src={guessTheNumber} alt="" />
-              <h3>Guess The Number</h3>
-            </div>
-          </a>
-        </div>
-
-        <div className="col all">
-          <a href="https://abhi0a11.github.io/Pig-Game/" target="_blank">
-            <div
-              className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box4}`}
-            >
-              <img src={pigGame} alt="" />
-              <h3>Pig Game</h3>
-            </div>
-          </a>
-        </div>
-      </div> */}
-
       <div className={`text-white ${styles.container_portfolio}`}>
         <div className={`${styles.project_detail}`}>
           <div className={`${styles.project_title}`}>
@@ -214,13 +172,32 @@ const Portfolio = () => {
               ))}
             </p>
           </div>
-          <a
-            className={`text-white btn btn-red ${styles.project_redirect_button}`}
-            href={project[index].link}
-            target="_blank"
-          >
-            Check Out Project!
-          </a>
+          <div className={`${styles.mobile}`}>
+            <div
+              className={`btn-animated btn-green-outline ${styles.icon_div}`}
+            >
+              <a
+                href={project[index].link}
+                target="_blank"
+                className={`text-white ${styles.branding_btn}`}
+              >
+                <PiLinkBold
+                  className={`${styles.fa__icon__detail} ${styles.fa__icon__detail_hover}`}
+                />
+              </a>
+            </div>
+            <div
+              className={`btn-animated btn-green-outline ${styles.icon_div}`}
+            >
+              <a
+                href={project[index].git_link}
+                target="_blank"
+                className={`${styles.branding_btn} `}
+              >
+                <FiGithub className={`${styles.fa__icon__detail}`} />
+              </a>
+            </div>
+          </div>
         </div>
         <div className={`${styles.project_icon}`}>
           <a href={project[index].image_url} target="_blank">
@@ -237,14 +214,15 @@ const Portfolio = () => {
               className={`text-white btn ${styles.prev_project}`}
               onClick={handlePrevClick}
             >
-              PREV
+              {/* PREV */}
+              <GrPrevious />
             </button>
             <button
               type="button"
               className={`text-white btn ${styles.next_project}`}
               onClick={handleNextClick}
             >
-              NEXT
+              <GrNext />
             </button>
           </div>
         </div>
@@ -478,3 +456,54 @@ export default Portfolio;
 // };
 
 // export default Portfolio;
+
+{
+  /* <div className={`container-fluid ${styles.pareshani} `}>
+        <div className="col all">
+          <a href="https://forkify-abhishek.netlify.app/" target="_blank">
+            <div
+              className={`card ${styles.cardPort} bg-dark text-white overflow-hidden ${styles.box} ${styles.box3}`}
+            >
+              <img src={forkify} alt="" />
+              <h3>Forkify</h3>
+            </div>
+          </a>
+        </div>
+
+        <div className="col js all">
+          <a href="https://abhi0a11.github.io/LunchTime/" target="_blank">
+            <div
+              className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box1}`}
+            >
+              <img src={lunchtime} alt="" />
+              <h3>Lunchtime</h3>
+            </div>
+          </a>
+        </div>
+
+        <div className="col all">
+          <a
+            href="https://abhi0a11.github.io/Guess-the-number/"
+            target="_blank"
+          >
+            <div
+              className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box2}`}
+            >
+              <img src={guessTheNumber} alt="" />
+              <h3>Guess The Number</h3>
+            </div>
+          </a>
+        </div>
+
+        <div className="col all">
+          <a href="https://abhi0a11.github.io/Pig-Game/" target="_blank">
+            <div
+              className={`card bg-dark text-white overflow-hidden ${styles.box} ${styles.box4}`}
+            >
+              <img src={pigGame} alt="" />
+              <h3>Pig Game</h3>
+            </div>
+          </a>
+        </div>
+      </div> */
+}

@@ -9,7 +9,7 @@ const LandingPage = () => {
   return (
     <section
       id="brand"
-      className={`bg-color text-white ${styles.display_branding}`}
+      className={`bg-color-secondary text-white ${styles.display_branding}`}
     >
       <div className={`${styles.branding_info}`}>
         <h5>Full Stack Developer</h5>

@@ -1,4 +1,4 @@
-import styles from "./Backend.module.css";
+import styles from "./Education.module.css";
 import { IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io";
 import { RiJavascriptFill } from "react-icons/ri";
@@ -36,7 +36,7 @@ const skills = [
     style: "git",
   },
 ];
-const BackendSkills = () => {
+const Education = () => {
   return (
     <section className={`${styles.section_front}`}>
       {skills.map((data, i) => (
@@ -49,4 +49,4 @@ const BackendSkills = () => {
   );
 };
 
-export default BackendSkills;
+export default Education;

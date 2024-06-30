@@ -1,6 +1,7 @@
 .container__contact {
   display: flex;
   padding: 130px 50px 50px 50px;
+  background-color: #000;
 }
 .contact__left {
   flex-basis: 35%;

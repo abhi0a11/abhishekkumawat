@@ -1,81 +1,52 @@
-import styles from "./TeckStack.module.css";
+// import styles from "./TeckStack.module.css";
 import { IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+import styles from "./Frontend.module.css";
 const skills = [
   {
-    logo: (
-      <IoLogoHtml5
-        style={{ width: "20px", height: "20px", color: "crimson" }}
-      />
-    ),
+    logo: <IoLogoHtml5 className={`${styles.logo}`} />,
     lang: "HTML",
     percent: "90%",
+    style: "html",
   },
   {
-    logo: (
-      <IoLogoCss3
-        style={{ width: "20px", height: "20px", color: "deepskyblue" }}
-      />
-    ),
+    logo: <IoLogoCss3 className={`${styles.logo}`} />,
     lang: "CSS",
     percent: "90%",
+    style: "css",
   },
   {
-    logo: (
-      <RiJavascriptFill
-        style={{ width: "24x", height: "24px", color: "antiquewhite" }}
-      />
-    ),
+    logo: <RiJavascriptFill className={`${styles.logo}`} />,
     lang: "JAVASCRIPT",
     percent: "85%",
+    style: "js",
   },
   {
-    logo: <FaReact style={{ width: "15px", height: "15px", color: "aqua" }} />,
+    logo: <FaReact className={`${styles.logo}`} />,
     lang: "REACT.JS",
     percent: "85%",
+    style: "react",
   },
   {
-    logo: <FaGitAlt style={{ width: "20px", height: "20px", color: "red" }} />,
+    logo: <FaGitAlt className={`${styles.logo}`} />,
     lang: "GIT Version Control",
     percent: "85%",
+    style: "git",
   },
 ];
 const FrontendSkills = () => {
   return (
-    <>
-      <div className={`hidden ${styles.skillset}`}>
-        {skills.map((data) => {
-          return (
-            <>
-              <div>
-                <div className={`${styles.skillset__item}`}>
-                  <span>
-                    {data.logo} &nbsp;
-                    {data.lang}
-                  </span>
-                  <span>{data.percent}</span>
-                </div>
-                <div
-                  style={{
-                    backgroundColor: "white",
-                  }}
-                >
-                  <div
-                    style={{
-                      border: "2px solid blue",
-                      width: `${data.percent}`,
-                    }}
-                  ></div>
-                </div>
-              </div>
-            </>
-          );
-        })}
-      </div>
-    </>
+    <section className={`${styles.section_front}`}>
+      {skills.map((data, i) => (
+        <div key={i} className={`${styles.technical__bars}`}>
+          <span>{data.logo}</span>
+          <span>{data.lang}</span>
+        </div>
+      ))}
+    </section>
   );
 };
 

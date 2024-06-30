@@ -25,10 +25,10 @@ const Navbar = () => {
             Abhishek Kumawat
           </a>
           <div
-            className="collapse navbar-collapse "
+            className="collapse navbar-collapse justify-content-center"
             id="navbarSupportedContent"
           >
-            <ul className={`navbar-nav me-auto mb-2 mb-lg-0 ${styles.ul_item}`}>
+            <ul className={`navbar-nav mb-2 mb-lg-0 ${styles.ul_item}`}>
               <li className="nav-item">
                 <Link
                   activeClass="active"
@@ -81,9 +81,6 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex">
-              <ul></ul>
-            </form>
           </div>
         </div>
       </nav>

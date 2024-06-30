@@ -30,6 +30,9 @@
   cursor: pointer;
   color: #00ff99;
 }
+.nav_logo_name {
+  margin-left: 10px;
+}
 @media only screen and (max-width: 300px) {
   .nav_logo_name {
     font-size: 15px;
