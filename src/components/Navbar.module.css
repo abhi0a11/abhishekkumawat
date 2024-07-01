@@ -1,6 +1,5 @@
 .shadow {
   box-shadow: 0 1.4rem 2rem rgba(0, 0, 0, 130.175) !important;
-  /* background: #00000078;  */
   background: #0000008c;
 }
 .underline {
@@ -33,8 +32,23 @@
 .nav_logo_name {
   margin-left: 10px;
 }
+.fixed_top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 @media only screen and (max-width: 300px) {
   .nav_logo_name {
     font-size: 15px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .shadow {
+    background-color: #000;
+  }
+  .ul_item {
+    padding: 15px 10px;
   }
 }

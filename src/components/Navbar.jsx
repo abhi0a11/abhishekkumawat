@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${styles.shadow} navbar navbar-expand-lg navbar-dark fixed-top `}
+        className={`${styles.shadow} navbar navbar-expand-lg navbar-dark ${styles.fixed_top} `}
       >
         <div className="container-fluid">
           <button
@@ -25,7 +25,7 @@ const Navbar = () => {
             Abhishek Kumawat
           </a>
           <div
-            className="collapse navbar-collapse justify-content-center"
+            className="collapse navbar-collapse justify-content-center "
             id="navbarSupportedContent"
           >
             <ul className={`navbar-nav mb-2 mb-lg-0 ${styles.ul_item}`}>
