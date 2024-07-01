@@ -2,6 +2,14 @@
   box-shadow: 0 1.4rem 2rem rgba(0, 0, 0, 130.175) !important;
   background: #0000008c;
 }
+.nav_logo_name {
+  color: #00ff99;
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 87.5;
+}
 .underline {
   position: relative;
   color: #8e99a2;
@@ -47,6 +55,9 @@
 @media only screen and (max-width: 780px) {
   .shadow {
     background-color: #000;
+  }
+  .navbar_toggler_icon {
+    font-size: 1rem !important;
   }
   .ul_item {
     padding: 15px 10px;

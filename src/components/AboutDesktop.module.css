@@ -121,6 +121,7 @@
   .displayBranding {
     flex-direction: column;
     text-align: center;
+    padding-top: 100px !important ;
   }
   .intro__subpara {
     display: inline-block;

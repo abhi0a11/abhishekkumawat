@@ -315,7 +315,11 @@
 }
 
 /* responsive styling */
-
+@media only screen and (max-width: 780px) {
+  .portfolio_container {
+    padding-top: 80px !important;
+  }
+}
 @media only screen and (max-width: 300px) {
   .portfolioMainHeading {
     font-size: 20px;

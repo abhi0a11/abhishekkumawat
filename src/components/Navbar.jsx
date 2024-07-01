@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-scroll";
 
@@ -9,7 +10,7 @@ const Navbar = () => {
       >
         <div className="container-fluid">
           <button
-            className="navbar-toggler collapsed"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -57,7 +58,7 @@ const Navbar = () => {
                   className={`nav-link ${styles.underline} `}
                   to="Skills"
                 >
-                  Skills
+                  Resume
                 </Link>
               </li>
               <li className="nav-item">
