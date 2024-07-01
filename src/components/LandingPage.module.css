@@ -1,7 +1,7 @@
 .display_branding {
   display: flex;
-  height: 100vh;
   background: #1c1c22;
+  padding: 100px 0px;
 }
 .branding_info {
   flex-grow: 2;
@@ -88,7 +88,7 @@
     font-size: 1rem;
   }
   .branding_info h1 {
-    font-size: 2.6rem;
+    font-size: 2.1rem;
     font-family: "Kablammo", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
