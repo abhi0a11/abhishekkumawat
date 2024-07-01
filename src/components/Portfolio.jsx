@@ -200,7 +200,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className={`${styles.project_icon}`}>
-          <a href={project[index].image_url} target="_blank">
+          <a href={project[index].link} target="_blank">
             <img
               src={project[index].image}
               srcSet={`${project[index].image_url} 1x, ${project[index].image_url} 2x`}
