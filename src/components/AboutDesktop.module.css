@@ -1,9 +1,7 @@
 .displayBranding {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   height: fit-content !important;
-  /* align-items: center; */
 }
 
 .imgMine {
@@ -30,8 +28,8 @@
 .intro__subpara {
   display: contents;
   font-size: 20px;
-  padding: 0px 18px 0px 18px;
-  width: 85%;
+  padding: 0px 25px;
+
   text-align: start;
 }
 
@@ -63,13 +61,22 @@
     margin: auto;
     width: 55.33333% !important;
   }
+  .heading {
+    padding: 50px 5px;
+  }
   .head__about {
     font-size: 43px;
     margin-top: 0px;
   }
   .intro__subpara {
     font-size: 15px;
-    padding: 0px 0px;
+  }
+  .btn__container {
+    margin-top: 16px;
+  }
+  .btn_about {
+    padding: 8px 14px !important;
+    font-size: 0.85rem;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 576px) {
@@ -77,13 +84,18 @@
     margin: auto;
     width: 50.33333% !important;
   }
+  .heading {
+    padding: 50px 5px !important;
+  }
   .head__about {
     font-size: 48px;
     margin-top: 0px;
   }
   .intro__subpara {
     font-size: 16px;
-    padding: 0px 0px;
+  }
+  .btn__container {
+    margin-top: 16px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -91,13 +103,15 @@
     margin: auto;
     width: 45.33333% !important;
   }
+  .heading {
+    padding: 50px 20px !important;
+  }
   .head__about {
     font-size: 58px;
     margin-top: 0px;
   }
   .intro__subpara {
     font-size: 18px;
-    padding: 0px 0px;
   }
   .heading {
     padding-bottom: 0 !important;

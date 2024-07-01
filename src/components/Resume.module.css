@@ -7,7 +7,7 @@
   padding: 100px 100px 100px 100px;
 }
 .heading {
-  font-size: 70px;
+  font-size: 4.375rem;
   color: #ababab;
   text-align: start;
   width: 100%;
@@ -59,4 +59,112 @@
   display: flex;
   overflow: auto;
   height: 50vh;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  .skills_container {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    padding: 20px 15px;
+    row-gap: 30px;
+  }
+  .heading {
+    font-size: 2.25rem;
+  }
+  .tabs_section {
+    width: 100%;
+    flex-basis: 100%;
+    padding: 10px 20px;
+  }
+  .info_container {
+    width: 100%;
+    padding: 0px 5px;
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  .skills_container {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    padding: 20px 20px;
+    row-gap: 30px;
+  }
+  .heading {
+    font-size: 2.75rem;
+  }
+  .tabs_section {
+    width: 100%;
+    flex-basis: 100%;
+    padding: 10px 20px;
+  }
+  .info_container {
+    width: 100%;
+    padding: 0px 5px;
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 780px) {
+  .skills_container {
+    align-items: center;
+    height: max-content;
+    padding: 20px 20px;
+    row-gap: 30px;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .tabs_section {
+    width: 100%;
+    flex-basis: 100%;
+    padding: 10px 20px;
+  }
+  .info_container {
+    width: 100%;
+    padding: 0px 5px;
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 1020px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+  .tabs_section {
+    width: 100%;
+    flex-basis: 75%;
+    padding: 10px 20px;
+  }
+  .info_container {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 1020px) and (max-width: 1200px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .tabs_section {
+    width: 100%;
+    flex-basis: 75%;
+    padding: 10px 20px;
+  }
+  .info_container {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .heading {
+    font-size: 2.85rem;
+  }
+  .tabs_section {
+    width: 100%;
+    flex-basis: 75%;
+    padding: 10px 20px;
+  }
+  .info_container {
+    width: 100%;
+    padding: 10px 20px;
+  }
 }

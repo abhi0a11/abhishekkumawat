@@ -8,7 +8,7 @@
   flex-basis: 60%;
   align-content: center;
   justify-content: center;
-  padding: 100px;
+  padding: 90px;
 }
 .branding_info h5 {
   font-size: 1.25rem;
@@ -21,8 +21,9 @@
   font-style: normal;
   font-variation-settings: "MORF" 0;
 }
+
 .branding_info > p {
-  width: 75%;
+  /* width: 75%; */
   color: #ababab;
   font-size: 17px;
 }
@@ -84,10 +85,10 @@
     padding: 25px;
   }
   .branding_info h5 {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .branding_info h1 {
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-family: "Kablammo", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -97,7 +98,7 @@
   .branding_info > p {
     /* width: 75%; */
     color: #ababab;
-    font-size: 14px;
+    font-size: 17px;
   }
   .branding_social {
     flex-direction: column-reverse;
@@ -106,28 +107,29 @@
     display: flex;
     margin-top: 29px;
     gap: 14px;
-    margin: 0 auto;
   }
   .icon_div {
-    width: 8.75vw;
+    font-size: 1.25rem;
+    width: 2rem;
+    height: 2rem;
   }
   .resumeBtn {
     font-size: 15px;
     padding: 8px 32px !important;
     font-weight: 400;
     width: fit-content;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
 @media screen and (min-width: 480px) and (max-width: 576px) {
   .branding_info {
-    padding: 80px;
+    padding: 80px 50px;
   }
   .branding_info h5 {
     font-size: 1rem;
   }
   .branding_info h1 {
-    font-size: 2.75rem;
+    font-size: 2.6rem;
     font-family: "Kablammo", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -137,32 +139,31 @@
   .branding_info > p {
     width: 90%;
     color: #ababab;
-    font-size: 16px;
+    font-size: 18px;
   }
   .branding_social {
     flex-direction: column-reverse;
   }
   .mobile {
     display: flex;
-    margin-top: 29px;
     gap: 14px;
-    margin: 0 auto;
   }
   .icon_div {
-    width: 7vw;
-    height: 6vh;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .resumeBtn {
     font-size: 15px;
     padding: 8px 32px !important;
     font-weight: 400;
     width: fit-content;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
 @media screen and (min-width: 576px) and (max-width: 700px) {
   .branding_info {
-    padding: 80px;
+    padding: 80px 50px;
   }
   .branding_info h5 {
     font-size: 1rem;
@@ -185,31 +186,30 @@
   }
   .mobile {
     display: flex;
-    margin-top: 29px;
     gap: 14px;
-    margin: 0 auto;
   }
   .icon_div {
-    width: 6.5vw;
-    height: 7vh;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .resumeBtn {
     font-size: 15px;
     padding: 8px 32px !important;
     font-weight: 400;
     width: fit-content;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
 @media screen and (min-width: 700px) and (max-width: 890px) {
   .branding_info {
-    padding: 100px;
+    padding: 100px 70px;
   }
   .branding_info h5 {
     font-size: 1.25rem;
   }
   .branding_info h1 {
-    font-size: 4.25rem;
+    font-size: 4rem;
     font-family: "Kablammo", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -227,8 +227,9 @@
     gap: 14px;
   }
   .icon_div {
-    width: 4.5vw;
-    height: 7vh;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .resumeBtn {
     font-size: 15px;
@@ -246,8 +247,9 @@
     gap: 14px;
   }
   .icon_div {
-    width: 4.5vw;
-    height: 7vh;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .resumeBtn {
     font-size: 15px;
@@ -256,30 +258,13 @@
     width: fit-content;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1020px) {
   .branding_info > p {
     width: 80%;
   }
   .icon_div {
-    width: 3.5vw;
-    height: 6vh;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .icon_div {
-    width: 3vw;
-    height: 6vh;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .icon_div {
-    width: 2.8vw;
-    height: 6vh;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .icon_div {
-    width: 2.5vw;
-    height: 6vh;
+    font-size: 1.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
   }
 }

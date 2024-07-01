@@ -290,6 +290,30 @@
   background-color: #00ff99;
 }
 /* end */
+
+/*  */
+.branding_social {
+  display: flex;
+  margin-top: 29px;
+  gap: 14px;
+}
+.icon_div {
+  border: 1px solid #00ff99;
+  width: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 42px;
+}
+
+.fa__icon__detail {
+  color: #00ff99;
+  /* font-size: 1.25rem; */
+}
+.fa__icon__detail_hover:hover {
+  transform: rotate(45deg);
+}
+
 /* responsive styling */
 
 @media only screen and (max-width: 300px) {
@@ -301,7 +325,7 @@
   /* .pareshani {
     justify-content: center;
     grid-template-columns: auto;
-  } */
+    } */
   .box {
     height: 32vh;
     width: 65vw;
@@ -313,12 +337,13 @@
 }
 @media only screen and (min-width: 300px) and (max-width: 482px) {
   .portfolioMainHeading {
-    font-size: 20px;
+    font-size: 36px;
     padding: 2px 2px 2px 2px;
   }
   .container_portfolio {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
+    padding: 25px 5px;
   }
   .project_serial {
     font-size: 67px;
@@ -344,37 +369,47 @@
     padding: 3px 6px;
     font-size: 13px;
   }
-  .box {
-    height: 32vh;
-    width: 65vw;
-  }
+
   .btnPortfolio {
-    font-size: 13px;
+    font-size: 17px;
+  }
+  .mobile {
+    display: flex;
+    margin-top: 29px;
+    gap: 14px;
+  }
+  .icon_div {
+    font-size: 1.25rem;
+    width: 2rem;
+    height: 2rem;
   }
 }
 @media only screen and (min-width: 482px) and (max-width: 576px) {
   .portfolioMainHeading {
-    font-size: 20px;
+    font-size: 36px;
     padding: 2px 2px 2px 2px;
   }
   .container_portfolio {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
+    padding: 25px 20px;
   }
   .project_detail {
     padding: 0;
   }
-  /* .pareshani {
-    justify-content: center;
-    grid-template-columns: auto;
-  } */
 
-  .box {
-    height: 32vh;
-    width: 65vw;
-  }
   .btnPortfolio {
-    font-size: 13px;
+    font-size: 17px;
+  }
+  .mobile {
+    display: flex;
+    margin-top: 15px;
+    gap: 14px;
+  }
+  .icon_div {
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
@@ -398,6 +433,16 @@
   .btnPortfolio {
     font-size: 16px;
   }
+  .mobile {
+    display: flex;
+    margin-top: 29px;
+    gap: 14px;
+  }
+  .icon_div {
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1020px) {
   .portfolioMainHeading {
@@ -405,16 +450,22 @@
     padding: 2px 2px 2px 2px;
   }
 
-  /* .pareshani {
-    justify-content: center;
-    grid-template-columns: auto auto;
-  } */
   .box {
     height: 32vh;
     width: 38vw;
   }
   .btnPortfolio {
     font-size: 21px;
+  }
+  .mobile {
+    display: flex;
+    margin-top: 29px;
+    gap: 14px;
+  }
+  .icon_div {
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 @media only screen and (min-width: 1020px) and (max-width: 1300px) {
@@ -423,16 +474,22 @@
     padding: 2px 2px 2px 2px;
   }
 
-  /* .pareshani {
-    justify-content: center;
-    grid-template-columns: auto auto;
-  } */
   .box {
     height: 35vh;
     width: 38vw;
   }
   .btnPortfolio {
     font-size: 21px;
+  }
+  .mobile {
+    display: flex;
+    margin-top: 29px;
+    gap: 14px;
+  }
+  .icon_div {
+    font-size: 1.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
   }
 }
 @media only screen and (min-width: 1300px) {
@@ -452,104 +509,14 @@
   .btnPortfolio {
     font-size: 21px;
   }
-}
-
-/*  */
-.branding_social {
-  display: flex;
-  margin-top: 29px;
-  gap: 14px;
-}
-.icon_div {
-  border: 1px solid #00ff99;
-  width: 2.5vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 42px;
-}
-
-.fa__icon__detail {
-  color: #00ff99;
-  /* font-size: 1.25rem; */
-}
-.fa__icon__detail_hover:hover {
-  transform: rotate(45deg);
-}
-
-@media screen and (min-width: 300px) and (max-width: 480px) {
   .mobile {
     display: flex;
     margin-top: 29px;
     gap: 14px;
   }
   .icon_div {
-    width: 8.75vw;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 576px) {
-  .mobile {
-    display: flex;
-    margin-top: 29px;
-    gap: 14px;
-  }
-  .icon_div {
-    width: 7vw;
-    height: 6vh;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 700px) {
-  .mobile {
-    display: flex;
-    margin-top: 29px;
-    gap: 14px;
-  }
-  .icon_div {
-    width: 6.5vw;
-    height: 7vh;
-  }
-}
-@media screen and (min-width: 700px) and (max-width: 890px) {
-  .mobile {
-    display: flex;
-    gap: 14px;
-  }
-  .icon_div {
-    width: 4.5vw;
-    height: 7vh;
-  }
-}
-@media screen and (min-width: 890px) {
-  .mobile {
-    display: flex;
-    gap: 14px;
-  }
-  .icon_div {
-    width: 4.5vw;
-    height: 7vh;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .icon_div {
-    width: 3.5vw;
-    height: 6vh;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .icon_div {
-    width: 3vw;
-    height: 6vh;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .icon_div {
-    width: 2.8vw;
-    height: 6vh;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .icon_div {
-    width: 2.5vw;
-    height: 6vh;
+    font-size: 1.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
   }
 }
