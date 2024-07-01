@@ -1,7 +1,7 @@
 .display_branding {
   display: flex;
   background: #1c1c22;
-  padding: 100px 0px;
+  padding: 100px 0px 50px 0px;
 }
 .branding_info {
   flex-grow: 2;
