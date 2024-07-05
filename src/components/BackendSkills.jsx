@@ -1,39 +1,24 @@
 import styles from "./Backend.module.css";
-import { IoLogoHtml5 } from "react-icons/io";
-import { IoLogoCss3 } from "react-icons/io";
-import { RiJavascriptFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiSocketdotio } from "react-icons/si";
 const skills = [
   {
-    logo: <IoLogoHtml5 className={`${styles.logo}`} />,
-    lang: "HTML",
-    percent: "90%",
-    style: "html",
+    logo: <FaNodeJs className={`${styles.logo}`} />,
+    lang: "NodeJS",
   },
   {
-    logo: <IoLogoCss3 className={`${styles.logo}`} />,
-    lang: "CSS",
-    percent: "90%",
-    style: "css",
+    logo: <SiExpress className={`${styles.logo}`} />,
+    lang: "Express JS",
   },
   {
-    logo: <RiJavascriptFill className={`${styles.logo}`} />,
-    lang: "JAVASCRIPT",
-    percent: "85%",
-    style: "js",
+    logo: <SiMongodb className={`${styles.logo}`} />,
+    lang: "Mongo DB",
   },
   {
-    logo: <FaReact className={`${styles.logo}`} />,
-    lang: "REACT.JS",
-    percent: "85%",
-    style: "react",
-  },
-  {
-    logo: <FaGitAlt className={`${styles.logo}`} />,
-    lang: "GIT Version Control",
-    percent: "85%",
-    style: "git",
+    logo: <SiSocketdotio className={`${styles.logo}`} />,
+    lang: "Socket io",
   },
 ];
 const BackendSkills = () => {

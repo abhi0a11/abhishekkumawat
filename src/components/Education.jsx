@@ -1,48 +1,58 @@
 import styles from "./Education.module.css";
-import { IoLogoHtml5 } from "react-icons/io";
-import { IoLogoCss3 } from "react-icons/io";
-import { RiJavascriptFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
-const skills = [
+
+const education = [
   {
-    logo: <IoLogoHtml5 className={`${styles.logo}`} />,
-    lang: "HTML",
-    percent: "90%",
-    style: "html",
+    year: "2017-2018",
+    institution: "Vardhman International School",
+    class: "X",
+    percent: "88%",
   },
   {
-    logo: <IoLogoCss3 className={`${styles.logo}`} />,
-    lang: "CSS",
-    percent: "90%",
-    style: "css",
+    year: "2019-2020",
+    institution: "Vardhman International School",
+    class: "XII ,Science Maths",
+    percent: "87%",
   },
   {
-    logo: <RiJavascriptFill className={`${styles.logo}`} />,
-    lang: "JAVASCRIPT",
-    percent: "85%",
-    style: "js",
+    year: "2021-2025",
+    institution: "Netaji Subhas University Of Technology",
+    class: "Computer Science with Internet of Things",
+    percent: "7.62 cgpa",
   },
   {
-    logo: <FaReact className={`${styles.logo}`} />,
-    lang: "REACT.JS",
-    percent: "85%",
-    style: "react",
+    year: "2023",
+    institution: "Frontend Development",
+    class: "Javascript",
+    percent: "Online",
   },
   {
-    logo: <FaGitAlt className={`${styles.logo}`} />,
-    lang: "GIT Version Control",
-    percent: "85%",
-    style: "git",
+    year: "2024",
+    institution: "Frontend Development",
+    class: "React",
+    percent: "online",
+  },
+  {
+    year: "2024",
+    institution: "Backend Development",
+    class: "NodeJs",
+    percent: "online",
+  },
+  {
+    year: "2024",
+    institution: "Backend Development",
+    class: "Socket io",
+    percent: "online",
   },
 ];
 const Education = () => {
   return (
     <section className={`${styles.section_front}`}>
-      {skills.map((data, i) => (
-        <div key={i} className={`${styles.technical__bars}`}>
-          <span>{data.logo}</span>
-          <span>{data.lang}</span>
+      {education.map((data, i) => (
+        <div key={i} className={`${styles.education}`}>
+          <p className={`${styles.year}`}>{data.year}</p>
+          <p className={`${styles.institue}`}>{data.institution}</p>
+          <p className={`${styles.course}`}>{data.class}</p>
+          <p className={`${styles.grade}`}>{data.percent}</p>
         </div>
       ))}
     </section>

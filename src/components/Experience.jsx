@@ -39,12 +39,9 @@ const skills = [
 const Experience = () => {
   return (
     <section className={`${styles.section_front}`}>
-      {skills.map((data, i) => (
-        <div key={i} className={`${styles.technical__bars}`}>
-          <span>{data.logo}</span>
-          <span>{data.lang}</span>
-        </div>
-      ))}
+      <div className={`${styles.technical__bars}`}>
+        <span style={{ color: "#00ff99" }}>Nil</span>
+      </div>
     </section>
   );
 };

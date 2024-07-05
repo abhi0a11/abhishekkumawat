@@ -29,7 +29,7 @@
   display: contents;
   font-size: 20px;
   padding: 0px 25px;
-
+  color: #ababab !important;
   text-align: start;
 }
 
@@ -56,6 +56,29 @@
   background-color: #1c1c22;
 }
 
+.personal_details {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 20px;
+  font-size: 1.25rem;
+}
+.detail {
+  display: flex;
+  gap: 20px;
+}
+.detail_head {
+  color: #848383 !important;
+}
+.detail_info {
+  color: #f1d2d2 !important;
+}
+.link {
+  color: #f1d2d2 !important;
+}
+.link:hover {
+  background-color: #00ff99;
+  color: black !important;
+}
 @media only screen and (min-width: 300px) and (max-width: 480px) {
   .img_box {
     margin: auto;

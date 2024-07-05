@@ -32,6 +32,38 @@ const AboutDesktop = () => {
             knowledge everytime learning new tools and trends and provide
             innovative solutions.
           </p>
+          <div className={`${styles.personal_details}`}>
+            <div className={`${styles.detail}`}>
+              <p className={`${styles.detail_head}`}>Name</p>
+              <p className={`${styles.detail_info}`}>Abhishek Kumawat</p>
+            </div>
+            <div className={`${styles.detail}`}>
+              <p className={`${styles.detail_head}`}>Email</p>
+              <p className={`${styles.detail_info}`}>
+                abhishekkumawat.ak21@gmail.com
+              </p>
+            </div>
+            <div className={`${styles.detail}`}>
+              <p className={`${styles.detail_head}`}>Leetcode</p>
+              <p className={`${styles.detail_info}`}>
+                <a className={`${styles.link}`} href="">
+                  Browse Profile
+                </a>
+              </p>
+            </div>
+            <div className={`${styles.detail}`}>
+              <p className={`${styles.detail_head}`}>Nationality</p>
+              <p className={`${styles.detail_info}`}>Indian</p>
+            </div>
+            <div className={`${styles.detail}`}>
+              <p className={`${styles.detail_head}`}>Language</p>
+              <p className={`${styles.detail_info}`}>Hindi, English</p>
+            </div>
+            <div className={`${styles.detail}`}>
+              <p className={`${styles.detail_head}`}>Development</p>
+              <p className={`${styles.detail_info}`}>Full Stack Developer</p>
+            </div>
+          </div>
           <div className={`d-grid gap-2 d-md-flex ${styles.btn__container}`}>
             <a
               download="resume"

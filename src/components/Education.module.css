@@ -6,23 +6,28 @@
   row-gap: 10px;
 }
 
-.technical__bars {
+.education {
   display: flex;
   flex-direction: column;
   padding: 13px 22px;
   flex-grow: 1;
   flex-basis: 47%;
-  height: 50%;
+  height: fit-content;
   background-color: #1c1c22;
   border: 1px solid #000;
   color: white !important;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
 }
-
-.logo {
-  font-size: 4rem;
+.year {
+  color: #00ff99;
 }
-.technical__bars {
-  font-size: 1.25rem;
+.institue {
+  margin: 0;
+}
+.course {
+}
+
+.grade {
+  margin: 0;
 }
