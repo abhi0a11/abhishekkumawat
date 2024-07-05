@@ -22,13 +22,13 @@ const LandingPage = () => {
           various programming languages and technologies.
         </p>
         <div className={`${styles.branding_social} `}>
-          <a
+          <button
             download="resume"
             href={resumePdf}
-            className={`animateUp btn-animated btn-green-outline btn-lg px-4  ${styles.resumeBtn} `}
+            className={`animateUp btn-animated btn btn-green-outline btn-lg px-4 ${styles.resumeBtn} `}
           >
             Download CV
-          </a>
+          </button>
           <div className={`${styles.mobile}`}>
             <div
               className={`btn-animated btn-green-outline ${styles.icon_div} animateUp`}

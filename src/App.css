@@ -49,44 +49,6 @@
 clolor-green {
   color: #00ff99;
 }
-.loader {
-  position: absolute;
-  border: 5px solid white;
-  border-color: #ff004f #ababab #ababab #ababab;
-  height: 50px;
-  width: 50px;
-  top: 50% !important;
-  left: 50% !important;
-  border-radius: 50px;
-  animation: rotate 0.5s infinite linear;
-  z-index: 1000;
-}
-.loading_form {
-  opacity: 0.53;
-  cursor: no-drop !important;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(365deg);
-  }
-}
-
-/* .fa__icon__rotate-up {
-  transition: all 1s;
-  transform: rotate(-180deg);
-}
-.fa__icon__rotate-down {
-  transition: all 1s;
-}
-
-.js_hidden {
-  display: none;
-} */
 
 .cutom-text-color {
   /* color: #22bfbf !important; */
@@ -100,44 +62,6 @@ clolor-green {
   transform: translateY(-2px);
 }
 
-.typed-cursor {
-  font-size: 50px;
-}
-
-@media only screen and (max-width: 300px) {
-  .typed-cursor {
-    font-size: 19px;
-  }
-}
-@media only screen and (min-width: 300px) and (max-width: 482px) {
-  .typed-cursor {
-    font-size: 24px;
-  }
-}
-@media only screen and (min-width: 482px) and (max-width: 576px) {
-  .typed-cursor {
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .typed-cursor {
-    font-size: 36px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .typed-cursor {
-    font-size: 33px;
-  }
-}
-@media only screen and (min-width: 1020px) {
-  .typed-cursor {
-    font-size: 35px;
-  }
-}
-
-/* .cln-card {
-  margin: 2px 0px;
-} */
 .active {
   background-color: #00ff99 !important;
   color: black !important;
