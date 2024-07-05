@@ -75,6 +75,13 @@ form textarea {
   border-radius: 3px;
 }
 
+.spinner {
+  display: inline !important;
+  position: absolute !important;
+  top: 30%;
+  left: 50%;
+  z-index: 200000000000000;
+}
 /* ------------------responsive */
 @media only screen and (max-width: 780px) {
   .container__contact {

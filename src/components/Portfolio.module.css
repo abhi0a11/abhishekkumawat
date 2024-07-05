@@ -240,11 +240,23 @@
   font-style: normal;
   font-variation-settings: "ELSH" 0;
 }
+@keyframes Dribble {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .project_icon a img {
   height: 100%;
   width: 100%;
   aspect-ratio: 3.5 / 1.8;
   object-fit: cover;
+  /* animation: Dribble 0.4s infinite ease-out !important; */
 }
 .project_icon a img:hover,
 .project_icon a img:focus {

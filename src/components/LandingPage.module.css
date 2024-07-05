@@ -21,6 +21,20 @@
   font-style: normal;
   font-variation-settings: "MORF" 0;
 }
+@keyframes Dribble {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.branding_info h1:hover {
+  animation: Dribble 0.4s infinite ease-out !important;
+}
 
 .branding_info > p {
   /* width: 75%; */
@@ -76,8 +90,9 @@
 
 .resumeBtn {
   font-size: 15px;
-  padding: 8px 25px !important;
+  padding: 8px 0px !important;
   font-weight: 400;
+  border-radius: 20px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {

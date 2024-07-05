@@ -22,7 +22,10 @@ const Navbar = () => {
               className={`navbar-toggler-icon ${styles.navbar_toggler_icon}`}
             ></span>
           </button>
-          <a className={`navbar-brand ${styles.nav_logo_name}`} href="#">
+          <a
+            className={`navbar-brand ${styles.nav_logo_name} animateDribble`}
+            href="#"
+          >
             Abhishek Kumawat
           </a>
           <div

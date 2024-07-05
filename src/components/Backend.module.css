@@ -18,9 +18,20 @@
   align-items: center;
   justify-content: space-around;
 }
-
+@keyframes Dribble {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .logo {
   font-size: 4rem;
+  animation: Dribble 0.4s infinite ease-out !important;
 }
 .technical__bars {
   font-size: 1.25rem;

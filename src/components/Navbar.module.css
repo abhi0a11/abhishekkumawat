@@ -32,10 +32,21 @@
 .underline:hover::after {
   transform: scaleX(0.7);
 }
-
+@keyframes Dribble {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .underline:hover {
   cursor: pointer;
   color: #00ff99;
+  animation: Dribble 0.4s infinite ease-out !important;
 }
 .nav_logo_name {
   margin-left: 10px;

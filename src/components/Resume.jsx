@@ -47,28 +47,28 @@ const Resume = () => {
 
         <button
           type="button"
-          className={`${styles.navigation_btn}`}
+          className={`${styles.navigation_btn} ${education && "active"}`}
           onClick={handleEductation}
         >
           Education
         </button>
         <button
           type="button"
-          className={`${styles.navigation_btn}`}
+          className={`${styles.navigation_btn} ${frontend && "active"}`}
           onClick={handleFrontend}
         >
           Frontend Skills
         </button>
         <button
           type="button"
-          className={`${styles.navigation_btn}`}
+          className={`${styles.navigation_btn} ${backend && "active"}`}
           onClick={handleBackend}
         >
           Backend Skills
         </button>
         <button
           type="button"
-          className={`${styles.navigation_btn}`}
+          className={`${styles.navigation_btn} ${experiance && "active"}`}
           onClick={handleExperience}
         >
           Experience

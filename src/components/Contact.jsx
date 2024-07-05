@@ -9,6 +9,7 @@ import { useState } from "react";
 import axios from "axios";
 import { server } from "../main";
 import toast from "react-hot-toast";
+import { HashLoader } from "react-spinners";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -95,7 +96,15 @@ const Contact = () => {
           </a>
         </div>
         <div className={`${styles.contact__right} `}>
-          <div className={`${loading ? "loader" : ""}`}></div>
+          {/* <div> */}
+          {loading && (
+            <HashLoader
+              className={` ${styles.spinner}`}
+              color="#00ff99"
+              size={70}
+            />
+          )}
+          {/* </div> */}
           <form onSubmit={submitHandler}>
             <input
               type="name"
