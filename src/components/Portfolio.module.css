@@ -1,10 +1,3 @@
-/* .box {
-  transition: all 0.2s ease-in;
-}
-.box:hover {
-  transform: rotateX(180deg);
-} */
-
 .portfolioContainer {
   background-color: black;
   display: flex;
@@ -44,34 +37,10 @@
   align-content: center;
 }
 
-/* .projectBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 69px 14px;
-} */
-
-.pareshani {
-  display: flex !important;
-  flex-wrap: wrap;
-  padding: 50px;
-  gap: 29px;
-}
 .col {
   flex-grow: 1;
   flex-basis: 200;
 }
-/* .pareshani {
-  width: 70%;
-  padding: 10px 15px;
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: auto auto auto;
-  row-gap: 45px;
-  margin-top: 50px;
-  
-} */
 
 .box {
   border-radius: 25px;
@@ -85,33 +54,6 @@
   position: absolute;
   color: #ababab;
   z-index: -1;
-}
-
-.box img:hover {
-  transition: 0.71s;
-  opacity: 0.2;
-  cursor: pointer;
-  z-index: 0;
-
-  .box h3 {
-    z-index: 1;
-  }
-}
-
-.box1 img,
-.box2 img,
-.box4 img {
-  height: 100%;
-  width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: cover;
-}
-
-.box3 img {
-  height: 100%;
-  width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: fill;
 }
 
 .btnPortfolio {
@@ -129,7 +71,6 @@
   display: inline-block;
   transform: translate(-1px, -1px);
   letter-spacing: -0.02em;
-  /* color: #ff004f; */
   color: #00ff99;
 
   font-family: "Danfo", serif;
@@ -137,14 +78,6 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "ELSH" 0;
-}
-
-.w50 {
-  width: 14% !important;
-}
-.cardPort {
-  border-radius: 15px;
-  box-shadow: 20px;
 }
 
 /* new portfolio start */
@@ -338,15 +271,6 @@
     padding: 2px 2px 2px 2px;
   }
 
-  /* .pareshani {
-    justify-content: center;
-    grid-template-columns: auto;
-    } */
-  .box {
-    height: 32vh;
-    width: 65vw;
-  }
-
   .btnPortfolio {
     font-size: 13px;
   }
@@ -438,14 +362,7 @@
     flex-direction: column-reverse;
     flex-wrap: nowrap;
   }
-  /* .pareshani {
-    justify-content: center;
-    grid-template-columns: auto auto;
-  } */
-  .box {
-    height: 32vh;
-    width: 34.5vw;
-  }
+
   .btnPortfolio {
     font-size: 16px;
   }
@@ -466,10 +383,6 @@
     padding: 2px 2px 2px 2px;
   }
 
-  .box {
-    height: 32vh;
-    width: 38vw;
-  }
   .btnPortfolio {
     font-size: 21px;
   }
@@ -490,10 +403,6 @@
     padding: 2px 2px 2px 2px;
   }
 
-  .box {
-    height: 35vh;
-    width: 38vw;
-  }
   .btnPortfolio {
     font-size: 21px;
   }
@@ -512,16 +421,8 @@
   .portfolioMainHeading {
     font-size: 70px;
     margin-bottom: 10px;
-    /* color: #00ff99; */
   }
 
-  /* .pareshani {
-    justify-content: center;
-  } */
-  .box {
-    height: 34vh;
-    width: 25vw;
-  }
   .btnPortfolio {
     font-size: 21px;
   }
