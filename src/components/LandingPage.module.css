@@ -64,28 +64,13 @@
   flex-grow: 1;
   flex-basis: 40%;
   display: flex;
-  /* justify-content: center; */
   align-content: center;
   flex-wrap: wrap;
 }
 .branding_image {
-  /* height: 77%;
-  width: 87%; */
   height: 60%;
   width: 69%;
-  /* border-radius: 100%; */
   overflow: hidden;
-  /* margin: 0px 38px 0px 0px; */
-  /* background-image: linear-gradient(
-      0deg,
-      hsla(0, 0%, 0%, 0.6) 11%,
-      hsla(240, 10%, 12%, 0.1) 39%
-    ),
-    url(../assets/branding-removebg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: contrast(1); */
 }
 
 .resumeBtn {

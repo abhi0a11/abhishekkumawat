@@ -3,7 +3,6 @@
 * {
   font-family: monospace, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
-  /* cursor: default; */
 }
 /* back ground color */
 .bg-color-primary {
@@ -87,13 +86,10 @@ clolor-green {
 }
 @keyframes moveInLeft {
   0% {
-    /* opacity: 0; */
-    /* transform: translateX(-100px) ; */
     transform: translateX(-50px);
   }
   60% {
     transform: translateX(20px);
-    /* opacity: 0.2; */
   }
   80% {
     transform: translateX(-40px);
@@ -108,9 +104,7 @@ clolor-green {
     opacity: 0;
     transform: translateY(-50px);
   }
-  /* 80% {
-    transform: translateY(+20px);
-  } */
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -121,9 +115,7 @@ clolor-green {
     opacity: 0;
     transform: translateY(100px);
   }
-  /* 80% {
-    transform: translateY(-20px);
-  } */
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -142,18 +134,15 @@ clolor-green {
 }
 @keyframes moveInRight {
   0% {
-    /* opacity: 0; */
     transform: translateX(10px);
   }
   60% {
     transform: translateX(-20px);
-    /* opacity: 0.2; */
   }
   80% {
     transform: translateX(10px);
   }
   100% {
-    /* opacity: 1; */
     transform: translate(0);
   }
 }
@@ -185,9 +174,6 @@ clolor-green {
   box-shadow: 0 5px 10px rgba(233, 226, 226, 0.3);
 }
 
-.btn-red {
-  background-color: #ff004f;
-}
 .btn-green {
   background-color: #00ff99;
   color: #000;
@@ -197,9 +183,6 @@ clolor-green {
   color: #00ff99;
 }
 
-.btn-red:hover {
-  background-color: #ff004f;
-}
 .btn-green:hover {
   background-color: #00ff99;
   color: #000;
@@ -209,17 +192,6 @@ clolor-green {
   color: #00ff99;
 }
 
-.btn-blue::after {
-  content: "";
-  background-color: #22bfbf !important;
-}
-.btn-red::after {
-  content: "";
-  background-color: #ff004f;
-}
-.btn-grey::after {
-  background-color: #6c757d !important;
-}
 .btn-green::after,
 .btn-green-outline::after {
   background-color: #00ff99 !important;
