@@ -60,7 +60,8 @@
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 20px;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  padding: 0px 25px 0px 0px;
 }
 .detail {
   display: flex;
@@ -101,8 +102,16 @@
     padding: 8px 14px !important;
     font-size: 0.85rem;
   }
+  .personal_details {
+    grid-template-columns: auto;
+    font-size: 13px;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 576px) {
+  .personal_details {
+    grid-template-columns: auto;
+    font-size: 16px;
+  }
   .img_box {
     margin: auto;
     width: 50.33333% !important;
@@ -122,6 +131,10 @@
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+  .personal_details {
+    grid-template-columns: auto;
+    font-size: 18px;
+  }
   .img_box {
     margin: auto;
     width: 45.33333% !important;
@@ -184,6 +197,9 @@
   .intro__subpara {
     font-size: 14px;
   }
+  .personal_details {
+    grid-template-columns: auto;
+  }
 }
 @media only screen and (min-width: 835px) and (max-width: 1020px) {
   .head__about {
@@ -191,6 +207,9 @@
   }
   .intro__subpara {
     font-size: 17px;
+  }
+  .personal_details {
+    grid-template-columns: auto;
   }
 }
 @media only screen and (min-width: 1020px) {
@@ -201,11 +220,17 @@
     font-size: 20px;
     padding: 0px 50px 0px 50px;
   }
+  .personal_details {
+    grid-template-columns: auto;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .img_box {
     margin: 70px 10px 0px 10px;
     flex-basis: 28%;
+  }
+  .personal_details {
+    grid-template-columns: auto auto;
   }
 }
 
