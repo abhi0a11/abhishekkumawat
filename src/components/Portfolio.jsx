@@ -9,7 +9,6 @@ import { FiGithub } from "react-icons/fi";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { PiLinkBold } from "react-icons/pi";
 const Portfolio = () => {
-  const [n, setN] = useState(4);
   const project_data = [
     {
       id: "01",
@@ -53,7 +52,11 @@ const Portfolio = () => {
       image: guessTheNumber,
       image_url:
         "https://ik.imagekit.io/abhishekkumawat/snake%20Game.png?updatedAt=1720241756248",
-      description: ["A Javascript Snake game."],
+      description: [
+        "A Javascript Snake game.",
+        "Increases speed on eating food.",
+        "Dies on touching walls or itsef.",
+      ],
       link: "https://snake-game-retrostyle.netlify.app/",
       git_link: "https://github.com/abhi0a11/Snake-Game",
       category: ["Javascript", "game"],
@@ -68,7 +71,10 @@ const Portfolio = () => {
       image: guessTheNumber,
       image_url:
         "https://ik.imagekit.io/abhishekkumawat/guess-the-number.png?updatedAt=1719573870728",
-      description: ["A Javascript guessing number game"],
+      description: [
+        "A Javascript guessing the number game",
+        "Logic build using Math.random() JS function.",
+      ],
       link: "https://abhi0a11.github.io/Guess-the-number/",
       git_link: "https://github.com/abhi0a11/Guess-the-number",
       category: ["Javascript", "game"],
@@ -82,7 +88,11 @@ const Portfolio = () => {
       image: pigGame,
       image_url:
         "https://ik.imagekit.io/abhishekkumawat/pig-game.png?updatedAt=1719573871017",
-      description: ["A Javascript Dice game"],
+      description: [
+        "A Javascript Dice game",
+        "When one comes on the dice, current score turns to zero.",
+        "To add your current score to score HOLD it, on holding you will loose your turn.",
+      ],
       link: "https://abhi0a11.github.io/Pig-Game/",
       git_link: "https://github.com/abhi0a11/Pig-Game",
       category: ["Javascript", "game"],
@@ -106,6 +116,8 @@ const Portfolio = () => {
       js: false,
     },
   ];
+  const [n, setN] = useState(project_data.length);
+  // console.log(project_data.length);
   const [index, setIndex] = useState(0);
   const [project, setProject] = useState(project_data);
 
@@ -198,13 +210,15 @@ const Portfolio = () => {
           </div>
 
           <div className={`${styles.project_info}`}>
-            {project[index].description.map((des) => (
-              <p className={`${styles.project_summary}`}>{des}</p>
+            {project[index].description.map((des, i) => (
+              <p key={i} className={`${styles.project_summary}`}>
+                {des}
+              </p>
             ))}
 
             <p className={`${styles.project_tags}`}>
-              {project[index].category.map((categ) => (
-                <span className={`${styles.danfo_unique}`}>
+              {project[index].category.map((categ, i) => (
+                <span key={i} className={`${styles.danfo_unique}`}>
                   {"#" + categ.toUpperCase() + " "}
                 </span>
               ))}
