@@ -22,13 +22,13 @@ const LandingPage = () => {
           various programming languages and technologies.
         </p>
         <div className={`${styles.branding_social} `}>
-          <button
+          <a
             download="resume"
             href={resumePdf}
             className={`animateUp btn-animated btn btn-green-outline btn-lg px-4 ${styles.resumeBtn} `}
           >
             Download CV
-          </button>
+          </a>
           <div className={`${styles.mobile}`}>
             <div
               className={`btn-animated btn-green-outline ${styles.icon_div} animateUp`}
@@ -50,17 +50,6 @@ const LandingPage = () => {
                 className={`${styles.branding_btn} `}
               >
                 <FiGithub className={`${styles.fa__icon__detail}`} />
-              </a>
-            </div>
-            <div
-              className={`btn-animated btn-green-outline ${styles.icon_div} animateUp`}
-            >
-              <a
-                href="https://www.instagram.com/abhishekkumawt._/"
-                target="_blank"
-                className={`text-white ${styles.branding_btn} `}
-              >
-                <FaInstagram className={`${styles.fa__icon__detail}`} />
               </a>
             </div>
             <div

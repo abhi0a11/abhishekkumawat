@@ -46,7 +46,10 @@ const AboutDesktop = () => {
             <div className={`${styles.detail}`}>
               <p className={`${styles.detail_head}`}>Leetcode</p>
               <p className={`${styles.detail_info}`}>
-                <a className={`${styles.link}`} href="">
+                <a
+                  className={`${styles.link}`}
+                  href="https://leetcode.com/u/abhishek_123321/"
+                >
                   Browse Profile
                 </a>
               </p>
