@@ -83,6 +83,8 @@
 /* new portfolio start */
 .container_portfolio {
   display: flex;
+  margin-top: 10px;
+
   flex-wrap: wrap;
   align-items: center;
   padding: 25px;
@@ -189,6 +191,8 @@
   width: 100%;
   aspect-ratio: 3.5 / 1.8;
   object-fit: cover;
+  object-position: top;
+
   /* animation: Dribble 0.4s infinite ease-out !important; */
 }
 .project_icon a img:hover,

@@ -15,13 +15,14 @@ const Portfolio = () => {
       id: "01",
       name: "Forkify",
       image: forkify,
+      project: "frontend project",
       image_url:
-        "https://ik.imagekit.io/abhishekkumawat/forkify.jpg?updatedAt=1719573871091",
+        "https://ik.imagekit.io/abhishekkumawat/tr:ar-3-2/forkify.jpg?updatedAt=1719573871091",
       description: [
-        "A web application that helps you search for recipes and save them.",
+        "A web application that helps you search recipes and save them.",
         "Implemented Fetching data and Sending data back to API asynchronously.",
-        " Implemented pagination to render only subset of fetched results on a page.",
-        " User can navigate through different pages to access remaining search results. ",
+        "Implemented pagination to render only subset of fetched results on a page.",
+        "Optimised the application to rerender on the fields requested using javascript",
       ],
       link: "https://forkify-abhishek.netlify.app/",
       git_link: "https://github.com/abhi0a11/Forkify",
@@ -30,7 +31,69 @@ const Portfolio = () => {
     },
     {
       id: "02",
+      name: "Todo App",
+      project: "Mern Stack",
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/tr:ar-3-2/Todo.png?updatedAt=1720246738294",
+      description: [
+        "A Mern Stack app for managing day to day task.",
+        "Authentication is done to give access to only verified users",
+        "Implemented Api's to fetch , and add new tasks of logged in users.",
+      ],
+      link: "https://todo-appauthenticated.netlify.app/",
+      git_link: "https://github.com/abhi0a11/todo-app",
+      category: ["Javascript", "game"],
+      js: true,
+      game: true,
+    },
+    {
+      id: "03",
+      name: "Snake Game",
+      project: "frontend project",
+      image: guessTheNumber,
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/snake%20Game.png?updatedAt=1720241756248",
+      description: ["A Javascript Snake game."],
+      link: "https://snake-game-retrostyle.netlify.app/",
+      git_link: "https://github.com/abhi0a11/Snake-Game",
+      category: ["Javascript", "game"],
+      js: true,
+      game: true,
+    },
+    {
+      id: "04",
+      name: "Guess The Number",
+      project: "frontend project",
+
+      image: guessTheNumber,
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/guess-the-number.png?updatedAt=1719573870728",
+      description: ["A Javascript guessing number game"],
+      link: "https://abhi0a11.github.io/Guess-the-number/",
+      git_link: "https://github.com/abhi0a11/Guess-the-number",
+      category: ["Javascript", "game"],
+      js: true,
+      game: true,
+    },
+    {
+      id: "05",
+      name: "Pig Game",
+      project: "frontend project",
+      image: pigGame,
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/pig-game.png?updatedAt=1719573871017",
+      description: ["A Javascript Dice game"],
+      link: "https://abhi0a11.github.io/Pig-Game/",
+      git_link: "https://github.com/abhi0a11/Pig-Game",
+      category: ["Javascript", "game"],
+      js: true,
+      game: true,
+    },
+    {
+      id: "06",
       name: "Lunch Time",
+      project: "frontend project",
+
       image: lunchtime,
       image_url:
         "https://ik.imagekit.io/abhishekkumawat/lunchttime.jpg?updatedAt=1719573870999",
@@ -41,36 +104,6 @@ const Portfolio = () => {
       git_link: "https://github.com/abhi0a11/LunchTime",
       category: ["html", "css"],
       js: false,
-    },
-    {
-      id: "03",
-      name: "Guess The Number",
-      image: guessTheNumber,
-      image_url:
-        "https://ik.imagekit.io/abhishekkumawat/guess-the-number.png?updatedAt=1719573870728",
-      description: [
-        "A web application that helps you guess the number between 1 to 100.",
-      ],
-      link: "https://abhi0a11.github.io/Guess-the-number/",
-      git_link: "https://github.com/abhi0a11/Guess-the-number",
-      category: ["Javascript", "game"],
-      js: true,
-      game: true,
-    },
-    {
-      id: "04",
-      name: "Pig Game",
-      image: pigGame,
-      image_url:
-        "https://ik.imagekit.io/abhishekkumawat/pig-game.png?updatedAt=1719573871017",
-      description: [
-        "A web application that helps you guess the number between 1 to 100.",
-      ],
-      link: "https://abhi0a11.github.io/Pig-Game/",
-      git_link: "https://github.com/abhi0a11/Pig-Game",
-      category: ["Javascript", "game"],
-      js: true,
-      game: true,
     },
   ];
   const [index, setIndex] = useState(0);
@@ -124,7 +157,7 @@ const Portfolio = () => {
           Projects
         </h1>
       </div>
-      <div className={`text-center ${styles.projectBtn}`}>
+      {/* <div className={`text-center ${styles.projectBtn}`}>
         <button
           className={`btn btn-lg ${styles.btnPortfolio}`}
           onClick={handleAllClick}
@@ -146,7 +179,7 @@ const Portfolio = () => {
         >
           Game
         </button>
-      </div>
+      </div> */}
 
       <div className={`text-white ${styles.container_portfolio}`}>
         <div className={`${styles.project_detail}`}>
@@ -156,6 +189,11 @@ const Portfolio = () => {
             </div>
             <div className={`${styles.project_Heading}`}>
               {project[index].name}
+            </div>
+          </div>
+          <div className={`${styles.project_title}`}>
+            <div className={`${styles.project_Heading}`} style={{ margin: 0 }}>
+              {project[index].project}
             </div>
           </div>
 
@@ -202,8 +240,7 @@ const Portfolio = () => {
         <div className={`${styles.project_icon}`}>
           <a href={project[index].link} target="_blank">
             <img
-              src={project[index].image}
-              srcSet={`${project[index].image_url} 1x, ${project[index].image_url} 2x`}
+              src={project[index].image_url}
               alt={project[index].name}
               loading="lazy"
             />
