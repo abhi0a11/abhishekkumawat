@@ -146,7 +146,11 @@ clolor-green {
     transform: translate(0);
   }
 }
-
+.loading_form,
+.loading_form:hover,
+.loading_form:focus {
+  cursor: no-drop;
+}
 /* button animation */
 .btn {
   font-weight: 900;

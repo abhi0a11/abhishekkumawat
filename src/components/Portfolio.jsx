@@ -12,6 +12,25 @@ const Portfolio = () => {
   const project_data = [
     {
       id: "01",
+      name: "Whatsapp",
+      image: forkify,
+      project: "MERN Stack",
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/w1.png?updatedAt=1720339691313",
+      description: [
+        " Developed WhatsApp clone with real-time messaging viaSocket.IO for seamless communication.",
+        "Integrated video calling functionality using simple-peer, enhancing user engagement and interactivity.",
+        "I Implemented secure user access and data protection using JWT access and refreshtokens.",
+        " Designed and implemented group chat features,facilitating effortless creation and participation in discussions.",
+        "Utilized Redux and Redux Persist for efficient state management,ensuring seamless data persistence",
+      ],
+      link: "https://forkify-abhishek.netlify.app/",
+      git_link: "https://github.com/abhi0a11/Forkify",
+      category: ["Javascript", "html", "css"],
+      js: true,
+    },
+    {
+      id: "02",
       name: "Forkify",
       image: forkify,
       project: "frontend project",
@@ -29,9 +48,9 @@ const Portfolio = () => {
       js: true,
     },
     {
-      id: "02",
+      id: "03",
       name: "Todo App",
-      project: "Mern Stack",
+      project: "Backend Project",
       image_url:
         "https://ik.imagekit.io/abhishekkumawat/tr:ar-3-2/Todo.png?updatedAt=1720246738294",
       description: [
@@ -46,7 +65,7 @@ const Portfolio = () => {
       game: true,
     },
     {
-      id: "03",
+      id: "04",
       name: "Snake Game",
       project: "frontend project",
       image: guessTheNumber,
@@ -64,7 +83,7 @@ const Portfolio = () => {
       game: true,
     },
     {
-      id: "04",
+      id: "05",
       name: "Guess The Number",
       project: "frontend project",
 
@@ -82,7 +101,7 @@ const Portfolio = () => {
       game: true,
     },
     {
-      id: "05",
+      id: "06",
       name: "Pig Game",
       project: "frontend project",
       image: pigGame,
@@ -100,7 +119,7 @@ const Portfolio = () => {
       game: true,
     },
     {
-      id: "06",
+      id: "07",
       name: "Lunch Time",
       project: "frontend project",
 

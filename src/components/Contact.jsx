@@ -104,7 +104,7 @@ const Contact = () => {
               size={70}
             />
           )}
-          {/* </div> */}
+
           <form onSubmit={submitHandler}>
             <input
               type="name"

@@ -81,6 +81,10 @@ form textarea {
   top: 30%;
   left: 50%;
   z-index: 200000000000000;
+  cursor: no-drop;
+}
+.loading_form {
+  cursor: no-drop;
 }
 /* ------------------responsive */
 @media only screen and (max-width: 780px) {
