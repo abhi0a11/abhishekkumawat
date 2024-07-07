@@ -49,6 +49,7 @@ const AboutDesktop = () => {
                 <a
                   className={`${styles.link}`}
                   href="https://leetcode.com/u/abhishek_123321/"
+                  target="_blank"
                 >
                   Browse Profile
                 </a>

@@ -52,17 +52,6 @@ const LandingPage = () => {
                 <FiGithub className={`${styles.fa__icon__detail}`} />
               </a>
             </div>
-            <div
-              className={`btn-animated btn-green-outline ${styles.icon_div} animateUp`}
-            >
-              <a
-                href="https://x.com/AbhishekKu32163"
-                target="_blank"
-                className={`${styles.branding_btn} `}
-              >
-                <FaTwitter className={`${styles.fa__icon__detail}`} />
-              </a>
-            </div>
           </div>
         </div>
       </div>
