@@ -26,7 +26,14 @@ const Portfolio = () => {
       ],
       link: "https://ws-app-clone.netlify.app/",
       git_link: "https://github.com/abhi0a11",
-      category: ["Javascript", "html", "css"],
+      category: [
+        "ReactJS",
+        "MongoDb",
+        "Socket.io",
+        "simple-peer",
+        "NodeJS",
+        "ExpressJS",
+      ],
       js: true,
     },
     {
@@ -60,7 +67,7 @@ const Portfolio = () => {
       ],
       link: "https://todo-appauthenticated.netlify.app/",
       git_link: "https://github.com/abhi0a11/todo-app",
-      category: ["Javascript", "game"],
+      category: ["NodeJS", "ExpressJS", "MongoDB", "React"],
       js: true,
       game: true,
     },
@@ -114,14 +121,14 @@ const Portfolio = () => {
       ],
       link: "https://abhi0a11.github.io/Pig-Game/",
       git_link: "https://github.com/abhi0a11/Pig-Game",
-      category: ["Javascript", "game"],
+      category: ["Javascript", "Game"],
       js: true,
       game: true,
     },
     {
       id: "07",
       name: "Lunch Time",
-      project: "frontend project",
+      project: "Frontend project",
 
       image: lunchtime,
       image_url:
@@ -131,7 +138,7 @@ const Portfolio = () => {
       ],
       link: "https://abhi0a11.github.io/LunchTime/",
       git_link: "https://github.com/abhi0a11/LunchTime",
-      category: ["html", "css"],
+      category: ["HTML", "CSS", "Javascript"],
       js: false,
     },
   ];
