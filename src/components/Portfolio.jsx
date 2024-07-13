@@ -10,34 +10,34 @@ import { GrNext, GrPrevious } from "react-icons/gr";
 import { PiLinkBold } from "react-icons/pi";
 const Portfolio = () => {
   const project_data = [
-    // {
-    //   id: "01",
-    //   name: "Whatsapp",
-    //   image: forkify,
-    //   project: "MERN Stack",
-    //   image_url:
-    //     "https://ik.imagekit.io/abhishekkumawat/w1.png?updatedAt=1720339691313",
-    //   description: [
-    //     " Developed WhatsApp clone with real-time messaging viaSocket.IO for seamless communication.",
-    //     "Integrated video calling functionality using simple-peer, enhancing user engagement and interactivity.",
-    //     "I Implemented secure user access and data protection using JWT access and refreshtokens.",
-    //     " Designed and implemented group chat features,facilitating effortless creation and participation in discussions.",
-    //     "Utilized Redux and Redux Persist for efficient state management,ensuring seamless data persistence",
-    //   ],
-    //   link: "https://ws-app-clone.netlify.app/",
-    //   git_link: "https://github.com/abhi0a11",
-    //   category: [
-    //     "ReactJS",
-    //     "MongoDb",
-    //     "Socket.io",
-    //     "simple-peer",
-    //     "NodeJS",
-    //     "ExpressJS",
-    //   ],
-    //   js: true,
-    // },
     {
       id: "01",
+      name: "Whatsapp",
+      image: forkify,
+      project: "MERN Stack",
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/w1.png?updatedAt=1720339691313",
+      description: [
+        " Developed WhatsApp clone with real-time messaging viaSocket.IO for seamless communication.",
+        "Integrated video calling functionality using simple-peer, enhancing user engagement and interactivity.",
+        "I Implemented secure user access and data protection using JWT access and refreshtokens.",
+        " Designed and implemented group chat features,facilitating effortless creation and participation in discussions.",
+        "Utilized Redux and Redux Persist for efficient state management,ensuring seamless data persistence",
+      ],
+      link: "https://ws-app-clone.netlify.app/",
+      git_link: "https://github.com/abhi0a11",
+      category: [
+        "ReactJS",
+        "MongoDb",
+        "Socket.io",
+        "simple-peer",
+        "NodeJS",
+        "ExpressJS",
+      ],
+      js: true,
+    },
+    {
+      id: "02",
       name: "Forkify",
       image: forkify,
       project: "frontend project",
@@ -55,7 +55,7 @@ const Portfolio = () => {
       js: true,
     },
     {
-      id: "02",
+      id: "03",
       name: "Todo App",
       project: "Backend Project",
       image_url:
@@ -71,26 +71,26 @@ const Portfolio = () => {
       js: true,
       game: true,
     },
-    // {
-    //   id: "03",
-    //   name: "Snake Game",
-    //   project: "frontend project",
-    //   image: guessTheNumber,
-    //   image_url:
-    //     "https://ik.imagekit.io/abhishekkumawat/snake%20Game.png?updatedAt=1720241756248",
-    //   description: [
-    //     "A Javascript Snake game.",
-    //     "Increases speed on eating food.",
-    //     "Dies on touching walls or itsef.",
-    //   ],
-    //   link: "https://snake-game-retrostyle.netlify.app/",
-    //   git_link: "https://github.com/abhi0a11/Snake-Game",
-    //   category: ["Javascript", "game"],
-    //   js: true,
-    //   game: true,
-    // },
     {
-      id: "03",
+      id: "04",
+      name: "Snake Game",
+      project: "frontend project",
+      image: guessTheNumber,
+      image_url:
+        "https://ik.imagekit.io/abhishekkumawat/snake%20Game.png?updatedAt=1720241756248",
+      description: [
+        "A Javascript Snake game.",
+        "Increases speed on eating food.",
+        "Dies on touching walls or itsef.",
+      ],
+      link: "https://snake-game-retrostyle.netlify.app/",
+      git_link: "https://github.com/abhi0a11/Snake-Game",
+      category: ["Javascript", "game"],
+      js: true,
+      game: true,
+    },
+    {
+      id: "05",
       name: "Guess The Number",
       project: "frontend project",
 
@@ -108,7 +108,7 @@ const Portfolio = () => {
       game: true,
     },
     {
-      id: "04",
+      id: "06",
       name: "Pig Game",
       project: "frontend project",
       image: pigGame,
@@ -126,7 +126,7 @@ const Portfolio = () => {
       game: true,
     },
     {
-      id: "05",
+      id: "07",
       name: "Lunch Time",
       project: "Frontend project",
 
