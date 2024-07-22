@@ -2,6 +2,7 @@
   display: flex;
   background: #1c1c22;
   padding: 100px 0px 50px 0px;
+  height: 100dvh;
 }
 .branding_info {
   flex-grow: 2;
