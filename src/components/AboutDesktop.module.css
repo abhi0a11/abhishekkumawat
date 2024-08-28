@@ -32,7 +32,7 @@
 
 .img_box {
   display: flex !important;
-  margin: 70px 10px 0px 160px;
+  margin: 26px 10px 0px 160px;
   /* width: 67.33333% !important; */
   /* height: 500px; */
   flex-basis: 68%;
@@ -169,7 +169,7 @@
     height: fit-content !important;
   }
   .img_box {
-    margin: 70px 10px 0px 10px;
+    margin: 26px 10px 0px 10px;
     flex-basis: 40%;
   }
   .heading {
@@ -226,7 +226,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .img_box {
-    margin: 70px 10px 0px 10px;
+    margin: 26px 10px 0px 10px;
     flex-basis: 28%;
   }
   .personal_details {

@@ -1,5 +1,6 @@
 import styles from "./AboutDesktop.module.css";
 import abhishek from "../assets/abhishek_1.jpg";
+import formals_photo from "../assets/abhi_edit1.jpg";
 import resumePdf from "../assets/resume__abhi.pdf";
 
 const AboutDesktop = () => {
@@ -12,7 +13,8 @@ const AboutDesktop = () => {
       >
         <div className={` ${styles.img_box}`}>
           <img
-            src={abhishek}
+            // src={abhishek}
+            src={formals_photo}
             className={`d-block mx-lg-auto img-fluid ${styles.imgMine}`}
             alt="Bootstrap Themes"
             loading="lazy"
