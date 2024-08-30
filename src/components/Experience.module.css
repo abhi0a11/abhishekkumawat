@@ -16,8 +16,10 @@
   background-color: #1c1c22;
   border: 1px solid #000;
   color: white !important;
-  align-items: center;
-  justify-content: space-around;
+  /* align-items: center; */
+  /* text-decoration: dotted; */
+  /* justify-content: space-around; */
+  font-size: 2rem !important;
 }
 
 .logo {
@@ -25,4 +27,37 @@
 }
 .technical__bars {
   font-size: 1.25rem;
+}
+.exp {
+  display: flex;
+  flex-direction: column;
+  padding: 13px 22px;
+  flex-grow: 1;
+  flex-basis: 47%;
+  height: fit-content;
+  background-color: #1c1c22;
+  border: 1px solid #000;
+  color: white !important;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+}
+.year {
+  color: #00ff99;
+}
+.institue {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.grade {
+  color: #ababab;
+  margin: 0;
+}
+.course {
+  color: #ababab;
+}
+.link {
+  margin-left: 15px;
+  text-transform: uppercase;
+  color: #ababab;
+  text-decoration: none;
 }
