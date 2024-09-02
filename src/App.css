@@ -225,3 +225,9 @@ clolor-green {
 /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
 
 /* css clip path maker {website name} */
+
+.leetcode {
+  height: 9dvh;
+  width: 5dvw;
+  margin: 10px 0px;
+}

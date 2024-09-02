@@ -5,11 +5,13 @@ import FrontendSkills from "./FrontendSkills";
 import BackendSkills from "./BackendSkills";
 import Experience from "./Experience";
 import Education from "./Education";
+import Profile from "./Profile.jsx";
 const Resume = () => {
   const [frontend, setFrontend] = useState(true);
   const [backend, setBackend] = useState(false);
   const [experiance, setExperiance] = useState(false);
   const [education, setEducation] = useState(false);
+  const [profile, setProfile] = useState(false);
   const [head, setHead] = useState("Frontend Skills");
 
   const handleEductation = () => {
@@ -17,6 +19,7 @@ const Resume = () => {
     setFrontend(false);
     setBackend(false);
     setExperiance(false);
+    setProfile(false);
     setEducation(true);
   };
   const handleFrontend = () => {
@@ -24,6 +27,7 @@ const Resume = () => {
     setFrontend(true);
     setBackend(false);
     setExperiance(false);
+    setProfile(false);
     setEducation(false);
   };
   const handleBackend = () => {
@@ -31,6 +35,7 @@ const Resume = () => {
     setFrontend(false);
     setBackend(true);
     setExperiance(false);
+    setProfile(false);
     setEducation(false);
   };
   const handleExperience = () => {
@@ -38,6 +43,15 @@ const Resume = () => {
     setFrontend(false);
     setBackend(false);
     setExperiance(true);
+    setEducation(false);
+    setProfile(false);
+  };
+  const handleProfile = () => {
+    setHead("CP Profiles");
+    setProfile(true);
+    setFrontend(false);
+    setBackend(false);
+    setExperiance(false);
     setEducation(false);
   };
   return (
@@ -73,6 +87,13 @@ const Resume = () => {
         >
           Experience
         </button>
+        {/* <button
+          type="button"
+          className={`${styles.navigation_btn} ${profile && "active"}`}
+          onClick={handleProfile}
+        >
+          Profiles
+        </button> */}
       </div>
       <div className={`${styles.info_container}`}>
         <div className={`${styles.heading}`}>{head}</div>
@@ -81,6 +102,7 @@ const Resume = () => {
           {backend && <BackendSkills />}
           {experiance && <Experience />}
           {education && <Education />}
+          {profile && <Profile />}
         </div>
       </div>
     </section>
