@@ -79,59 +79,205 @@
 
 // export default Profile;
 
+import { useEffect, useState } from "react";
 import styles from "./Profile.module.css";
+import axios from "axios";
 
-const education = [
-  {
-    platform: "Leetcode",
-    rating: "1741",
-    contest: "34",
-    url: "https://leetcode.com/u/abhishek_123321/",
-  },
-  {
-    platform: "Codechef",
-    rating: "1472",
-    contest: "8",
-    url: "https://www.codechef.com/users/abhi_ak21",
-  },
-  {
-    platform: "Atcoder",
-    rating: "355",
-    contest: "11",
-    url: "https://atcoder.jp/users/abhishek_123321",
-  },
-  {
-    platform: "Codeforces",
-    rating: "410",
-    contest: "1",
-    url: "https://codeforces.com/profile/abhishek_123321",
-  },
-  {
-    platform: "GeeksforGeeks",
-    rating: "1680",
-    contest: "1",
-    url: "https://www.geeksforgeeks.org/user/abhishekkum/",
-  },
-];
+// const education = [
+//   {
+//     platform: "Leetcode",
+//     rating: "1751",
+//     contest: "34",
+//     url: "https://leetcode.com/u/abhishek_123321/",
+//   },
+//   {
+//     platform: "Codechef",
+//     rating: "1472",
+//     contest: "8",
+//     url: "https://www.codechef.com/users/abhi_ak21",
+//   },
+//   {
+//     platform: "Atcoder",
+//     rating: "355",
+//     contest: "11",
+//     url: "https://atcoder.jp/users/abhishek_123321",
+//   },
+//   {
+//     platform: "Codeforces",
+//     rating: "410",
+//     contest: "1",
+//     url: "https://codeforces.com/profile/abhishek_123321",
+//   },
+//   {
+//     platform: "GeeksforGeeks",
+//     rating: "1680",
+//     contest: "1",
+//     url: "https://www.geeksforgeeks.org/user/abhishekkum/",
+//   },
+// ];
+
 const Profile = () => {
+  const [lcrating, setlcrating] = useState(1751);
+  const [lcontest, setlcontest] = useState(34);
+  const [top, setTop] = useState(11.29);
+  const [ccrating, setccrating] = useState(1480);
+  const [ccontest, setccontest] = useState(9);
+  const [topcc, setTopcc] = useState(32571);
+  const [cfrating, setcfrating] = useState(410);
+  const [cfContest, setcfContest] = useState(1);
+  const [cfTop, setcfTop] = useState(13666);
+
+  const getLeetcodeData = async () => {
+    try {
+      const res = await axios.get(
+        "https://alfa-leetcode-api.onrender.com/abhishek_123321/contest"
+      );
+
+      console.log("lc", res.data);
+      if (!res) return;
+
+      setlcrating(res.data.contestRating);
+      setlcontest(res.data.contestAttend);
+      setTop(res.data.contestTopPercentage);
+    } catch (error) {
+      return;
+    }
+  };
+  const getCodechefData = async () => {
+    try {
+      const res = await axios.get(
+        "https://codechef-api.vercel.app/handle/abhi_ak21"
+      );
+
+      if (!res) return;
+      // console.log("cc", res.data);
+      setccrating(res.data.currentRating);
+      setccontest(res.data.ratingData.size());
+      setTopcc(res.data.globalRank);
+    } catch (error) {
+      return;
+    }
+  };
+  const getCodeForcesContest = async () => {
+    try {
+      const res = await axios.get(
+        "https://codeforces.com/api/user.rating?handle=abhishek_123321"
+      );
+      if (!res) return;
+      console.log("cf", res.data);
+      setcfContest(res.data.result.size());
+      setcfrating(res.data.result[0].newRating);
+      setcfTop(res.data.result[0].rank);
+    } catch (error) {
+      return;
+    }
+  };
+
+  useEffect(() => {
+    getLeetcodeData();
+    getCodechefData();
+    getCodeForcesContest();
+  }, []);
   return (
     <section className={`${styles.section_front}`}>
-      {education.map((data, i) => (
-        <div key={i} className={`${styles.education}`}>
-          <p>
-            Platform: <span className={`${styles.year}`}> {data.platform}</span>
-          </p>
-          <p>
-            Rating: <span className={`${styles.institue}`}> {data.rating}</span>
-          </p>
-          <p>
-            Contest: <span className={`${styles.course}`}> {data.contest}</span>
-          </p>
-          <a href={data.url} target="_blank" className={`${styles.grade}`}>
-            Visit
-          </a>
-        </div>
-      ))}
+      <div className={`${styles.education}`}>
+        <p>
+          Platform: <span className={`${styles.year}`}> Leetcode</span>
+        </p>
+        <p>
+          Rating:{" "}
+          <span className={`${styles.institue}`}>{Math.round(lcrating)}</span>
+        </p>
+        <p>
+          Contest:
+          <span className={`${styles.course}`}>{lcontest}</span>
+        </p>
+        <p>
+          Top:
+          <span className={`${styles.course}`}> {top}%</span>
+        </p>
+
+        <a
+          href={"https://leetcode.com/u/abhishek_123321/"}
+          target="_blank"
+          className={`${styles.grade}`}
+        >
+          Visit
+        </a>
+      </div>
+      <div className={`${styles.education}`}>
+        <p>
+          Platform: <span className={`${styles.year}`}> CodeChef</span>
+        </p>
+        <p>
+          Rating: <span className={`${styles.institue}`}>{ccrating}</span>
+        </p>
+        <p>
+          Contest:
+          <span className={`${styles.course}`}>{Math.round(ccontest)}</span>
+        </p>
+        <p>
+          Top:
+          <span className={`${styles.course}`}> {topcc} global rank</span>
+        </p>
+
+        <a
+          href={"https://www.codechef.com/users/abhi_ak21"}
+          target="_blank"
+          className={`${styles.grade}`}
+        >
+          Visit
+        </a>
+      </div>
+      <div className={`${styles.education}`}>
+        <p>
+          Platform: <span className={`${styles.year}`}> CodeForces</span>
+        </p>
+        <p>
+          Rating:{" "}
+          <span className={`${styles.institue}`}>{Math.round(cfrating)}</span>
+        </p>
+        <p>
+          Contest:
+          <span className={`${styles.course}`}>{cfContest}</span>
+        </p>
+        <p>
+          Top:
+          <span className={`${styles.course}`}> {cfTop} global rank</span>
+        </p>
+
+        <a
+          href={"https://codeforces.com/profile/abhishek_123321"}
+          target="_blank"
+          className={`${styles.grade}`}
+        >
+          Visit
+        </a>
+      </div>
+      <div className={`${styles.education}`}>
+        <p>
+          Platform: <span className={`${styles.year}`}> Atcoder</span>
+        </p>
+        <p>
+          Rating: <span className={`${styles.institue}`}>355</span>
+        </p>
+        <p>
+          Contest:
+          <span className={`${styles.course}`}>11</span>
+        </p>
+        <p>
+          Top:
+          <span className={`${styles.course}`}> 34161 global rank</span>
+        </p>
+
+        <a
+          href={"https://atcoder.jp/users/abhishek_123321"}
+          target="_blank"
+          className={`${styles.grade}`}
+        >
+          Visit
+        </a>
+      </div>
     </section>
   );
 };

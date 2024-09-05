@@ -63,8 +63,13 @@
   color: #00ff99;
 }
 .institue {
+  color: #00ff99;
+  margin: 0;
+}
+.course {
+  color: #00ff99;
   margin: 0;
 }
 .grade {
-  margin: 0;
+  color: skyblue;
 }

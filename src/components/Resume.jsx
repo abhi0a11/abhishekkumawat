@@ -87,13 +87,13 @@ const Resume = () => {
         >
           Experience
         </button>
-        {/* <button
+        <button
           type="button"
           className={`${styles.navigation_btn} ${profile && "active"}`}
           onClick={handleProfile}
         >
-          Profiles
-        </button> */}
+          CP Profiles
+        </button>
       </div>
       <div className={`${styles.info_container}`}>
         <div className={`${styles.heading}`}>{head}</div>
