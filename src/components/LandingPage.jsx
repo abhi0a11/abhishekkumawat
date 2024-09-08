@@ -2,8 +2,6 @@ import styles from "./LandingPage.module.css";
 import resumePdf from "../assets/resume__abhi.pdf";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
-import { FaTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
 
 const LandingPage = () => {
   return (
@@ -55,17 +53,6 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      {/* <div className={`${styles.image_container}`}> */}
-      {/* <div className={`${styles.branding_image}`}> */}
-      {/* <img
-            // src="https://ik.imagekit.io/abhishekkumawat/abhishek_1.jpg?updatedAt=1719573870814"
-            src={abhishek}
-            className={`cmx-lg-auto img-fluid`}
-            alt="Abhishek"
-            loading="lazy"
-          /> */}
-      {/* </div> */}
-      {/* </div> */}
     </section>
   );
 };

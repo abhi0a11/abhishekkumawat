@@ -10,21 +10,6 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 
 function App() {
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 768;
-
-  useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, [width]);
-
-  const [top, setTop] = useState();
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      let newTop = window.scrollY;
-      setTop(newTop);
-    });
-  }, []);
   return (
     <>
       <Navbar></Navbar>
