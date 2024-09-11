@@ -2,7 +2,7 @@
   background-color: #697565;
   background-color: #1c1c22;
   border-radius: 20px;
-  padding: 60px 50px;
+  padding: 60px 20px;
   overflow: hidden;
 }
 
@@ -55,15 +55,20 @@
   .bucket_container {
     flex-basis: 60%;
   }
-
+  .branding_info h1 {
+    font-size: 1.5rem;
+  }
   .resumeBtn {
-    font-size: 15px;
+    font-size: 10px;
     padding: 8px 32px !important;
     font-weight: 400;
     width: fit-content;
   }
 }
 @media screen and (min-width: 890px) {
+  .branding_info h1 {
+    font-size: 1.5rem;
+  }
   .resumeBtn {
     font-size: 15px;
     padding: 8px 32px !important;
