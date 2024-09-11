@@ -8,12 +8,32 @@ import AboutDesktop from "./components/AboutDesktop";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import HomePage from "./components/HomePage";
 
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 768;
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, [width]);
+
+  const [top, setTop] = useState();
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let newTop = window.scrollY;
+      setTop(newTop);
+    });
+  }, []);
   return (
     <>
       <Navbar></Navbar>
-      <LandingPage></LandingPage>
+      {width >= breakpoint ? (
+        <HomePage></HomePage>
+      ) : (
+        <LandingPage></LandingPage>
+      )}
       <AboutDesktop></AboutDesktop>
       <Resume></Resume>
       <Portfolio></Portfolio>

@@ -1,0 +1,64 @@
+.bucket_container {
+  background-color: #697565;
+  background-color: #1c1c22;
+  border-radius: 20px;
+  padding: 35px 50px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.branding_info {
+  flex-grow: 2;
+  flex-basis: 60%;
+  align-content: center;
+  justify-content: center;
+}
+.branding_info h5 {
+  font-size: 1rem;
+}
+.branding_info h1 {
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+}
+.greet {
+  font-size: 2rem;
+}
+.first_name {
+  font-size: 3.5rem;
+}
+.last_name {
+  font-size: 3.5rem;
+}
+
+.resumeBtn {
+  font-size: 15px;
+  padding: 8px 0px !important;
+  font-weight: 400;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 890px) {
+  .branding_info h5 {
+    font-size: 1.5rem;
+  }
+  .greet {
+    font-size: 2.5rem;
+  }
+  .first_name {
+    font-size: 4rem;
+  }
+  .last_name {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 890px) {
+  .resumeBtn {
+    font-size: 15px;
+    padding: 8px 32px !important;
+    font-weight: 400;
+    width: fit-content;
+  }
+}

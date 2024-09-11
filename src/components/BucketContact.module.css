@@ -1,0 +1,64 @@
+.bucket_container {
+  background-color: #697565;
+  background-color: #1c1c22;
+  border-radius: 20px;
+  padding: 60px 20px;
+  flex-basis: inherit;
+  overflow: hidden;
+}
+
+.branding_info {
+  flex-grow: 2;
+  flex-basis: 60%;
+  align-content: center;
+  justify-content: center;
+}
+
+.downArrow {
+  color: #ffdbb5;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.branding_info > p {
+  /* width: 75%; */
+  color: #ababab;
+  font-size: 17px;
+}
+.branding_social {
+  display: flex;
+  margin-top: 29px;
+  gap: 14px;
+}
+
+.resumeBtn {
+  font-size: 15px;
+  padding: 8px 0px !important;
+  font-weight: 400;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 890px) {
+  .bucket_container {
+    flex-basis: 60%;
+  }
+  .branding_info > p {
+    color: #ababab;
+    font-size: 17px;
+  }
+
+  .resumeBtn {
+    font-size: 15px;
+    padding: 8px 32px !important;
+    font-weight: 400;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 890px) {
+  .resumeBtn {
+    font-size: 15px;
+    padding: 8px 32px !important;
+    font-weight: 400;
+    width: fit-content;
+  }
+}
