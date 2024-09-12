@@ -65,10 +65,14 @@ const Contact = () => {
       <div className={`${styles.container__contact}`}>
         <div className={`${styles.contact__left} text-white`}>
           <h1 className="sub-title">Contact Me</h1>
-          <p>
+          <a
+            style={{ textDecoration: "underline", color: "white" }}
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=abhishekkumawat.ak21@gmail.com"
+            target="_blank"
+          >
             <SiMinutemailer className={`${styles.emailIcon}`} />
             abhishekkumawat.ak21@gmail.com
-          </p>
+          </a>
           {/* <p>9828855266</p> */}
           <div className={`${styles.social__icons}`}>
             <a
@@ -118,7 +122,6 @@ const Contact = () => {
               required
               readOnly={loading}
             />
-
             <input
               type="email"
               className={` ${styles.form__input} ${
@@ -131,7 +134,6 @@ const Contact = () => {
               readOnly={loading}
               required
             />
-
             <input
               type="number"
               className={` ${styles.form__input} ${
@@ -144,7 +146,6 @@ const Contact = () => {
               readOnly={loading}
               required
             />
-
             <textarea
               type="text"
               className={`${styles.form__input} ${
@@ -167,6 +168,15 @@ const Contact = () => {
             >
               {buttonText}
             </button>
+
+            <a
+              style={{ marginLeft: "10px" }}
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=abhishekkumawat.ak21@gmail.com"
+              target="_blank"
+              className={`btn btn-green ${styles.form_btn}`}
+            >
+              OR Email Me
+            </a>
           </form>
         </div>
       </div>

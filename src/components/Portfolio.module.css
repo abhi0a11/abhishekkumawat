@@ -20,65 +20,6 @@
   font-style: normal;
   font-variation-settings: "MORF" 0;
 }
-.projectBtn {
-  float: center;
-}
-
-.portfolioSubHeading {
-  font-size: 80px;
-  margin: 0px 0px 33px 40px;
-  padding: 2px 450px 2px 2px;
-  line-height: 5rem;
-  color: white;
-  /* opacity: 0.8; */
-  letter-spacing: -0.045em;
-}
-.content__align {
-  align-content: center;
-}
-
-.col {
-  flex-grow: 1;
-  flex-basis: 200;
-}
-
-.box {
-  border-radius: 25px;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  height: 20vh;
-  width: 20vw;
-}
-.box h3 {
-  position: absolute;
-  color: #ababab;
-  z-index: -1;
-}
-
-.btnPortfolio {
-  display: inline-block;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.btnPortfolio:hover,
-.btnPortfolio:focus,
-.btnPortfolio:active,
-.btnPortfolio:link {
-  display: inline-block;
-  transform: translate(-1px, -1px);
-  letter-spacing: -0.02em;
-  color: #00ff99;
-
-  font-family: "Danfo", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "ELSH" 0;
-}
 
 /* new portfolio start */
 .container_portfolio {
@@ -136,15 +77,15 @@
 }
 .project_tags {
   margin-top: 0.5rem;
-  font-size: 30px;
+  font-size: 20px;
 }
-.danfo_unique {
+/* .danfo_unique {
   font-family: "Danfo", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "ELSH" 0;
-}
+} */
 .project_redirect_button,
 .project_redirect_button:link,
 .project_redirect_button:active {
@@ -208,11 +149,11 @@
 .project_summary {
   display: list-item;
   font-size: 18px;
-  font-family: "Tourney", sans-serif;
+  /* font-family: "Tourney", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-variation-settings: "wdth" 87.5;
+  font-variation-settings: "wdth" 87.5; */
 }
 
 .prev_project {

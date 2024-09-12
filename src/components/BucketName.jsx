@@ -3,7 +3,12 @@ import styles from "./BucketName.module.css";
 import Tilt from "react-parallax-tilt";
 const BucketName = () => {
   return (
-    <Tilt style={{ flexBasis: "inherit" }} scale={1.01}>
+    <Tilt
+      tiltMaxAngleX={10}
+      tiltMaxAngleY={10}
+      style={{ flexBasis: "inherit" }}
+      scale={1.01}
+    >
       <div className={`animateUp ${styles.bucket_container} `}>
         <div className={`${styles.branding_info} text-white`}>
           <h1 className={`animateInLeft ${styles.greet}`}>Hello I'm</h1>

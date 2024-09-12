@@ -3,16 +3,22 @@ import styles from "./Profile.module.css";
 import axios from "axios";
 
 const Profile = () => {
-  const [lcrating, setlcrating] = useState(1751);
-  const [lcontest, setlcontest] = useState(34);
-  const [top, setTop] = useState(11.29);
-  const [ccrating, setccrating] = useState(1480);
-  const [ccontest, setccontest] = useState(0);
-  const [topcc, setTopcc] = useState(0);
-  const [ccStar, setccStar] = useState("");
-  const [cfrating, setcfrating] = useState(410);
-  const [cfContest, setcfContest] = useState(1);
-  const [cfTop, setcfTop] = useState(13666);
+  const [LCdata, setLCdata] = useState({
+    lcrating: 0,
+    lcontest: 0,
+    top: 0,
+  });
+  const [CCdata, setCCdata] = useState({
+    ccrating: 0,
+    ccontest: 0,
+    topcc: 0,
+    ccStar: 0,
+  });
+  const [CFdata, setCFdata] = useState({
+    cfrating: 0,
+    cfContest: 0,
+    cfTop: 0,
+  });
   const getLeetcodeData = async () => {
     try {
       const res = await axios.get(
@@ -20,10 +26,11 @@ const Profile = () => {
       );
 
       if (!res) return;
-
-      setlcrating(res.data.contestRating);
-      setlcontest(res.data.contestAttend);
-      setTop(res.data.contestTopPercentage);
+      setLCdata({
+        lcrating: res.data.contestRating,
+        lcontest: res.data.contestAttend,
+        top: res.data.contestTopPercentage,
+      });
     } catch (error) {
       return;
     }
@@ -35,10 +42,12 @@ const Profile = () => {
       );
 
       if (!res) return;
-      setccrating(res.data.currentRating);
-      setTopcc(res.data.globalRank);
-      setccontest(res.data.ratingData.length);
-      setccStar(res.data.stars);
+      setCCdata({
+        ccrating: res.data.currentRating,
+        ccontest: res.data.ratingData.length,
+        topcc: res.data.globalRank,
+        ccStar: res.data.stars,
+      });
     } catch (error) {
       return;
     }
@@ -50,9 +59,11 @@ const Profile = () => {
       );
       if (!res) return;
 
-      setcfContest(res.data.result.size());
-      setcfrating(res.data.result[0].newRating);
-      setcfTop(res.data.result[0].rank);
+      setCFdata({
+        cfrating: res.data.result[0].newRating,
+        cfContest: res.data.result.length,
+        cfTop: res.data.result[0].rank,
+      });
     } catch (error) {
       return;
     }
@@ -71,15 +82,17 @@ const Profile = () => {
         </p>
         <p>
           Rating:{" "}
-          <span className={`${styles.institue}`}>{Math.round(lcrating)}</span>
+          <span className={`${styles.institue}`}>
+            {Math.round(LCdata.lcrating)}
+          </span>
         </p>
         <p>
           Contest:
-          <span className={`${styles.course}`}>{lcontest}</span>
+          <span className={`${styles.course}`}>{LCdata.lcontest}</span>
         </p>
         <p>
           Top:
-          <span className={`${styles.course}`}> {top}%</span>
+          <span className={`${styles.course}`}> {LCdata.top}%</span>
         </p>
 
         <a
@@ -97,16 +110,19 @@ const Profile = () => {
         <p>
           Rating:{" "}
           <span className={`${styles.institue}`}>
-            {ccrating}({ccStar})
+            {CCdata.ccrating}({CCdata.ccStar})
           </span>
         </p>
         <p>
           Contest:
-          <span className={`${styles.course}`}>{ccontest}</span>
+          <span className={`${styles.course}`}>{CCdata.ccontest}</span>
         </p>
         <p>
           Top:
-          <span className={`${styles.course}`}> {topcc} global rank</span>
+          <span className={`${styles.course}`}>
+            {" "}
+            {CCdata.topcc} global rank
+          </span>
         </p>
 
         <a
@@ -123,15 +139,20 @@ const Profile = () => {
         </p>
         <p>
           Rating:{" "}
-          <span className={`${styles.institue}`}>{Math.round(cfrating)}</span>
+          <span className={`${styles.institue}`}>
+            {Math.round(CFdata.cfrating)}
+          </span>
         </p>
         <p>
           Contest:
-          <span className={`${styles.course}`}>{cfContest}</span>
+          <span className={`${styles.course}`}>{CFdata.cfContest}</span>
         </p>
         <p>
           Top:
-          <span className={`${styles.course}`}> {cfTop} global rank</span>
+          <span className={`${styles.course}`}>
+            {" "}
+            {CFdata.cfTop} global rank
+          </span>
         </p>
 
         <a

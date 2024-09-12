@@ -1,8 +1,11 @@
 .bucket_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #697565;
   background-color: #1c1c22;
   border-radius: 20px;
-  padding: 60px 20px;
+  padding: 35px 20px;
   overflow: hidden;
   height: 100%;
 }
@@ -13,7 +16,12 @@
   align-content: center;
   justify-content: center;
 }
-
+.branding_info a {
+  text-decoration: none;
+}
+.branding_info h1:hover {
+  color: #ffdbb5 !important;
+}
 .branding_info h1 {
   font-size: 2rem;
   font-family: "Tourney", sans-serif;
