@@ -3,25 +3,43 @@ import styles from "./BucketContact.module.css";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { Link } from "react-scroll";
 import Tilt from "react-parallax-tilt";
-
+import { MdAttachEmail } from "react-icons/md";
 const BucketContact = () => {
   return (
-    <Tilt style={{ flexBasis: "inherit" }} scale={1.01}>
+    <Tilt
+      tiltMaxAngleX={10}
+      tiltMaxAngleY={10}
+      style={{ flexBasis: "inherit" }}
+      scale={1.01}
+    >
       <div className={`animateDown text-white ${styles.bucket_container} `}>
-        <h1>Contact me!</h1>
-        <div className={`${styles.branding_info} text-white`}>
-          <p>
-            As a Full Stack Developer with a strong foundation in web
-            technologies, problem-solving, and software development, I am always
-            eager to explore new opportunities and collaborate on innovative
-            projects. Feel free to reach out if you would like to discuss
-            potential roles, technical challenges, or industry insights. I look
-            forward to hearing from you and let’s discuss how we can collaborate
-            on exciting new opportunities!
-          </p>
+        <div>
+          <h1>Contact me!</h1>
+          <div className={`${styles.branding_info} text-white`}>
+            <p>
+              I'm always{" "}
+              <span style={{ color: "#00ff99", fontWeight: "500" }}>
+                {" "}
+                open to new opportunities and collaborations{" "}
+              </span>{" "}
+              on innovative projects—feel free to connect if you'd like to
+              discuss potential roles, technical challenges, or industry
+              insights!
+            </p>
+          </div>
         </div>
         <div className={`${styles.branding_social} `}>
-          <Link
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=abhishekkumawat.ak21@gmail.com"
+            target="_blank"
+            className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
+          >
+            Email Me <MdAttachEmail className={` ${styles.downArrow}`} />
+            {/* <FaArrowCircleDown
+              className={`animateDribble ${styles.downArrow}`}
+            /> */}
+          </a>
+          {/* <Link
             to="Contact-Form"
             className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
           >
@@ -29,7 +47,7 @@ const BucketContact = () => {
             <FaArrowCircleDown
               className={`animateDribble ${styles.downArrow}`}
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </Tilt>

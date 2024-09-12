@@ -7,18 +7,29 @@ import Tilt from "react-parallax-tilt";
 
 const BucketResume = () => {
   return (
-    <Tilt scale={1.01} style={{ flexBasis: "inherit" }}>
+    <Tilt
+      tiltMaxAngleX={10}
+      tiltMaxAngleY={10}
+      scale={1.01}
+      style={{ flexBasis: "inherit" }}
+    >
       <div className={`text-white animateLeft ${styles.bucket_container} `}>
-        <h1 className="">Resume</h1>
-
-        <div className={`${styles.branding_info} text-white`}>
-          <p>
-            I bring a robust foundation in both frontend and backend
-            technologies, with proven experience in React.js, Node.js and other
-            frameworks. My expertise spans designing and developing scalable web
-            applications and RESTful APIs, demonstrated through internships at
-            Roxwell Technologies Intern.
-          </p>
+        <div>
+          <h1 className="">Resume</h1>
+          <div className={`${styles.branding_info} text-white`}>
+            <p>
+              I have a strong foundation in{" "}
+              <span style={{ color: "#00ff99", fontWeight: "500" }}>
+                frontend and backend
+              </span>{" "}
+              technologies , with expertise in React.js, Node.js, and scalable
+              web application development, demonstrated through my{" "}
+              <span style={{ color: "#00ff99", fontWeight: "500" }}>
+                {" "}
+                internships at Roxwell Technologies.{" "}
+              </span>
+            </p>
+          </div>
         </div>
         <div className={`${styles.branding_social} `}>
           <a

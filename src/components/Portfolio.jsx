@@ -4,12 +4,12 @@ import guessTheNumber from "../assets/guess-the-number.png";
 import forkify from "../assets/forkify.jpg";
 import pigGame from "../assets/pig-game.png";
 import { useState } from "react";
-import { FaLinkedinIn } from "react-icons/fa6";
+
 import { FiGithub } from "react-icons/fi";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { PiLinkBold } from "react-icons/pi";
 const Portfolio = () => {
-  const project_data = [
+  const project = [
     {
       id: "01",
       name: "Whatsapp",
@@ -18,11 +18,13 @@ const Portfolio = () => {
       image_url:
         "https://ik.imagekit.io/abhishekkumawat/w1.png?updatedAt=1720339691313",
       description: [
-        " Developed WhatsApp clone with real-time messaging viaSocket.IO for seamless communication.",
-        "Integrated video calling functionality using simple-peer, enhancing user engagement and interactivity.",
-        "I Implemented secure user access and data protection using JWT access and refreshtokens.",
-        " Designed and implemented group chat features,facilitating effortless creation and participation in discussions.",
-        "Utilized Redux and Redux Persist for efficient state management,ensuring seamless data persistence",
+        // "Real-time messaging via Socket.IO for seamless communication.",
+        // "Video calling functionality using simple-peer",
+        // "I Implemented secure user access and data protection using JWT access and refreshtokens.",
+        // "Group chat features,facilitating effortless creation and participation in discussions.",
+        // "Utilized Redux and Redux Persist for efficient state management,ensuring seamless data persistence",
+        "Real-time messaging and group chat with Socket.IO, and implemented video calling using simple-peer",
+        "Secured user access and data protection with JWT tokens, and managed state with Redux and Redux Persist for efficient data persistence.",
       ],
       link: "https://ws-app-clone.netlify.app/",
       git_link: "https://github.com/abhi0a11",
@@ -44,7 +46,7 @@ const Portfolio = () => {
       image_url:
         "https://ik.imagekit.io/abhishekkumawat/tr:ar-3-2/forkify.jpg?updatedAt=1719573871091",
       description: [
-        "A web application that helps you search recipes and save them.",
+        "Recipes Finder.",
         "Implemented Fetching data and Sending data back to API asynchronously.",
         "Implemented pagination to render only subset of fetched results on a page.",
         "Optimised the application to rerender on the fields requested using javascript",
@@ -142,10 +144,8 @@ const Portfolio = () => {
       js: false,
     },
   ];
-  const [n, setN] = useState(project_data.length);
-  // console.log(project_data.length);
+  const n = project.length;
   const [index, setIndex] = useState(0);
-  const [project, setProject] = useState(project_data);
 
   const handlePrevClick = () => {
     const newIndex = (((index - 1) % n) + n) % n;
@@ -154,35 +154,6 @@ const Portfolio = () => {
   const handleNextClick = () => {
     const newIndex = (index + 1) % n;
     setIndex(newIndex);
-  };
-  const handleAllClick = () => {
-    document.querySelectorAll(".all").forEach((element) => {
-      element.classList.remove("js_hidden");
-    });
-    setProject(project_data);
-    setIndex(0);
-    setN(project_data.length);
-  };
-  const handleGameClick = () => {
-    const game_data = project_data.filter((element) => element.game === true);
-    setProject(game_data);
-    setIndex(0);
-    setN(game_data.length);
-  };
-  const handleJsClick = () => {
-    document.querySelectorAll(".js").forEach((element) => {
-      if (element.classList.contains("js_hidden")) {
-        element.classList.remove("js_hidden");
-        element.classList.add("js_show");
-      } else {
-        element.classList.toggle("js_hidden");
-      }
-    });
-
-    const js_data = project_data.filter((element) => element.js === true);
-    setProject(js_data);
-    setIndex(0);
-    setN(js_data.length);
   };
 
   return (
@@ -195,29 +166,6 @@ const Portfolio = () => {
           Projects
         </h1>
       </div>
-      {/* <div className={`text-center ${styles.projectBtn}`}>
-        <button
-          className={`btn btn-lg ${styles.btnPortfolio}`}
-          onClick={handleAllClick}
-        >
-          All
-        </button>
-        <button className={`btn btn-lg btn ${styles.btnPortfolio}`}>
-          React.js
-        </button>
-        <button
-          className={`btn btn-lg ${styles.btnPortfolio}`}
-          onClick={handleJsClick}
-        >
-          Javascript
-        </button>
-        <button
-          className={`btn btn-lg ${styles.btnPortfolio}`}
-          onClick={handleGameClick}
-        >
-          Game
-        </button>
-      </div> */}
 
       <div className={`text-white ${styles.container_portfolio}`}>
         <div className={`${styles.project_detail}`}>
@@ -279,11 +227,7 @@ const Portfolio = () => {
         </div>
         <div className={`${styles.project_icon}`}>
           <a href={project[index].link} target="_blank">
-            <img
-              src={project[index].image_url}
-              alt={project[index].name}
-              loading="lazy"
-            />
+            <img src={project[index].image_url} alt={project[index].name} />
           </a>
           <div className={`${styles.project_navigation}`}>
             <button

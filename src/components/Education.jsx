@@ -2,10 +2,10 @@ import styles from "./Education.module.css";
 
 const education = [
   {
-    year: "2017-2018",
-    institution: "Vardhman International School",
-    class: "X",
-    percent: "88%",
+    year: "2021-2025",
+    institution: "Netaji Subhas University Of Technology",
+    class: "Computer Science with Internet of Things",
+    percent: "7.62 cgpa",
   },
   {
     year: "2019-2020",
@@ -14,10 +14,10 @@ const education = [
     percent: "87%",
   },
   {
-    year: "2021-2025",
-    institution: "Netaji Subhas University Of Technology",
-    class: "Computer Science with Internet of Things",
-    percent: "7.62 cgpa",
+    year: "2017-2018",
+    institution: "Vardhman International School",
+    class: "X",
+    percent: "88%",
   },
   {
     year: "2023",
