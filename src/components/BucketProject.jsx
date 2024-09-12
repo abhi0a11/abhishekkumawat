@@ -28,7 +28,7 @@ const BucketProject = () => {
           <div className={`${styles.branding_social} `}>
             <Link
               to="portfolio-id"
-              className={`animateUp btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
+              className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
             >
               Check All Projects{" "}
               <FaArrowCircleDown

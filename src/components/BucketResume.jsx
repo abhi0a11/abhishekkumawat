@@ -24,7 +24,7 @@ const BucketResume = () => {
           <a
             download="resume"
             href={resumePdf}
-            className={`animateUp btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
+            className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
           >
             Download CV
           </a>

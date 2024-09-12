@@ -177,13 +177,8 @@
 
 .btn-animated:hover,
 .btn-animated:focus {
-  transform: translateY(-3px);
+  transform: translateY(-6px);
   /* box-shadow: 0 4px 4px rgba(233, 226, 226, 0.3); */
-}
-.btn-animated:active,
-.btn-animated:focus {
-  transform: translateY(-1px);
-  /* box-shadow: 0 5px 10px rgba(233, 226, 226, 0.3); */
 }
 
 .btn-skin-outline {
