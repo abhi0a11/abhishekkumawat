@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./BucketResume.module.css";
 import resumePdf from "../assets/resume__abhi.pdf";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
+import Tilt from "react-parallax-tilt";
+
 const BucketResume = () => {
   return (
-    <>
-      <div className={`animateLeft ${styles.bucket_container} `}>
-        <h1 className="text-white">Resume</h1>
+    <Tilt scale={1.01} style={{ flexBasis: "inherit" }}>
+      <div className={`text-white animateLeft ${styles.bucket_container} `}>
+        <h1 className="">Resume</h1>
 
         <div className={`${styles.branding_info} text-white`}>
           <p>
@@ -22,7 +24,7 @@ const BucketResume = () => {
           <a
             download="resume"
             href={resumePdf}
-            className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
+            className={`animateUp btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
           >
             Download CV
           </a>
@@ -52,7 +54,7 @@ const BucketResume = () => {
           </div>
         </div>
       </div>
-    </>
+    </Tilt>
   );
 };
 

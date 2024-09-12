@@ -7,12 +7,12 @@ const Profile = () => {
   const [lcontest, setlcontest] = useState(34);
   const [top, setTop] = useState(11.29);
   const [ccrating, setccrating] = useState(1480);
-  const [ccontest, setccontest] = useState(9);
-  const [topcc, setTopcc] = useState(32571);
+  const [ccontest, setccontest] = useState(0);
+  const [topcc, setTopcc] = useState(0);
+  const [ccStar, setccStar] = useState("");
   const [cfrating, setcfrating] = useState(410);
   const [cfContest, setcfContest] = useState(1);
   const [cfTop, setcfTop] = useState(13666);
-
   const getLeetcodeData = async () => {
     try {
       const res = await axios.get(
@@ -35,10 +35,10 @@ const Profile = () => {
       );
 
       if (!res) return;
-
       setccrating(res.data.currentRating);
-      setccontest(res.data.ratingData.size());
       setTopcc(res.data.globalRank);
+      setccontest(res.data.ratingData.length);
+      setccStar(res.data.stars);
     } catch (error) {
       return;
     }
@@ -95,11 +95,14 @@ const Profile = () => {
           Platform: <span className={`${styles.year}`}> CodeChef</span>
         </p>
         <p>
-          Rating: <span className={`${styles.institue}`}>{ccrating}</span>
+          Rating:{" "}
+          <span className={`${styles.institue}`}>
+            {ccrating}({ccStar})
+          </span>
         </p>
         <p>
           Contest:
-          <span className={`${styles.course}`}>{Math.round(ccontest)}</span>
+          <span className={`${styles.course}`}>{ccontest}</span>
         </p>
         <p>
           Top:

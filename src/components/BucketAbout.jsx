@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./BucketAbout.module.css";
-import resumePdf from "../assets/resume__abhi.pdf";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Tilt from "react-parallax-tilt";
 
 const BucketAbout = () => {
   return (
-    <>
-      <div className={`animateRight ${styles.bucket_container} `}>
-        <h1 className="text-white">About</h1>
+    <Tilt scale={1.01} style={{ flexBasis: "inherit" }}>
+      <div className={`text-white animateRight ${styles.bucket_container} `}>
+        <h1 className="">About</h1>
         <div className={`${styles.branding_info} text-white`}>
           <p>
             A strong problem-solver with over 800 Leetcode questions solved, I
@@ -32,7 +32,7 @@ const BucketAbout = () => {
           </Link>
         </div>
       </div>
-    </>
+    </Tilt>
   );
 };
 

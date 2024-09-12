@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./BucketProject.module.css";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Tilt from "react-parallax-tilt";
 
 const BucketProject = () => {
   return (
-    <>
+    <Tilt style={{ flexBasis: "inherit" }} scale={1.01}>
       <div className={`animateLeft text-white ${styles.bucket_container} `}>
         <h1>Projects</h1>
         <div className={`${styles.branding_info} text-white`}>
@@ -27,7 +28,7 @@ const BucketProject = () => {
           <div className={`${styles.branding_social} `}>
             <Link
               to="portfolio-id"
-              className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
+              className={`animateUp btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
             >
               Check All Projects{" "}
               <FaArrowCircleDown
@@ -37,7 +38,7 @@ const BucketProject = () => {
           </div>
         </div>
       </div>
-    </>
+    </Tilt>
   );
 };
 

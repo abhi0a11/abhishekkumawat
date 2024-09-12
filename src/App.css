@@ -186,32 +186,16 @@
   /* box-shadow: 0 5px 10px rgba(233, 226, 226, 0.3); */
 }
 
-.btn-skin {
-  background-color: #ffdbb5;
-  color: #000;
-}
 .btn-skin-outline {
   border: 1px solid #ffdbb5;
   color: #ffdbb5;
 }
 
-.btn-skin:hover {
-  background-color: #ffdbb5;
-  color: #000;
-}
 .btn-skin-outline:hover {
   border: 1px solid #ffdbb5;
-  color: #ffdbb5;
 }
-.btn-skin::after,
-.btn-skin-outline::after {
-  background-color: #ffdbb5 !important;
-}
-.btn-skin::after,
-.btn-green-outline::after {
-  background-color: #00ff99 !important;
-}
-.btn-skin {
+
+.btn-green {
   background-color: #00ff99;
   color: #000;
 }
@@ -249,8 +233,8 @@
 
 .btn-animated:hover::after,
 .btn-animated:focus::after {
-  transform: scaleX(1.6) scaleY(1.4);
   opacity: 0;
+  transform: scaleX(1.6) scaleY(1.4);
 }
 
 /* for fancy cropping images or anything in any polygon shape  use this css property x y are the cordinates*/

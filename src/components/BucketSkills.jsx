@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./BucketSkills.module.css";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Tilt from "react-parallax-tilt";
 
 const BucketSkills = () => {
   return (
-    <>
+    <Tilt style={{ flexBasis: "inherit" }} scale={1.01}>
       <div className={`animateRight text-white ${styles.bucket_container} `}>
         <h1>Skills & Experience</h1>
         <div className={`${styles.branding_info} text-white`}>
@@ -29,7 +30,7 @@ const BucketSkills = () => {
           </Link>
         </div>
       </div>
-    </>
+    </Tilt>
   );
 };
 

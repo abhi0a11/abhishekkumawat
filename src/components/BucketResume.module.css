@@ -5,7 +5,8 @@
   /* padding: 90px 20px 50px 20px; */
   padding: 35px 20px;
   overflow: hidden;
-  flex-basis: inherit;
+  flex-basis: inherit !important;
+  height: 100%;
 }
 
 .branding_info {

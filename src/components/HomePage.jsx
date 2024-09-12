@@ -5,6 +5,7 @@ import BucketProject from "./BucketProject.jsx";
 import BucketContact from "./BucketContact.jsx";
 import BucketSkills from "./BucketSkills.jsx";
 import styles from "./Homepage.module.css";
+
 const HomePage = () => {
   return (
     <div>

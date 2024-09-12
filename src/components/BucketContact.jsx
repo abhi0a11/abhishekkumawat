@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./BucketContact.module.css";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Tilt from "react-parallax-tilt";
 
 const BucketContact = () => {
   return (
-    <>
+    <Tilt style={{ flexBasis: "inherit" }} scale={1.01}>
       <div className={`animateDown text-white ${styles.bucket_container} `}>
         <h1>Contact me!</h1>
         <div className={`${styles.branding_info} text-white`}>
@@ -31,7 +32,7 @@ const BucketContact = () => {
           </Link>
         </div>
       </div>
-    </>
+    </Tilt>
   );
 };
 

@@ -29,13 +29,13 @@ const Experience = () => {
           </p>
           <p className={`${styles.institue}`}>{data.name}</p>
           <p className={`${styles.course}`}>{data.designation}</p>
-          <p className={`${styles.grade}`}>
+          <div className={`${styles.grade}`}>
             <ul>
               {data.work.map((info, i) => (
                 <li key={i}>{info}</li>
               ))}
             </ul>
-          </p>
+          </div>
         </div>
       ))}
     </section>
