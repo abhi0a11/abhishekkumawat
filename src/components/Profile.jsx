@@ -42,6 +42,7 @@ const Profile = () => {
       );
 
       if (!res) return;
+
       setCCdata({
         ccrating: res.data.currentRating,
         ccontest: res.data.ratingData.length,
