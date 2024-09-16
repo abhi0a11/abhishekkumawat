@@ -29,11 +29,11 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      {width >= breakpoint ? (
+      {/* {width >= breakpoint ? (
         <HomePage></HomePage>
-      ) : (
-        <LandingPage></LandingPage>
-      )}
+      ) : ( */}
+      <LandingPage></LandingPage>
+      {/* // )} */}
       <AboutDesktop></AboutDesktop>
       <Resume></Resume>
       <Portfolio></Portfolio>
