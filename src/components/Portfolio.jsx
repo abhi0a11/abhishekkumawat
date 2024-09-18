@@ -12,7 +12,7 @@ const Portfolio = () => {
   const project = [
     {
       id: "01",
-      name: "Whatsapp",
+      name: "Whatsapp Clone",
       image: forkify,
       project: "MERN Stack",
       image_url:
@@ -23,8 +23,9 @@ const Portfolio = () => {
         // "I Implemented secure user access and data protection using JWT access and refreshtokens.",
         // "Group chat features,facilitating effortless creation and participation in discussions.",
         // "Utilized Redux and Redux Persist for efficient state management,ensuring seamless data persistence",
-        "Real-time messaging and group chat with Socket.IO, and implemented video calling using simple-peer",
-        "Secured user access and data protection with JWT tokens, and managed state with Redux and Redux Persist for efficient data persistence.",
+        // "Real-time messaging and group chat with Socket.IO, and implemented video calling using simple-peer",
+        // "Secured user access and data protection with JWT tokens, and managed state with Redux and Redux Persist for efficient data persistence.",
+        "WhatsApp Web clone developed with group chat and video calling features. It replicates the core functionalities of WhatsApp Web, allowing users to chat in groups, share media, and conduct video calls seamlessly in real time.",
       ],
       link: "https://ws-app-clone.netlify.app/",
       git_link: "https://github.com/abhi0a11",
@@ -46,10 +47,10 @@ const Portfolio = () => {
       image_url:
         "https://ik.imagekit.io/abhishekkumawat/tr:ar-3-2/forkify.jpg?updatedAt=1719573871091",
       description: [
-        "Recipes Finder.",
-        "Implemented Fetching data and Sending data back to API asynchronously.",
-        "Implemented pagination to render only subset of fetched results on a page.",
-        "Optimised the application to rerender on the fields requested using javascript",
+        "Recipe Finder application built using JavaScript. It allows users to search for recipes based on ingredients, cuisine types, or specific dish names, providing a convenient way to discover new cooking ideas.",
+        // "Implemented Fetching data and Sending data back to API asynchronously.",
+        // "Implemented pagination to render only subset of fetched results on a page.",
+        // "Optimised the application to rerender on the fields requested using javascript",
       ],
       link: "https://forkify-abhishek.netlify.app/",
       git_link: "https://github.com/abhi0a11/Forkify",

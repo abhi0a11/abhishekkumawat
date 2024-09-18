@@ -9,12 +9,14 @@ const BucketSkills = () => {
     <Tilt
       tiltMaxAngleX={10}
       tiltMaxAngleY={10}
-      style={{ flexBasis: "inherit" }}
+      style={{ flexBasis: "50%" }}
       scale={1.01}
     >
       <div className={`animateRight text-white ${styles.bucket_container} `}>
         <div>
-          <h1>Skills & Experience</h1>
+          <h1 style={{ fontSize: " clamp(25px, 5vw, 40px)" }}>
+            Skills & Experience
+          </h1>
           <div className={`${styles.branding_info} text-white`}>
             <p>
               Have a look on{" "}

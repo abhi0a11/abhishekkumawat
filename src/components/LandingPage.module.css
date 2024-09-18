@@ -1,6 +1,6 @@
 .display_branding {
   display: flex;
-  background: #1c1c22;
+  background-color: #000;
   padding: 100px 0px 50px 0px;
   height: 100dvh;
 }
@@ -10,31 +10,33 @@
   align-content: center;
   justify-content: center;
   padding: 90px;
+  margin: 0px auto;
 }
+
 .branding_info h5 {
-  font-size: 1.25rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #00ff99;
+  font-size: clamp(16px, 5vw, 20px);
 }
-.branding_info h1 {
-  font-size: 4.75rem;
+
+.branding_info > h1 {
+  font-size: clamp(40px, 8vw, 60px);
+  font-weight: 400;
   font-family: "Kablammo", system-ui;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
   font-variation-settings: "MORF" 0;
+  /* color: #00ff99; */
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-@keyframes Dribble {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-.branding_info h1:hover {
-  animation: Dribble 0.4s infinite ease-out !important;
+h2 {
+  color: #e2e2e2;
+  font-size: clamp(40px, 8vw, 60px);
+  font-weight: 600;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
 }
 
 .branding_info > p {
@@ -90,11 +92,6 @@
   }
   .branding_info h1 {
     font-size: 2.1rem;
-    font-family: "Kablammo", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "MORF" 0;
   }
   .branding_info > p {
     /* width: 75%; */
@@ -131,11 +128,6 @@
   }
   .branding_info h1 {
     font-size: 2.6rem;
-    font-family: "Kablammo", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "MORF" 0;
   }
   .branding_info > p {
     width: 90%;
@@ -171,11 +163,6 @@
   }
   .branding_info h1 {
     font-size: 3.25rem;
-    font-family: "Kablammo", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "MORF" 0;
   }
   .branding_info > p {
     width: 90%;
@@ -211,11 +198,6 @@
   }
   .branding_info h1 {
     font-size: 4rem;
-    font-family: "Kablammo", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "MORF" 0;
   }
   .branding_info > p {
     width: 90%;

@@ -55,56 +55,58 @@ const Resume = () => {
     setEducation(false);
   };
   return (
-    <section id="Skills" className={`bg-color ${styles.skills_container}`}>
-      <div className={`${styles.tabs_section}`}>
-        <div className={`${styles.heading}`}>Why hire me?</div>
+    <section>
+      <section id="Skills" className={`bg-color ${styles.skills_container}`}>
+        <div className={`${styles.tabs_section}`}>
+          <div className={`${styles.heading}`}>Why hire me?</div>
 
-        <button
-          type="button"
-          className={`${styles.navigation_btn} ${education && "active"}`}
-          onClick={handleEductation}
-        >
-          Education
-        </button>
-        <button
-          type="button"
-          className={`${styles.navigation_btn} ${frontend && "active"}`}
-          onClick={handleFrontend}
-        >
-          Frontend Skills
-        </button>
-        <button
-          type="button"
-          className={`${styles.navigation_btn} ${backend && "active"}`}
-          onClick={handleBackend}
-        >
-          Backend Skills
-        </button>
-        <button
-          type="button"
-          className={`${styles.navigation_btn} ${experiance && "active"}`}
-          onClick={handleExperience}
-        >
-          Experience
-        </button>
-        <button
-          type="button"
-          className={`${styles.navigation_btn} ${profile && "active"}`}
-          onClick={handleProfile}
-        >
-          CP Profiles
-        </button>
-      </div>
-      <div className={`${styles.info_container}`}>
-        <div className={`${styles.heading}`}>{head}</div>
-        <div className={`${styles.info}`}>
-          {frontend && <FrontendSkills />}
-          {backend && <BackendSkills />}
-          {experiance && <Experience />}
-          {education && <Education />}
-          {profile && <Profile />}
+          <button
+            type="button"
+            className={`${styles.navigation_btn} ${education && "active"}`}
+            onClick={handleEductation}
+          >
+            Education
+          </button>
+          <button
+            type="button"
+            className={`${styles.navigation_btn} ${frontend && "active"}`}
+            onClick={handleFrontend}
+          >
+            Frontend Skills
+          </button>
+          <button
+            type="button"
+            className={`${styles.navigation_btn} ${backend && "active"}`}
+            onClick={handleBackend}
+          >
+            Backend Skills
+          </button>
+          <button
+            type="button"
+            className={`${styles.navigation_btn} ${experiance && "active"}`}
+            onClick={handleExperience}
+          >
+            Experience
+          </button>
+          <button
+            type="button"
+            className={`${styles.navigation_btn} ${profile && "active"}`}
+            onClick={handleProfile}
+          >
+            CP Profiles
+          </button>
         </div>
-      </div>
+        <div className={`${styles.info_container}`}>
+          <div className={`${styles.heading}`}>{head}</div>
+          <div className={`${styles.info}`}>
+            {frontend && <FrontendSkills />}
+            {backend && <BackendSkills />}
+            {experiance && <Experience />}
+            {education && <Education />}
+            {profile && <Profile />}
+          </div>
+        </div>
+      </section>
     </section>
   );
 };

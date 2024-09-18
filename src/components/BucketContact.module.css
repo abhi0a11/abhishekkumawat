@@ -8,7 +8,6 @@
   padding: 35px 20px;
   flex-basis: inherit;
   overflow: hidden;
-  height: 100%;
 }
 
 .branding_info {
@@ -27,7 +26,7 @@
 .branding_info > p {
   /* width: 75%; */
   color: #ababab;
-  font-size: 17px;
+  font-size: clamp(13px, 5vw, 17px);
 }
 .branding_social {
   display: flex;
@@ -43,26 +42,18 @@
 }
 
 @media screen and (min-width: 700px) and (max-width: 890px) {
-  .bucket_container {
-    flex-basis: 60%;
+  .downArrow {
+    height: 1rem;
+    width: 1rem;
   }
-  .branding_info > p {
-    color: #ababab;
-    font-size: 17px;
-  }
-
   .resumeBtn {
-    font-size: 15px;
-    padding: 8px 32px !important;
-    font-weight: 400;
+    padding: 8px 20px !important;
     width: fit-content;
   }
 }
 @media screen and (min-width: 890px) {
   .resumeBtn {
-    font-size: 15px;
     padding: 8px 32px !important;
-    font-weight: 400;
     width: fit-content;
   }
 }

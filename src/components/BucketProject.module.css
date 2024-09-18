@@ -8,11 +8,10 @@
   padding: 35px 20px;
   overflow: hidden;
   height: 100%;
+  flex: 1 0 50%;
 }
 
 .branding_info {
-  flex-grow: 2;
-  flex-basis: 60%;
   align-content: center;
   justify-content: center;
 }
@@ -23,7 +22,7 @@
   color: #ffdbb5 !important;
 }
 .branding_info h1 {
-  font-size: 2rem;
+  font-size: clamp(15px, 5vw, 20px);
   font-family: "Tourney", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -54,34 +53,25 @@
 }
 
 .resumeBtn {
-  font-size: 15px;
+  font-size: clamp(12px, 2.5vw, 15px);
   padding: 8px 0px !important;
   font-weight: 400;
   border-radius: 20px;
 }
 
 @media screen and (min-width: 700px) and (max-width: 890px) {
-  .bucket_container {
-    flex-basis: 60%;
-  }
-  .branding_info h1 {
-    font-size: 1.5rem;
+  .downArrow {
+    height: 1rem;
+    width: 1rem;
   }
   .resumeBtn {
-    font-size: 10px;
-    padding: 8px 32px !important;
-    font-weight: 400;
+    padding: 8px 20px !important;
     width: fit-content;
   }
 }
 @media screen and (min-width: 890px) {
-  .branding_info h1 {
-    font-size: 1.5rem;
-  }
   .resumeBtn {
-    font-size: 15px;
     padding: 8px 32px !important;
-    font-weight: 400;
     width: fit-content;
   }
 }

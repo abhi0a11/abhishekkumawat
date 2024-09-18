@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import AboutDesktop from "./components/AboutDesktop";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact.jsx";
 import Resume from "./components/Resume";
 import HomePage from "./components/HomePage";
 
@@ -29,11 +29,12 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      {/* {width >= breakpoint ? (
+      {width >= breakpoint ? (
         <HomePage></HomePage>
-      ) : ( */}
-      <LandingPage></LandingPage>
-      {/* // )} */}
+      ) : (
+        <LandingPage></LandingPage>
+      )}
+      {/* <LandingPage></LandingPage> */}
       <AboutDesktop></AboutDesktop>
       <Resume></Resume>
       <Portfolio></Portfolio>

@@ -14,7 +14,7 @@ const BucketContact = () => {
     >
       <div className={`animateDown text-white ${styles.bucket_container} `}>
         <div>
-          <h1>Contact me!</h1>
+          <h1 style={{ fontSize: "clamp(25px, 5vw, 40px)" }}>Contact me!</h1>
           <div className={`${styles.branding_info} text-white`}>
             <p>
               I'm always{" "}

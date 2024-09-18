@@ -28,7 +28,7 @@ const Navbar = () => {
             Abhishek Kumawat
           </a>
           <div
-            className="collapse navbar-collapse justify-content-center "
+            className="collapse navbar-collapse justify-content-end mx-5"
             id="navbarSupportedContent"
           >
             <ul className={`navbar-nav mb-2 mb-lg-0 ${styles.ul_item}`}>

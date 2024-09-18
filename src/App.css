@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Danfo&family=Kablammo&family=League+Gothic&family=Sixtyfour&family=Tilt+Prism&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lora:ital@0;1&family=Roboto+Mono:ital@0;1&display=swap");
 * {
   font-family: monospace, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
@@ -19,9 +21,7 @@
 }
 
 .nav-link.active {
-  background-color: #00ff99 !important;
-  color: black !important;
-  border-radius: 50px;
+  color: #00ff99 !important;
 }
 /* scroll bar */
 /* width */
@@ -62,25 +62,25 @@
   transform: translateY(-2px);
 }
 
-.active {
+/* .active {
   background-color: #00ff99 !important;
   color: black !important;
-}
+} */
 .animateLeft {
   /* animation-name: moveInLeft;
   animation-duration: 0.4s;
   animation-timing-function: ease-out; */
-  animation: moveInLeft 1.5s ease-out !important;
   /* animation-fill-mode: backwards; */
+  animation: moveInLeft 1.5s ease-out !important;
 }
 .animateRight {
-  animation: moveInRight 1s ease-out !important;
+  animation: moveInRight 3s ease-out !important;
 }
 .animateUp {
-  animation: moveUp 2s ease-out !important;
+  animation: moveUp 2s ease-in !important;
 }
 .animateDown {
-  animation: moveDown 0.5s ease-out !important;
+  animation: moveDown 3s ease-out !important;
 }
 
 .animateDribble {

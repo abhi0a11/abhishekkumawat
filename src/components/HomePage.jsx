@@ -10,12 +10,12 @@ const HomePage = () => {
   return (
     <div>
       <div id="brand" className={`bg-color-primary ${styles.bucket_container}`}>
-        <BucketResume></BucketResume>
         <BucketName></BucketName>
-        <BucketAbout></BucketAbout>
-        <BucketProject></BucketProject>
-        <BucketContact></BucketContact>
-        <BucketSkills></BucketSkills>
+        <BucketResume></BucketResume>
+        {/* <BucketAbout></BucketAbout> */}
+        {/* <BucketProject></BucketProject> */}
+        {/* <BucketContact></BucketContact> */}
+        {/* <BucketSkills></BucketSkills> */}
       </div>
     </div>
   );

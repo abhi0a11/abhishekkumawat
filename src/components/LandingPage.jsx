@@ -7,18 +7,14 @@ const LandingPage = () => {
   return (
     <section
       id="brand"
-      className={`bg-color-secondary text-white ${styles.display_branding}`}
+      className={`bg-color-primary text-white ${styles.display_branding}`}
     >
       <div className={`${styles.branding_info}`}>
-        <h5 className="animateDown">Full Stack Developer</h5>
-        <h1 className="animateInLeft">Hello I'm</h1>
-        <h1 className="animateInRight" style={{ color: "#00ff99" }}>
-          Abhishek Kumawat
-        </h1>
-        <p className="animateUp">
-          I excel in crafting elegant digital experiances and I am proficient in
-          various programming languages and technologies.
-        </p>
+        <h5 className="animateDown">Hi, my name is</h5>
+        {/* <h1 className="animateInLeft">Hello I'm</h1> */}
+        <h1 className="animateInRight">Abhishek Kumawat.</h1>
+        <h2 className="animateInRight">I build things for the web.</h2>
+
         <div className={`${styles.branding_social} `}>
           <a
             download="resume"

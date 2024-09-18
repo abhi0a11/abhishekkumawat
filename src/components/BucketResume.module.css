@@ -6,8 +6,7 @@
   border-radius: 20px;
   padding: 35px 20px;
   overflow: hidden;
-  flex-basis: inherit !important;
-  height: 100%;
+  flex-basis: 35% !important;
 }
 
 .branding_info {
@@ -16,14 +15,16 @@
   align-content: center;
   justify-content: center;
 }
-
+.inside {
+  display: flex;
+}
 .branding_info > p {
   color: #ababab;
-  font-size: 17px;
+  font-size: clamp(13px, 5vw, 17px);
 }
 .branding_social {
   display: flex;
-  margin-top: 29px;
+  margin: 20px 0px;
   gap: 14px;
 }
 .icon_div {
@@ -40,34 +41,24 @@
 }
 
 .resumeBtn {
-  font-size: 14px;
+  font-size: clamp(12px, 2.5vw, 15px);
   padding: 8px 0px !important;
   font-weight: 400;
   border-radius: 20px;
 }
 
 @media screen and (min-width: 700px) and (max-width: 890px) {
-  .bucket_container {
-    flex-basis: 50%;
-  }
-
-  .branding_info h5 {
-    font-size: 1.25rem;
-  }
-
   .mobile {
     display: flex;
     gap: 14px;
   }
   .icon_div {
-    font-size: 1.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    font-size: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
   }
   .resumeBtn {
-    font-size: 14px;
-    padding: 8px 32px !important;
-    font-weight: 400;
+    padding: 8px 20px !important;
     width: fit-content;
   }
 }
@@ -82,9 +73,7 @@
     height: 2.5rem;
   }
   .resumeBtn {
-    font-size: 14px;
     padding: 8px 20px !important;
-    font-weight: 400;
     width: fit-content;
   }
 }

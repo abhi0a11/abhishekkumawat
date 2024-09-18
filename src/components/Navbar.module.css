@@ -46,7 +46,7 @@
 .underline:hover {
   cursor: pointer;
   color: #00ff99;
-  animation: Dribble 0.4s infinite ease-out !important;
+  /* animation: Dribble 0.4s infinite ease-out !important; */
 }
 .nav_logo_name {
   margin-left: 10px;
