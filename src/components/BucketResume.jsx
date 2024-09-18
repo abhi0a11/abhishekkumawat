@@ -9,69 +9,69 @@ import BucketAbout from "./BucketAbout";
 
 const BucketResume = () => {
   return (
-    // <Tilt
-    //   tiltMaxAngleX={0}
-    //   tiltMaxAngleY={0}
-    //   scale={1.01}
-    //   style={{ flexBasis: "45%", maxWidth: "700px" }}
-    // >
     <div className={`text-white animateLeft ${styles.bucket_container} `}>
-      <div>
-        <h1 style={{ fontSize: "clamp(25px, 5vw, 40px)" }}>Resume</h1>
-        <div className={`${styles.branding_info} text-white`}>
-          <p>
-            I have a strong foundation in{" "}
-            <span style={{ color: "#00ff99", fontWeight: "500" }}>
-              frontend and backend
-            </span>{" "}
-            technologies , with expertise in React.js, Node.js, and scalable web
-            application development, demonstrated through my{" "}
-            <span style={{ color: "#00ff99", fontWeight: "500" }}>
-              {" "}
-              internships at Roxwell Technologies.{" "}
-            </span>
-          </p>
-        </div>
-      </div>
-      <div className={`${styles.branding_social} `}>
-        <a
-          download="resume"
-          href={resumePdf}
-          className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
-        >
-          Resume
-        </a>
-        <div className={`${styles.mobile}`}>
-          <div
-            className={`btn-animated btn-skin-outline ${styles.icon_div} animateUp`}
-          >
-            <a
-              href="https://www.linkedin.com/in/abhishekkumawt/"
-              target="_blank"
-              className={`text-white ${styles.branding_btn} `}
-            >
-              <FaLinkedinIn className={`${styles.fa__icon__detail}`} />
-            </a>
-          </div>
-          <div
-            className={`btn-animated btn-skin-outline ${styles.icon_div} animateUp`}
-          >
-            <a
-              href="https://github.com/abhi0a11"
-              target="_blank"
-              className={`${styles.branding_btn} `}
-            >
-              <FiGithub className={`${styles.fa__icon__detail}`} />
-            </a>
+      <Tilt
+        tiltMaxAngleX={10}
+        tiltMaxAngleY={10}
+        scale={1.01}
+        style={{ flexBasis: "45%", maxWidth: "700px" }}
+      >
+        <div>
+          <h1 style={{ fontSize: "clamp(25px, 5vw, 40px)" }}>Resume</h1>
+          <div className={`${styles.branding_info} text-white`}>
+            <p>
+              I have a strong foundation in{" "}
+              <span style={{ color: "#00ff99", fontWeight: "500" }}>
+                frontend and backend
+              </span>{" "}
+              technologies , with expertise in React.js, Node.js, and scalable
+              web application development, demonstrated through my{" "}
+              <span style={{ color: "#00ff99", fontWeight: "500" }}>
+                {" "}
+                internships at Roxwell Technologies.{" "}
+              </span>
+            </p>
           </div>
         </div>
-      </div>
+        <div className={`${styles.branding_social} `}>
+          <a
+            download="resume"
+            href={resumePdf}
+            className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
+          >
+            Resume
+          </a>
+          <div className={`${styles.mobile}`}>
+            <div
+              className={`btn-animated btn-skin-outline ${styles.icon_div} animateUp`}
+            >
+              <a
+                href="https://www.linkedin.com/in/abhishekkumawt/"
+                target="_blank"
+                className={`text-white ${styles.branding_btn} `}
+              >
+                <FaLinkedinIn className={`${styles.fa__icon__detail}`} />
+              </a>
+            </div>
+            <div
+              className={`btn-animated btn-skin-outline ${styles.icon_div} animateUp`}
+            >
+              <a
+                href="https://github.com/abhi0a11"
+                target="_blank"
+                className={`${styles.branding_btn} `}
+              >
+                <FiGithub className={`${styles.fa__icon__detail}`} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </Tilt>
       {/* <div className={`animateInRight ${styles.inside}`}> */}
       <BucketContact></BucketContact>
       {/* <BucketAbout></BucketAbout> */}
       {/* </div> */}
     </div>
-    // </Tilt>
   );
 };
 

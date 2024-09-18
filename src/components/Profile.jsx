@@ -97,7 +97,7 @@ const Profile = () => {
         </p>
 
         <a
-          href={"https://leetcode.com/u/abhishek_123321/"}
+          href={"https://leetcode.com/u/neerajofficial1919/"}
           target="_blank"
           className={`${styles.grade}`}
         >

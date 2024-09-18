@@ -22,7 +22,7 @@
   color: #ffdbb5 !important;
 }
 .branding_info h1 {
-  font-size: clamp(15px, 5vw, 20px);
+  font-size: clamp(15px, 5vw, 25px);
   font-family: "Tourney", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
