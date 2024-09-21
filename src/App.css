@@ -20,9 +20,9 @@
   text-align: center;
 }
 
-.nav-link.active {
+/* .nav-link.active {
   color: #00ff99 !important;
-}
+} */
 /* scroll bar */
 /* width */
 ::-webkit-scrollbar {
@@ -62,10 +62,13 @@
   transform: translateY(-2px);
 }
 
-/* .active {
+.active {
+  color: #00ff99 !important;
+}
+.activeBtn {
   background-color: #00ff99 !important;
   color: black !important;
-} */
+}
 .animateLeft {
   /* animation-name: moveInLeft;
   animation-duration: 0.4s;

@@ -58,7 +58,7 @@ const Navbar = () => {
                   activeClass="active"
                   spy={true}
                   className={`nav-link ${styles.underline} `}
-                  to="Skills"
+                  to="SkillsID"
                 >
                   Resume
                 </Link>
