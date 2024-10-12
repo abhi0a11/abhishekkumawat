@@ -69,24 +69,24 @@ const Resume = () => {
         return;
       }
     })()
-    // ;(async () => {
-    //   try {
-    //     const res = await axios.get(
-    //       "https://codeforces.com/api/user.rating?handle=abhishek_123321",{
-    //         changeOrigin:true
-    //       }
-    //     );
-    //     if (!res) return;
+    ;(async () => {
+      try {
+        const res = await axios.get(
+          "https://codeforces.com/api/user.rating?handle=abhishek_123321",{
+            changeOrigin:true
+          }
+        );
+        if (!res) return;
 
-    //     setCFdata({
-    //       cfrating: res.data.result[0].newRating,
-    //       cfContest: res.data.result.length,
-    //       cfTop: res.data.result[0].rank,
-    //     });
-    //   } catch (error) {
-    //     return;
-    //   }
-    // })();
+        setCFdata({
+          cfrating: res.data.result[res.data.result.length - 1].newRating,
+          cfContest: res.data.result.length,
+          cfTop: res.data.result[res.data.result.length-1].rank,
+        });
+      } catch (error) {
+        return;
+      }
+    })();
   }, []);
 
   const handleEductation = () => {
@@ -129,6 +129,7 @@ const Resume = () => {
     setExperiance(false);
     setEducation(false);
   };
+
   return (
     <section>
       <section id="SkillsID" className={`bg-color ${styles.skills_container}`}>

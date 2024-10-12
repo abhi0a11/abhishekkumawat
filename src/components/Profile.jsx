@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 import styles from "./Profile.module.css";
 
 const Profile = ({ CCdata, LCdata, CFdata }) => {
+  console.log(CFdata);
   return (
     <section className={`${styles.section_front}`}>
       <div className={`${styles.education}`}>
@@ -96,15 +96,15 @@ const Profile = ({ CCdata, LCdata, CFdata }) => {
           Platform: <span className={`${styles.year}`}> Atcoder</span>
         </p>
         <p>
-          Rating: <span className={`${styles.institue}`}>355</span>
+          Rating: <span className={`${styles.institue}`}>392</span>
         </p>
         <p>
           Contest:
-          <span className={`${styles.course}`}> 11</span>
+          <span className={`${styles.course}`}> 12</span>
         </p>
         <p>
           Top:
-          <span className={`${styles.course}`}> 34161 global rank</span>
+          <span className={`${styles.course}`}> 32992 global rank</span>
         </p>
 
         <a
