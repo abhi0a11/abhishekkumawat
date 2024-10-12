@@ -133,7 +133,9 @@ const Resume = () => {
     <section>
       <section id="SkillsID" className={`bg-color ${styles.skills_container}`}>
         <div className={`${styles.tabs_section}`}>
-          <div className={`${styles.heading}`}>Why hire me?</div>
+          <div className={`kablammo-font tourney-font ${styles.heading}`}>
+            Why hire me?
+          </div>
 
           <button
             type="button"
@@ -172,7 +174,7 @@ const Resume = () => {
           </button>
         </div>
         <div className={`${styles.info_container}`}>
-          <div className={`${styles.heading}`}>{head}</div>
+          <div className={`kablammo-font ${styles.heading}`}>{head}</div>
           <div className={`${styles.info}`}>
             {frontend && <FrontendSkills />}
             {backend && <BackendSkills />}

@@ -14,11 +14,6 @@
   line-height: 1.2rem;
   /* color: #ff004f; */
   color: #00ff99;
-  font-family: "Kablammo", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "MORF" 0;
 }
 
 /* new portfolio start */
@@ -53,24 +48,12 @@
   font-size: 100px;
   /* color: #ff004f; */
   color: #00ff99;
-
-  font-family: "Kablammo", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "MORF" 0;
 }
 .project_Heading {
   margin: 60px 0px 0px 20px;
   /* color: #ff004f; */
   color: #00ff99;
-
   font-size: 45px;
-  font-family: "Kablammo", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "MORF" 0;
 }
 .project_info p {
   margin-bottom: 0.5rem;
@@ -79,43 +62,7 @@
   margin-top: 0.5rem;
   font-size: 20px;
 }
-/* .danfo_unique {
-  font-family: "Danfo", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "ELSH" 0;
-} */
-.project_redirect_button,
-.project_redirect_button:link,
-.project_redirect_button:active {
-  width: fit-content;
-  margin: 0 auto;
-  font-family: "Tilt Prism", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bolder;
-  font-style: normal;
-  font-variation-settings: "XROT" 0, "YROT" 0;
-  font-size: 18px;
-  border: 2px solid #00ff99;
-  /* color: #ff004f; */
-  color: #00ff99;
 
-  border: 1px solid #00ff99;
-}
-.project_redirect_button:hover,
-.project_redirect_button:focus {
-  background-color: #00ff99aa;
-  color: white;
-  transform: translate(-3px, -3px);
-  /* box-shadow: 1px 1px 3px 1px #ababab; */
-  border: 1px solid #00ff99;
-  font-family: "Danfo", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "ELSH" 0;
-}
 @keyframes Dribble {
   0% {
     transform: translateY(0px);
@@ -133,8 +80,6 @@
   aspect-ratio: 3.5 / 1.8;
   object-fit: cover;
   object-position: top;
-
-  /* animation: Dribble 0.4s infinite ease-out !important; */
 }
 .project_icon a img:hover,
 .project_icon a img:focus {
@@ -149,13 +94,7 @@
 .project_summary {
   display: list-item;
   font-size: 18px;
-
   max-width: 800px;
-  /* font-family: "Tourney", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "wdth" 87.5; */
 }
 
 .prev_project {

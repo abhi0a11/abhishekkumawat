@@ -163,7 +163,9 @@ const Portfolio = () => {
       id="portfolio-id"
     >
       <div className="container-fluid " id="custom-cards">
-        <h1 className={`pb-2 text-center ${styles.portfolioMainHeading} `}>
+        <h1
+          className={`pb-2 text-center kablammo-font ${styles.portfolioMainHeading} `}
+        >
           Projects
         </h1>
       </div>
@@ -171,15 +173,18 @@ const Portfolio = () => {
       <div className={`text-white ${styles.container_portfolio}`}>
         <div className={`${styles.project_detail}`}>
           <div className={`${styles.project_title}`}>
-            <div className={`${styles.project_serial}`}>
+            <div className={`kablammo-font ${styles.project_serial}`}>
               {project[index].id}
             </div>
-            <div className={`${styles.project_Heading}`}>
+            <div className={`kablammo-font ${styles.project_Heading}`}>
               {project[index].name}
             </div>
           </div>
-          <div className={`${styles.project_title}`}>
-            <div className={`${styles.project_Heading}`} style={{ margin: 0 }}>
+          <div className={` ${styles.project_title}`}>
+            <div
+              className={`kablammo-font ${styles.project_Heading}`}
+              style={{ margin: 0 }}
+            >
               {project[index].project}
             </div>
           </div>

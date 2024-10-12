@@ -22,7 +22,9 @@ const AboutDesktop = () => {
         </div>
 
         <div className={`${styles.heading} `}>
-          <h2 className={`fw-bold cutom-text-color ${styles.head__about}`}>
+          <h2
+            className={`fw-bold cutom-text-color kablammo-font ${styles.head__about}`}
+          >
             About me
           </h2>
           <p className={`lead text-white ${styles.intro__subpara}`}>
