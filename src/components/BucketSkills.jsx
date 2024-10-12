@@ -31,7 +31,7 @@ const BucketSkills = () => {
         </div>
         <div className={`${styles.branding_social} `}>
           <Link
-            to="Skills"
+            to="SkillsID"
             className={`animateUp btn-animated btn btn-skin-outline btn-lg px-4 ${styles.resumeBtn} `}
           >
             Have a look!{" "}
