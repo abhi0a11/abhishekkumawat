@@ -28,8 +28,11 @@ const AboutDesktop = () => {
             About me
           </h2>
           <p className={`lead text-white ${styles.intro__subpara}`}>
-            Hello I'm a{" "}
-            <span className="cutom-text-color fw-bold"> Abhishek Kumawat </span>
+            Hello I'm{" "}
+            <span className="cutom-text-color fw-bold">
+              {" "}
+              Abhishek Kumawat,{" "}
+            </span>
             web designer based in Delhi,INDIA. Designer expert in creating user
             centered websites.Passionte about created websites with beautiful
             interfaces. I have a strong attention to detail, I like to update my
