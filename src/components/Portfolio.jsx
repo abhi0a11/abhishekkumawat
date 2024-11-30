@@ -41,6 +41,23 @@ const Portfolio = () => {
     },
     {
       id: "02",
+      name: "GoSHopping",
+      project: "Full Stack Project",
+      image_url:
+        "https://res.cloudinary.com/daiwqouix/image/upload/v1732959212/goshop_lg2qyn.png",
+      description: [
+        "A Mern Stack E-commerce App.",
+        "Authentication is done to give access to only verified users",
+      ],
+      link: "https://go-shopping121.netlify.app/",
+      git_link:
+        "https://github.com/abhi0a11/todo-apphttps://github.com/abhi0a11?tab=repositories",
+      category: ["NodeJS", "ExpressJS", "MongoDB", "React"],
+      js: true,
+      game: false,
+    },
+    {
+      id: "03",
       name: "Forkify",
       image: forkify,
       project: "frontend project",
@@ -56,23 +73,6 @@ const Portfolio = () => {
       git_link: "https://github.com/abhi0a11/Forkify",
       category: ["Javascript", "html", "css"],
       js: true,
-    },
-    {
-      id: "03",
-      name: "Todo App",
-      project: "Backend Project",
-      image_url:
-        "https://ik.imagekit.io/abhishekkumawat/tr:ar-3-2/Todo.png?updatedAt=1720246738294",
-      description: [
-        "A Mern Stack app for managing day to day task.",
-        "Authentication is done to give access to only verified users",
-        "Implemented Api's to fetch , and add new tasks of logged in users.",
-      ],
-      link: "https://todo-appauthenticated.netlify.app/",
-      git_link: "https://github.com/abhi0a11/todo-app",
-      category: ["NodeJS", "ExpressJS", "MongoDB", "React"],
-      js: true,
-      game: true,
     },
     {
       id: "04",

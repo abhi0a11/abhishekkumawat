@@ -17,21 +17,21 @@ const Resume = () => {
   const [head, setHead] = useState("Frontend Skills");
 
   const [CCdata, setCCdata] = useState({
-    ccrating: 0,
-    ccontest: 0,
+    ccrating: 1530,
+    ccontest: 11,
     topcc: 0,
-    ccStar: 0,
+    ccStar: 2,
   });
   const [LCdata, setLCdata] = useState({
-    lcrating: 1657,
-    lcontest: 34,
-    top: 8,
+    lcrating: 1801,
+    lcontest: 43,
+    top: 7.52,
   });
 
   const [CFdata, setCFdata] = useState({
-    cfrating: 410,
-    cfContest: 1,
-    cfTop: 13666,
+    cfrating: 702,
+    cfContest: 2,
+    cfTop: 8141,
   });
   //  prettier-ignore
   useEffect(() => {

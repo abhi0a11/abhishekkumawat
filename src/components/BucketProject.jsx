@@ -21,25 +21,14 @@ const BucketProject = () => {
                 Whatsapp Clone
               </h1>
             </a>
+            <a href="https://go-shopping121.netlify.app/" target="_blank">
+              <h1 className="animateInRight" style={{ color: "#00ff99" }}>
+                GoShopping
+              </h1>
+            </a>
             <a href="https://forkify-abhishek.netlify.app/" target="_blank">
               <h1 className="animateInRight" style={{ color: "#00ff99" }}>
                 Forkify
-              </h1>
-            </a>
-            <a
-              href="https://todo-appauthenticated.netlify.app/"
-              target="_blank"
-            >
-              <h1 className="animateInRight" style={{ color: "#00ff99" }}>
-                Snake Game
-              </h1>
-            </a>
-            <a
-              href="https://snake-game-retrostyle.netlify.app/"
-              target="_blank"
-            >
-              <h1 className="animateInRight" style={{ color: "#00ff99" }}>
-                Todo App
               </h1>
             </a>
             <a
