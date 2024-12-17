@@ -2,8 +2,6 @@ import styles from "./Contact.module.css";
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { SiMinutemailer } from "react-icons/si";
-import resumePdf from "../assets/resume__abhi.pdf";
 
 const Contact = () => {
   return (

@@ -1,5 +1,5 @@
 import styles from "./LandingPage.module.css";
-import resumePdf from "../assets/resume__abhi.pdf";
+import resumePdf from "../assets/Resume.pdf";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 

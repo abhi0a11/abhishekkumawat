@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import styles from "./BucketResume.module.css";
-import resumePdf from "../assets/resume__abhi.pdf";
+import resumePdf from "../assets/Resume.pdf";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import Tilt from "react-parallax-tilt";
 import BucketContact from "./BucketContact";
-import BucketAbout from "./BucketAbout";
 
 const BucketResume = () => {
   return (

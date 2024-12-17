@@ -1,7 +1,7 @@
 import styles from "./AboutDesktop.module.css";
 import abhishek from "../assets/abhishek_1.jpg";
 import formals_photo from "../assets/abhi_edit1.jpg";
-import resumePdf from "../assets/resume__abhi.pdf";
+import resumePdf from "../assets/Resume.pdf";
 
 const AboutDesktop = () => {
   return (
