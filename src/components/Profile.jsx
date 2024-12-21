@@ -1,7 +1,6 @@
 import styles from "./Profile.module.css";
 
 const Profile = ({ CCdata, LCdata, CFdata }) => {
-  console.log(CFdata);
   return (
     <section className={`${styles.section_front}`}>
       <div className={`${styles.education}`}>

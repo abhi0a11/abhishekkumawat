@@ -3,6 +3,8 @@ import { FaNodeJs } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
+import { SiWebrtc } from "react-icons/si";
 const skills = [
   {
     logo: <FaNodeJs className={`${styles.logo}`} />,
@@ -19,6 +21,14 @@ const skills = [
   {
     logo: <SiSocketdotio className={`${styles.logo}`} />,
     lang: "Socket io",
+  },
+  {
+    logo: <TbBrandMysql className={`${styles.logo}`} />,
+    lang: "SQL",
+  },
+  {
+    logo: <SiWebrtc className={`${styles.logo}`} />,
+    lang: "Web RTC(PeerJS)",
   },
 ];
 const BackendSkills = () => {

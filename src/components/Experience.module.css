@@ -6,34 +6,16 @@
   row-gap: 10px;
 }
 
-.technical__bars {
-  display: flex;
-  flex-direction: column;
-  padding: 13px 22px;
-  flex-grow: 1;
-  flex-basis: 47%;
-  height: 50%;
-  background-color: #1c1c22;
-  border: 1px solid #000;
-  color: white !important;
-  /* align-items: center; */
-  /* text-decoration: dotted; */
-  /* justify-content: space-around; */
-  font-size: 2rem !important;
-}
-
 .logo {
   font-size: 4rem;
 }
-.technical__bars {
-  font-size: 1.25rem;
-}
+
 .exp {
   display: flex;
   flex-direction: column;
   padding: 13px 22px;
   flex-grow: 1;
-  flex-basis: 47%;
+  flex-basis: 100%;
   height: fit-content;
   background-color: #1c1c22;
   border: 1px solid #000;

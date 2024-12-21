@@ -171,7 +171,7 @@ const Resume = () => {
             className={`${styles.navigation_btn} ${profile && "activeBtn"}`}
             onClick={handleProfile}
           >
-            CP Profiles
+            CP Profiles (C++)
           </button>
         </div>
         <div className={`${styles.info_container}`}>
