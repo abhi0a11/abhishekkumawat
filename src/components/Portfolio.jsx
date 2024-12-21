@@ -51,7 +51,7 @@ const Portfolio = () => {
       ],
       link: "https://go-shopping121.netlify.app/",
       git_link:
-        "https://github.com/abhi0a11/todo-apphttps://github.com/abhi0a11?tab=repositories",
+        "https://github.com/abhi0a11?tab=overview&from=2024-12-01&to=2024-12-21",
       category: ["NodeJS", "ExpressJS", "MongoDB", "React"],
       js: true,
       game: false,
