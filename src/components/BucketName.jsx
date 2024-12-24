@@ -11,6 +11,7 @@ const BucketName = () => {
     //   style={{ flexBasis: "55%" }}
     //   scale={1.01}
     // >
+
     <div
       className={`animateUp ${styles.bucket_container} `}
       style={{ transitionDelay: "100ms" }}

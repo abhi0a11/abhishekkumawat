@@ -75,6 +75,23 @@ const AboutDesktop = () => {
               <p className={`${styles.detail_info}`}>Full Stack Developer</p>
             </div>
           </div>
+          <div
+            class="badge-base LI-profile-badge"
+            data-locale="en_US"
+            data-size="large"
+            data-theme="dark"
+            data-type="HORIZONTAL"
+            data-vanity="abhishekkumawt"
+            data-version="v1"
+          >
+            {/* <a
+              class="badge-base__link LI-simple-link"
+              href="https://in.linkedin.com/in/abhishekkumawt?trk=profile-badge"
+            >
+              Abhishek Kumawat
+            </a> */}
+          </div>
+
           <div className={`d-grid gap-2 d-md-flex ${styles.btn__container}`}>
             <a
               download="resume"
