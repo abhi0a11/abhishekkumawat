@@ -54,7 +54,7 @@ const AboutDesktop = () => {
               <p className={`${styles.detail_head}`}>Leetcode</p>
               <p className={`${styles.detail_info}`}>
                 <a
-                  className={`${styles.link}`}
+                  className={`${styles.link} color-green`}
                   href="https://leetcode.com/u/abhishek_123321/"
                   target="_blank"
                 >
@@ -73,6 +73,19 @@ const AboutDesktop = () => {
             <div className={`${styles.detail}`}>
               <p className={`${styles.detail_head}`}>Development</p>
               <p className={`${styles.detail_info}`}>Full Stack Developer</p>
+            </div>
+
+            <div className={`${styles.detail}`}>
+              <p className={`${styles.detail_head}`}>Fiverr</p>
+              <p className={`${styles.detail_info}`}>
+                <a
+                  className={`${styles.link} color-green`}
+                  href="https://www.fiverr.com/u_71b746ed0fe8?public_mode=true"
+                  target="_blank"
+                >
+                  Browse Gig!
+                </a>
+              </p>
             </div>
           </div>
           <div

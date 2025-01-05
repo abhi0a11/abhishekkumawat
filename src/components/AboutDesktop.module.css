@@ -65,9 +65,9 @@
 .detail_info {
   color: #f1d2d2 !important;
 }
-.link {
+/* .link {
   color: #f1d2d2 !important;
-}
+} */
 .link:hover {
   background-color: #00ff99;
   color: black !important;

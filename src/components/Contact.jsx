@@ -16,10 +16,14 @@ const Contact = () => {
         </p>
         <p className={`${styles.fiverr}`}>
           Looking for a professional full-stack developer? Your search ends
-          here! I offer tailored, reliable, and affordable web solutions on
-          Fiverr. From sleek e-commerce platforms to dynamic web apps, I’ve got
-          you covered. Let’s build something amazing together –{" "}
+          here!{" "}
+          <span style={{ background: "#00ff99", color: "#000" }}>
+            I offer tailored, reliable, and affordable web solutions on Fiverr.
+          </span>{" "}
+          From sleek e-commerce platforms to dynamic web apps, I’ve got you
+          covered. Let’s build something amazing together –{" "}
           <a
+            className="color-green"
             href="https://www.fiverr.com/u_71b746ed0fe8?public_mode=true"
             target="_blank"
           >
