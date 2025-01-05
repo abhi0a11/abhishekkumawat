@@ -27,8 +27,10 @@
   text-align: center;
   color: white;
   /* font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace; */
-  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
-    system-ui, sans-serif;
+  /* font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif; */
+  font-style: oblique !important;
+  font-family: monospace !important;
 }
 .emailIcon {
   font-size: 20px;
@@ -59,7 +61,12 @@
   transform: translate(-3px, -3px);
   /* color: #fff; */
 }
+.fiverr {
+  font-size: clamp(12px, 5vw, 16px) !important;
+  font-style: oblique !important;
 
+  font-family: monospace !important;
+}
 /* ------------------responsive */
 @media only screen and (max-width: 780px) {
   .container__contact {

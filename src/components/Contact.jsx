@@ -14,6 +14,18 @@ const Contact = () => {
           open. Whether you have a question or just want to say hi, I’ll try my
           best to get back to you!
         </p>
+        <p className={`${styles.fiverr}`}>
+          Looking for a professional full-stack developer? Your search ends
+          here! I offer tailored, reliable, and affordable web solutions on
+          Fiverr. From sleek e-commerce platforms to dynamic web apps, I’ve got
+          you covered. Let’s build something amazing together –{" "}
+          <a
+            href="https://www.fiverr.com/u_71b746ed0fe8?public_mode=true"
+            target="_blank"
+          >
+            explore my Fiverr gigs and place your order today!
+          </a>
+        </p>
         <a
           style={{ marginTop: "50px" }}
           href="https://mail.google.com/mail/?view=cm&fs=1&to=abhishekkumawat.ak21@gmail.com"
